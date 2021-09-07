@@ -1,0 +1,1 @@
+// User model to config the User schema
