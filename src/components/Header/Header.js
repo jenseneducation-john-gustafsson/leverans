@@ -1,24 +1,11 @@
-import React, { Component } from 'react';
-import { MenuItems } from "./MenuItems";
+import "./Header.css";
 
-class Header extends Component {
-  render() {
-    return (
-      <nav className="HeaderItems">
-        <h1 className="header-logo">React</h1>
-        <div className="menu-icon">
-
-        </div>
-        <ul>
-          {MenuItems.map((item, index) => {
-            return (
-              <li><a className="{item.cName}"></a></li>
-            )
-          })}
-         
-        </ul>
-      </nav>
-    )
-  }
+function Header() {
+  return (
+    <div >
+      <h1 className="test">Hej</h1>
+    </div>
+  )
 }
+
 export default Header;
