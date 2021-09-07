@@ -1,3 +1,26 @@
-.test {
-  font-size: 20px;
+.nav {
+  align-items: center;
+  background: rgb(10, 113, 148);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 0;
+}
+
+.nav-header {
+  font-size: 2.5rem;
+}
+
+.nav-icons {
+  position: relative;
+}
+
+.nav-buttons {
+  background: none;
+  border: 0;
+  margin-left: 20px;
+  outline: none;
+  color: white;
+  cursor: pointer;
 }
