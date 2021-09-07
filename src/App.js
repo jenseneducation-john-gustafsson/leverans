@@ -4,7 +4,7 @@ import {Header} from "./components/common"
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <h1>Hi</h1>
     </div>
   );
 }
