@@ -1,20 +1,22 @@
 import "./Header.css";
 import { RiAccountCircleFill } from "react-icons/ri";
+import { TiShoppingCart } from "react-icons/ti";
+import { FaSignInAlt } from "react-icons/fa"
 
 function Header() {
   return (
     <div >
       <nav className="nav">
-        <h2 className="nav-header">Notflix</h2>
+        <h2 className="nav-header-title">Notflix</h2>
         <div className="nav-icons">
           <button className="nav-buttons">
-            <RiAccountCircleFill />
+            <FaSignInAlt />
           </button>
           <button className="nav-buttons">
             <RiAccountCircleFill />
           </button>
           <button className="nav-buttons">
-            <RiAccountCircleFill />
+            <TiShoppingCart />
           </button>
         </div>
       </nav>
