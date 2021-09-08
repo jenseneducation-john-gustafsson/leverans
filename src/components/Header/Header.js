@@ -6,16 +6,16 @@ import { FaSignInAlt } from "react-icons/fa"
 function Header() {
   return (
     <div >
-      <nav className="nav">
+      <nav className="nav-header">
         <h2 className="nav-header-title">Notflix</h2>
-        <div className="nav-icons">
-          <button className="nav-buttons">
+        <div className="nav-header-icons">
+          <button className="nav-header-buttons">
             <FaSignInAlt />
           </button>
-          <button className="nav-buttons">
+          <button className="nav-header-buttons">
             <RiAccountCircleFill />
           </button>
-          <button className="nav-buttons">
+          <button className="nav-header-buttons">
             <TiShoppingCart />
           </button>
         </div>

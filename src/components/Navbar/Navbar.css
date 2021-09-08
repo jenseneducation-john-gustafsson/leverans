@@ -1,0 +1,12 @@
+.nav {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.nav-text {
+  margin: 0;
+}
