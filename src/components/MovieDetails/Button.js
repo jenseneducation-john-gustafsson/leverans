@@ -2,8 +2,8 @@ import './MovieDetails.css'
 
 const Button = () => {
   return (
-    <div>
-    <button className="button">Add to cart</button>
+    <div className="button">
+    <button className="btn btn-success">Add to cart</button>
 
     </div>
   )
