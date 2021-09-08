@@ -1,4 +1,4 @@
-.nav {
+.navbar {
   border: 2px solid black;
   border-radius: 10px;
   display: flex;
@@ -9,4 +9,11 @@
 
 .nav-text {
   margin: 0;
+}
+
+.navbar-buttons {
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
