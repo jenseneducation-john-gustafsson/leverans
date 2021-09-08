@@ -1,4 +1,4 @@
-.nav {
+.nav-header {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -10,11 +10,11 @@
   font-size: 2.5rem;
 }
 
-.nav-icons {
+.nav-header-icons {
   position: relative;
 }
 
-.nav-buttons {
+.nav-header-buttons {
   background: none;
   border: 0;
   font-size: 30px;
