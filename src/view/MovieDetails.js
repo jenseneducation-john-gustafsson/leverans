@@ -1,7 +1,9 @@
-import Button from '../src/components/MovieDetails/Button'
-import Trailer from '../src/components/MovieDetails/Trailer'
-import Description from '../src/components/MovieDetails/Description'
-import Image from '../src/components/MovieDetails/Image'
+import Button from '../components/MovieDetails/Button'
+import Trailer from '../components/MovieDetails/Trailer'
+import Description from '../components/MovieDetails/Description'
+import Image from '../components/MovieDetails/Image'
+import Rating from '../components/MovieDetails/Rating'
+import Labels from '../components/MovieDetails/Labels'
 
 const MovieDetails = () => {
   return (
@@ -11,8 +13,9 @@ const MovieDetails = () => {
           <h1>Movie Details</h1>
         </div>
       </div>
+
       <div className="row">
-        <div className="col">
+        <div className="col-8">
           <Image />
         </div>
         <div className="col-4">
@@ -21,11 +24,18 @@ const MovieDetails = () => {
       </div>
       <div className="row">
         <div className="col-7">
+          <Labels />
+        </div>
+        <div className="col"></div>
+        <div className="col-4">
+          <Rating />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-7">
           <Description />
         </div>
-        <div className="col">
-
-        </div>
+        <div className="col"></div>
         <div className="col-4">
           <Button />
         </div>
