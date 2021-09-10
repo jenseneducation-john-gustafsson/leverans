@@ -1,5 +1,9 @@
-.button {
+.button-cart {
   margin-top: 7.5em;
+}
+
+.button-wish {
+  margin-top: 1em;
 }
 
 .description {
