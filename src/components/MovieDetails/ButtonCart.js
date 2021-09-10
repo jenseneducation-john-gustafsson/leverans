@@ -1,13 +1,13 @@
 import './MovieDetails.css'
 
-const Button = () => {
+const ButtonCart = () => {
   return (
-    <div className="button">
+    <div className="button-cart">
     <button className="btn btn-success">Add to cart</button>
 
     </div>
   )
 }
 
-export default Button
+export default ButtonCart
 
