@@ -11,7 +11,6 @@ const MovieDetails = () => {
     <div className="container">
       <div className="row">
         <div className="col">
-          <h1>Movie Details</h1>
         </div>
       </div>
 
