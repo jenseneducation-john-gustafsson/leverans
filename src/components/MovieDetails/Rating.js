@@ -1,4 +1,5 @@
 import { FaRegStar } from 'react-icons/fa'
+import { FaRegStarHalf } from 'react-icons/fa'
 
 const Rating = () => {
   return (
@@ -7,6 +8,7 @@ const Rating = () => {
       <FaRegStar />
       <FaRegStar />
       <FaRegStar />
+      <FaRegStarHalf />
     </div>
   )
 }
