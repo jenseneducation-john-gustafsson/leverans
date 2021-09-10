@@ -1,4 +1,5 @@
-import Button from '../components/MovieDetails/Button'
+import ButtonCart from '../components/MovieDetails/ButtonCart'
+import ButtonWish from '../components/MovieDetails/ButtonWish'
 import Trailer from '../components/MovieDetails/Trailer'
 import Description from '../components/MovieDetails/Description'
 import Image from '../components/MovieDetails/Image'
@@ -37,7 +38,16 @@ const MovieDetails = () => {
         </div>
         <div className="col"></div>
         <div className="col-4">
-          <Button />
+          <div className="row">
+            <div className="col">
+              <ButtonCart />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <ButtonWish />
+            </div>
+          </div>
         </div>
       </div>
     </div>
