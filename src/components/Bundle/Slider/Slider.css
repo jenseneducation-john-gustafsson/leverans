@@ -10,6 +10,17 @@
     .container-slider {
       margin: 100px 10px 0;
     }
+  }  
+  @media screen and (max-width: 880px) {
+    .container-slider {
+      height: 330px;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    .container-slider {
+      height: 200px;
+    }
   }
   .slide {
     width: 100%;
