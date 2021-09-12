@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import Bundle from './components/Bundle/Bundle.js'
 import Slider from './components/Bundle/Slider/Slider.js';
 
