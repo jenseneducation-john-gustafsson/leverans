@@ -1,7 +1,7 @@
 /*css*/
 import "./bundle.css";
 /*slide*/
-import Slider from "./Slider/Slider.js";
+// import Slider from "./Slider/Slider.js";
 //import pic from '../src/components/Bundle/Pictures/joker.png'
 //Horror
 import Scream from "./Pictures/Scream.jpg";
@@ -43,7 +43,7 @@ function App() {
   return (
     <div class="main">
       <h1>slideshow</h1>
-      <Slider />
+      {/* <Slider /> */}
       <h2>Bundle Of movies</h2>
       <p>
         Get the best movie bundles deals so that you can enjoy the movie to the
