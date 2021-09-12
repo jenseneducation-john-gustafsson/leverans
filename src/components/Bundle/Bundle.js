@@ -42,13 +42,11 @@ import Madagascar from "./Pictures/Madagascar.jpg";
 function App() {
   return (
     <div class="main">
-      <h1>slideshow</h1>
-      {/* <Slider /> */}
       <h2>Bundle Of movies</h2>
-      <p>
+      <h4>
         Get the best movie bundles deals so that you can enjoy the movie to the
         fullest!
-      </p>
+      </h4>
 
       <h3>Horror</h3>
 
