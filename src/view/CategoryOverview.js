@@ -43,7 +43,7 @@ function App() {
              
               <h4>The Dark Knight</h4>
               <p>
-                2008 - 1h 48m
+                2008 | 1h 48m
               </p>
               <button>Buy</button>
             </div>
@@ -59,7 +59,7 @@ function App() {
               />
               <h4>LOTR - Return of the King </h4>
               <p>
-                2003 - Run Time
+                2003 | Run Time
               </p>
               <button>Buy</button>
             </div>
@@ -69,7 +69,7 @@ function App() {
               <img src={Inception} alt="Inception" width="196px" height="300px" />
               <h4>Inception</h4>
               <p>
-                2010 - Run Time
+                2010 | Run Time
               </p>
               <button>Buy</button>
             </div>
@@ -93,7 +93,7 @@ function App() {
                 <img src={TheShining} alt="TheShining" width="196px" height="300px" />
                 <h4>The Shining</h4>
                 <p>
-                   Date tag - Run Time
+                   1980 | Run Time
                 </p>
                 <button>Buy</button>
               </div>
@@ -103,7 +103,7 @@ function App() {
                 <img src={Alien} alt="Alien" width="196px" height="300px" />
                 <h4>Alien</h4>
                 <p>
-                  Date RunTime
+                  1979 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
@@ -118,7 +118,7 @@ function App() {
                 />
                 <h4>Psycho</h4>
                 <p>
-                  Date RunTIme
+                  1960 | RunTIme
                 </p>
                 <button>Buy</button>
               </div>
@@ -128,7 +128,7 @@ function App() {
                 <img src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
                 <h4>Tumbbad</h4>
                 <p>
-                  Date RunTime
+                  2018 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
