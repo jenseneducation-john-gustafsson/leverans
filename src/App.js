@@ -1,13 +1,12 @@
 import './App.css';
-import Bundle from './components/Bundle/Bundle.js'
-import Slider from './components/Bundle/Slider/Slider.js';
+import Header from "./components/Header/Header"
+import Navbar from "./components/Navbar/Navbar"
 
 function App() {
   return (
     <div className="App">
-      <h1>Notflix</h1>
-      <Slider/>
-      <Bundle/>
+      <Header />
+      <Navbar />
     </div>
   );
 }
