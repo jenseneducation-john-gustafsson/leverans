@@ -23,12 +23,8 @@ function CategoryDetailsHorror() {
     return (
       <div class="main">
         
-        <h2>Categories</h2>
-        <p>
-          Browse and select different categories that you may like to watch.
-        </p>
-  
-        <h3>Horror</h3>
+        <h2>Horror</h2>
+        
   
         <div class="row2">
           <div class="column">
@@ -85,7 +81,7 @@ function CategoryDetailsHorror() {
             </div>
           </div>
   
-          <h3>Horror</h3> 
+          <hr></hr>
   
           <div class="row2">
             <div class="column">
@@ -134,7 +130,7 @@ function CategoryDetailsHorror() {
               </div>
             </div>
   
-            <h3>Comedy</h3>
+            <hr></hr>
   
             <div class="row2">
               <div class="column">
