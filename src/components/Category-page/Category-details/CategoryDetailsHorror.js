@@ -3,21 +3,21 @@
 
 /*css*/
 import "../Category-details/Category-details.css";
-//Horror Imports
-import TheShining from "../Category-details/Images/The Shining (1980).jpg";
-import Alien from "../Category-details/Images/Alien (1979).jpg";
-import Psycho from "../Category-details/Images/Psycho (1960).jpg";
-import Tumbbad from "../Category-details/Images/Tumbbad (2018).jpg";
+//Horror Thumbnails Imports
+import TheShining from "../Category-details/ImagesHorror/The Shining (1980).jpg";
+import Alien from "../Category-details/ImagesHorror/Alien (1979).jpg";
+import Psycho from "../Category-details/ImagesHorror/Psycho (1960).jpg";
+import Tumbbad from "../Category-details/ImagesHorror/Tumbbad (2018).jpg";
 //Horror -- del
-import TheShining from "../Category-details/Images/The Shining (1980).jpg";
-import Alien from "../Category-details/Images/Alien (1979).jpg";
-import Psycho from "../Category-details/Images/Psycho (1960).jpg";
-import Tumbbad from "../Category-details/Images/Tumbbad (2018).jpg";
+import TheThing from "../Category-details/ImagesHorror/The Thing (1982).jpg";
+import TheExorcist from "../Category-details/ImagesHorror/The Exorcist (1973).jpg";
+import GetOut from "../Category-details/ImagesHorror/Get Out (2017).jpg";
+import Halloween from "../Category-details/ImagesHorror/Halloween (1978).jpg";
 //Comedy -- del
-import Parasite from "../Category-details/Images/Parasite (2019).jpg";
-import LifeIsBeautiful from "../Category-details/Images/Life Is Beautiful (1997).jpg";
-import TheIntouchables from "../Category-details/Images/The Intouchables (2011).jpg";
-import BackToTheFuture from "../Category-details/Images/Back to the Future (1985).jpg";
+import HollowMan from "../Category-details/ImagesHorror/Hollow Man (2000).jpg";
+import Saw from "../Category-details/ImagesHorror/Saw (2004).jpg";
+import TheLighthouse from "../Category-details/ImagesHorror/The Lighthouse (2019).jpg";
+import TheConjuring from "../Category-details/ImagesHorror/The Conjuring (2013).jpg";
 
 function CategoryDetailsHorror() {
     return (
@@ -39,11 +39,11 @@ function CategoryDetailsHorror() {
                   individually.
                 </div>
               </div>
-              <img src={TheDarkKnight} alt="TheDarkKnight" width="196px" height="300px" />
+              <img src={TheShining} alt="The Shining" width="196px" height="300px" />
              
-              <h4>The Dark Knight</h4>
+              <h4>The Shining</h4>
               <p>
-                2008 | 1h 48m
+                1980 | 1h 48m
               </p>
               <button>Buy</button>
             </div>
@@ -52,34 +52,34 @@ function CategoryDetailsHorror() {
           <div class="column">
             <div class="content">
               <img
-                src={LOTRReturnOfKing}
-                alt="LOTRReturnOfKing"
+                src={Alien}
+                alt="Alien"
                 width="196px"
                 height="300px"
               />
-              <h4>LOTR - Return of the King </h4>
+              <h4>Alien </h4>
               <p>
-                2003 | Run Time
+                1979 | Run Time
               </p>
               <button>Buy</button>
             </div>
           </div>
           <div class="column">
             <div class="content">
-              <img src={Inception} alt="Inception" width="196px" height="300px" />
-              <h4>Inception</h4>
+              <img src={Psycho} alt="Psycho" width="196px" height="300px" />
+              <h4>Psycho</h4>
               <p>
-                2010 | Run Time
+                1960 | Run Time
               </p>
               <button>Buy</button>
             </div>
           </div>
           <div class="column">
             <div class="content">
-              <img src={TheMatrix} alt="TheMatrix" width="196px" height="300px" />
-              <h4>The Matrix</h4>
+              <img src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
+              <h4>Tumbbad</h4>
               <p>
-                1999 | 1h 58m
+                2018 | 1h 58m
               </p>
               <button>Buy</button>
             </div>
@@ -90,20 +90,20 @@ function CategoryDetailsHorror() {
           <div class="row2">
             <div class="column">
               <div class="content">
-                <img src={TheShining} alt="TheShining" width="196px" height="300px" />
-                <h4>The Shining</h4>
+                <img src={TheThing} alt="The Thing" width="196px" height="300px" />
+                <h4>The Thing</h4>
                 <p>
-                   1980 | Run Time
+                   1982 | Run Time
                 </p>
                 <button>Buy</button>
               </div>
             </div>
             <div class="column">
               <div class="content">
-                <img src={Alien} alt="Alien" width="196px" height="300px" />
-                <h4>Alien</h4>
+                <img src={TheExorcist} alt="The Exorcist" width="196px" height="300px" />
+                <h4>The Exorcist</h4>
                 <p>
-                  1979 | RunTime
+                  1973 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
@@ -111,24 +111,24 @@ function CategoryDetailsHorror() {
             <div class="column">
               <div class="content">
                 <img
-                  src={Psycho}
-                  alt="Psycho"
+                  src={GetOut}
+                  alt="Get Out"
                   width="196px"
                   height="300px"
                 />
-                <h4>Psycho</h4>
+                <h4>Get Out</h4>
                 <p>
-                  1960 | RunTIme
+                  2017 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
             </div>
             <div class="column">
               <div class="content">
-                <img src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
-                <h4>Tumbbad</h4>
+                <img src={Halloween} alt="Halloween" width="196px" height="300px" />
+                <h4>Halloween</h4>
                 <p>
-                  2018 | RunTime
+                  1978 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
@@ -140,14 +140,14 @@ function CategoryDetailsHorror() {
               <div class="column">
                 <div class="content">
                   <img
-                    src={Parasite}
-                    alt="Parasite"
+                    src={HollowMan}
+                    alt="Hollow Man"
                     width="196px"
                     height="300px"
                   />
-                  <h4>Parasite</h4>
+                  <h4>Hollow Man</h4>
                   <p>
-                    Date RunTime
+                    2000 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
@@ -155,34 +155,34 @@ function CategoryDetailsHorror() {
               <div class="column">
                 <div class="content">
                   <img
-                    src={LifeIsBeautiful}
-                    alt="LifeIsBeautiful"
+                    src={Saw}
+                    alt="Saw"
                     width="196px"
                     height="300px"
                   />
-                  <h4>Life Is Beautiful</h4>
+                  <h4>Saw</h4>
                   <p>
-                    Date RunTime
+                    2004 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
               </div>
               <div class="column">
                 <div class="content">
-                  <img src={TheIntouchables} alt="TheIntouchables" width="196px" height="300px" />
-                  <h4>The Intouchables</h4>
+                  <img src={TheLighthouse} alt="The Lighthouse" width="196px" height="300px" />
+                  <h4>The Lighthouse</h4>
                   <p>
-                    Date RunTime
+                    2019 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
               </div>
               <div class="column">
                 <div class="content">
-                  <img src={BackToTheFuture} alt="BackToTheFuture" width="196px" height="300px" />
-                  <h4>Back To The Future</h4>
+                  <img src={TheConjuring} alt="The Conjuring" width="196px" height="300px" />
+                  <h4>The Conjuring</h4>
                   <p>
-                    Date - RunTime
+                    2013 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
