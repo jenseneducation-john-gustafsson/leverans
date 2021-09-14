@@ -51,7 +51,7 @@ function CategoryDetailsAction() {
               />
               <h4>LOTR - Return of the King </h4>
               <p>
-                2003 | Run Time
+                2003 | 3h 21m
               </p>
               <button>Buy</button>
             </div>
@@ -61,7 +61,7 @@ function CategoryDetailsAction() {
               <img src={Inception} alt="Inception" width="196px" height="300px" />
               <h4>Inception</h4>
               <p>
-                2010 | Run Time
+                2010 | 2h 28m
               </p>
               <button>Buy</button>
             </div>

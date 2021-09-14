@@ -4,20 +4,20 @@
 /*css*/
 import "../Category-details/Category-details.css";
 //Comedy Thumbnail Imports
-import Parasite from "../Category-details/Images/Parasite (2019).jpg";
-import LifeIsBeautiful from "../Category-details/ImagesAction/Life Is Beautiful (1997).jpg";
-import TheIntouchables from "../Category-details/ImagesAction/The Intouchables (2011).jpg";
-import BackToTheFuture from "../Category-details/ImagesAction/Back to the Future (1985).jpg";
+import Parasite from "../Category-details/ImagesComedy/Parasite (2019).jpg";
+import LifeIsBeautiful from "../Category-details/ImagesComedy/Life Is Beautiful (1997).jpg";
+import TheIntouchables from "../Category-details/ImagesComedy/The Intouchables (2011).jpg";
+import BackToTheFuture from "../Category-details/ImagesComedy/Back to the Future (1985).jpg";
 //-----------------------------------------------------------------------
-// import SWEmpireStrikesBack from "../Category-details/ImagesAction/Star Wars - Empire Strikes Back (1980).jpg";
-// import Gladiator from "../Category-details/ImagesAction/Gladiator (2000).jpg";
-// import Leon from "../Category-details/ImagesAction/Léon (1994).jpg";
-// import Terminator2 from "../Category-details/ImagesAction/Terminator 2 - Judgement Day (1991).jpg";
-// //-----------------------------------------------------------------------
-// import DieHard from "../Category-details/ImagesAction/Die Hard (1988).jpg";
-// import Logan from "../Category-details/ImagesAction/Logan - The Wolverine (2017).jpg";
-// import VForVendetta from "../Category-details/ImagesAction/V for Vendetta (2005).jpg";
-// import KillBillVol1 from "../Category-details/ImagesAction/Kill Bill_ Vol. 1 (2003).jpg";
+ import Snatch from "../Category-details/ImagesComedy/Snatch (2000).jpg";
+ import IntoTheSpiderverse from "../Category-details/ImagesComedy/Spider-Man_ Into the Spider-Verse (2018).jpg";
+ import WildTales from "../Category-details/ImagesComedy/Wild Tales (2014).jpg";
+ import GreenBook from "../Category-details/ImagesComedy/Green Book (2018).jpg";
+//-----------------------------------------------------------------------
+ import TrumanShow from "../Category-details/ImagesComedy/Truman Show (1998).jpg";
+ import TheBigLebowski from "../Category-details/ImagesComedy/The Big Lebowski (1998).png";
+ import TheHangover2 from "../Category-details/ImagesComedy/The Hangover 2 (2011).jpg";
+ import YourHighness from "../Category-details/ImagesComedy/Your Highness (2011).jpg";
 
 function CategoryDetailsComedy() {
     return (
@@ -25,22 +25,17 @@ function CategoryDetailsComedy() {
         
         
   
-        <h2>Action</h2>
+        <h2>Comedy</h2>
   
         <div class="row2">
           <div class="column">
             <div class="content">
-            <div class="overlay">
-                <div class="text">
-                  Save 194.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </div>
-              </div>
-              <img src={TheDarkKnight} alt="TheDarkKnight" width="196px" height="300px" />
+            
+              <img src={Parasite} alt="Parasite" width="196px" height="300px" />
              
-              <h4>The Dark Knight</h4>
+              <h4>Parasite</h4>
               <p>
-                2008 | 1h 48m
+                2019 | 1h 48m
               </p>
               <button>Buy</button>
             </div>
@@ -49,34 +44,34 @@ function CategoryDetailsComedy() {
           <div class="column">
             <div class="content">
               <img
-                src={LOTRReturnOfKing}
-                alt="LOTRReturnOfKing"
+                src={LifeIsBeautiful}
+                alt="LifeIsBeautiful"
                 width="196px"
                 height="300px"
               />
-              <h4>LOTR - Return of the King </h4>
+              <h4>Life Is Beautiful</h4>
               <p>
-                2003 | Run Time
+                1997 | Run Time
               </p>
               <button>Buy</button>
             </div>
           </div>
           <div class="column">
             <div class="content">
-              <img src={Inception} alt="Inception" width="196px" height="300px" />
-              <h4>Inception</h4>
+              <img src={TheIntouchables} alt="The Intouchables" width="196px" height="300px" />
+              <h4>The Intouchables</h4>
               <p>
-                2010 | Run Time
+                2011 | Run Time
               </p>
               <button>Buy</button>
             </div>
           </div>
           <div class="column">
             <div class="content">
-              <img src={TheMatrix} alt="TheMatrix" width="196px" height="300px" />
-              <h4>The Matrix</h4>
+              <img src={BackToTheFuture} alt="BackToTheFuture" width="196px" height="300px" />
+              <h4>Back To The Future</h4>
               <p>
-                1999 | 1h 58m
+                1985 | 1h 58m
               </p>
               <button>Buy</button>
             </div>
@@ -87,20 +82,20 @@ function CategoryDetailsComedy() {
           <div class="row2">
             <div class="column">
               <div class="content">
-                <img src={SWEmpireStrikesBack} alt="SWEmpireStrikesBack" width="196px" height="300px" />
-                <h4>SW - Empire Strikes Back</h4>
+                <img src={Snatch} alt="Snatch" width="196px" height="300px" />
+                <h4>Snatch</h4>
                 <p>
-                   1980 | Run Time
+                   2000 | Run Time
                 </p>
                 <button>Buy</button>
               </div>
             </div>
             <div class="column">
               <div class="content">
-                <img src={Gladiator} alt="Gladiator" width="196px" height="300px" />
-                <h4>Gladiator</h4>
+                <img src={IntoTheSpiderverse} alt="IntoTheSpiderverse" width="196px" height="300px" />
+                <h4>Into The Spiderverse</h4>
                 <p>
-                  2000 | RunTime
+                  2018 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
@@ -108,24 +103,24 @@ function CategoryDetailsComedy() {
             <div class="column">
               <div class="content">
                 <img
-                  src={Leon}
-                  alt="Leon"
+                  src={WildTales}
+                  alt="Wild Tales"
                   width="196px"
                   height="300px"
                 />
-                <h4>Léon</h4>
+                <h4>Wild Tales</h4>
                 <p>
-                  1994 | RunTIme
+                  2014 | RunTIme
                 </p>
                 <button>Buy</button>
               </div>
             </div>
             <div class="column">
               <div class="content">
-                <img src={Terminator2} alt="Terminator 2" width="196px" height="300px" />
-                <h4>Terminator 2 </h4>
+                <img src={GreenBook} alt="GreenBook" width="196px" height="300px" />
+                <h4>Green Book</h4>
                 <p>
-                  1991 | RunTime
+                  2018 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
@@ -137,14 +132,14 @@ function CategoryDetailsComedy() {
               <div class="column">
                 <div class="content">
                   <img
-                    src={DieHard}
-                    alt="Die Hard"
+                    src={TrumanShow}
+                    alt="Truman Show"
                     width="196px"
                     height="300px"
                   />
-                  <h4>Die Hard</h4>
+                  <h4>Truman Show</h4>
                   <p>
-                    1988 | RunTime
+                    1998 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
@@ -152,34 +147,34 @@ function CategoryDetailsComedy() {
               <div class="column">
                 <div class="content">
                   <img
-                    src={Logan}
-                    alt="Logan"
+                    src={TheBigLebowski}
+                    alt="The Big Lebowski"
                     width="196px"
                     height="300px"
                   />
-                  <h4>Logan - The Wolverine</h4>
+                  <h4>The Big Lebowski</h4>
                   <p>
-                    2017 | RunTime
+                    1998 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
               </div>
               <div class="column">
                 <div class="content">
-                  <img src={VForVendetta} alt="V For Vendetta" width="196px" height="300px" />
-                  <h4>V For Vendetta</h4>
+                  <img src={TheHangover2} alt="The Hangover 2" width="196px" height="300px" />
+                  <h4>The Hangover 2</h4>
                   <p>
-                    2005 | RunTime
+                    2011 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
               </div>
               <div class="column">
                 <div class="content">
-                  <img src={KillBillVol1} alt="Kill Bill Vol. 1" width="196px" height="300px" />
-                  <h4>Kill Bill Vol. 1</h4>
+                  <img src={YourHighness} alt="Your Highness" width="196px" height="300px" />
+                  <h4>Your Highness</h4>
                   <p>
-                    2003 | RunTime
+                    2011 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
