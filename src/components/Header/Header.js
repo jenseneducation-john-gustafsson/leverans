@@ -3,11 +3,15 @@ import { RiAccountCircleFill } from "react-icons/ri";
 import { TiShoppingCart } from "react-icons/ti";
 import { FaSignInAlt } from "react-icons/fa"
 
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <div >
       <nav className="nav-header">
-        <h2 className="nav-header-title">Notflix</h2>
+        <h2 className="nav-header-title">
+          <Link to="/">Notflix</Link>
+          </h2>
         <div className="nav-header-icons">
           <button className="nav-header-buttons">
             <FaSignInAlt />
