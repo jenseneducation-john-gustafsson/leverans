@@ -2,24 +2,24 @@
 //import '../components/Category-page/Category-overview/Category-overview.css'
 
 /*css*/
-import "../components/Category-page/Category-overview/tempdump.css";
-//Action
-import TheDarkKnight from "../components/Category-page/Category-overview/Images/The Dark Knight (2008).jpg";
-import LOTRReturnOfKing from "../components/Category-page/Category-overview/Images/The Lord of the Rings_ The Return of the King (2003).jpg";
-import Inception from "../components/Category-page/Category-overview/Images/Inception (2010).jpg";
-import TheMatrix from "../components/Category-page/Category-overview/Images/The Matrix (1999).jpg";
-//Horror
-import TheShining from "../components/Category-page/Category-overview/Images/The Shining (1980).jpg";
-import Alien from "../components/Category-page/Category-overview/Images/Alien (1979).jpg";
-import Psycho from "../components/Category-page/Category-overview/Images/Psycho (1960).jpg";
-import Tumbbad from "../components/Category-page/Category-overview/Images/Tumbbad (2018).jpg";
-//Comedy
-import Parasite from "../components/Category-page/Category-overview/Images/Parasite (2019).jpg";
-import LifeIsBeautiful from "../components/Category-page/Category-overview/Images/Life Is Beautiful (1997).jpg";
-import TheIntouchables from "../components/Category-page/Category-overview/Images/The Intouchables (2011).jpg";
-import BackToTheFuture from "../components/Category-page/Category-overview/Images/Back to the Future (1985).jpg";
+import "../Category-details/Category-details.css";
+//Horror Imports
+import TheShining from "../Category-details/Images/The Shining (1980).jpg";
+import Alien from "../Category-details/Images/Alien (1979).jpg";
+import Psycho from "../Category-details/Images/Psycho (1960).jpg";
+import Tumbbad from "../Category-details/Images/Tumbbad (2018).jpg";
+//Horror -- del
+import TheShining from "../Category-details/Images/The Shining (1980).jpg";
+import Alien from "../Category-details/Images/Alien (1979).jpg";
+import Psycho from "../Category-details/Images/Psycho (1960).jpg";
+import Tumbbad from "../Category-details/Images/Tumbbad (2018).jpg";
+//Comedy -- del
+import Parasite from "../Category-details/Images/Parasite (2019).jpg";
+import LifeIsBeautiful from "../Category-details/Images/Life Is Beautiful (1997).jpg";
+import TheIntouchables from "../Category-details/Images/The Intouchables (2011).jpg";
+import BackToTheFuture from "../Category-details/Images/Back to the Future (1985).jpg";
 
-function App() {
+function CategoryDetailsHorror() {
     return (
       <div class="main">
         
@@ -28,7 +28,7 @@ function App() {
           Browse and select different categories that you may like to watch.
         </p>
   
-        <h3>Action</h3>
+        <h3>Horror</h3>
   
         <div class="row2">
           <div class="column">
@@ -85,7 +85,7 @@ function App() {
             </div>
           </div>
   
-          <h3>Horror</h3>
+          <h3>Horror</h3> 
   
           <div class="row2">
             <div class="column">
@@ -197,4 +197,4 @@ function App() {
     );
   }
   
-  export default App;
+  export default CategoryDetailsHorror;

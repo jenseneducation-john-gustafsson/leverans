@@ -2,43 +2,35 @@
 //import '../components/Category-page/Category-overview/Category-overview.css'
 
 /*css*/
-import "../components/Category-page/Category-overview/tempdump.css";
-//Action
-import TheDarkKnight from "../components/Category-page/Category-overview/Images/The Dark Knight (2008).jpg";
-import LOTRReturnOfKing from "../components/Category-page/Category-overview/Images/The Lord of the Rings_ The Return of the King (2003).jpg";
-import Inception from "../components/Category-page/Category-overview/Images/Inception (2010).jpg";
-import TheMatrix from "../components/Category-page/Category-overview/Images/The Matrix (1999).jpg";
-//Horror
-import TheShining from "../components/Category-page/Category-overview/Images/The Shining (1980).jpg";
-import Alien from "../components/Category-page/Category-overview/Images/Alien (1979).jpg";
-import Psycho from "../components/Category-page/Category-overview/Images/Psycho (1960).jpg";
-import Tumbbad from "../components/Category-page/Category-overview/Images/Tumbbad (2018).jpg";
-//Comedy
-import Parasite from "../components/Category-page/Category-overview/Images/Parasite (2019).jpg";
-import LifeIsBeautiful from "../components/Category-page/Category-overview/Images/Life Is Beautiful (1997).jpg";
-import TheIntouchables from "../components/Category-page/Category-overview/Images/The Intouchables (2011).jpg";
-import BackToTheFuture from "../components/Category-page/Category-overview/Images/Back to the Future (1985).jpg";
+import "../Category-details/Category-details.css";
+//Action Thumbnail Imports
+import TheDarkKnight from "../Category-details/ImagesAction/The Dark Knight (2008).jpg";
+import LOTRReturnOfKing from "../Category-details/ImagesAction/The Lord of the Rings_ The Return of the King (2003).jpg";
+import Inception from "../Category-details/ImagesAction/Inception (2010).jpg";
+import TheMatrix from "../Category-details/ImagesAction/The Matrix (1999).jpg";
+//-----------------------------------------------------------------------
+import SWEmpireStrikesBack from "../Category-details/ImagesAction/Star Wars - Empire Strikes Back (1980).jpg";
+import Gladiator from "../Category-details/ImagesAction/Gladiator (2000).jpg";
+import Leon from "../Category-details/ImagesAction/Léon (1994).jpg";
+import Terminator2 from "../Category-details/ImagesAction/Terminator 2 - Judgement Day (1991).jpg";
+//-----------------------------------------------------------------------
+import DieHard from "../Category-details/ImagesAction/Die Hard (1988).jpg";
+import Logan from "../Category-details/ImagesAction/Logan - The Wolverine (2017).jpg";
+import VForVendetta from "../Category-details/ImagesAction/V for Vendetta (2005).jpg";
+import KillBillVol1 from "../Category-details/ImagesAction/Kill Bill_ Vol. 1 (2003).jpg";
 
-function App() {
+function CategoryDetailsAction() {
     return (
       <div class="main">
         
-        <h2>Categories</h2>
-        <p>
-          Browse and select different categories that you may like to watch.
-        </p>
+        
   
-        <h3>Action</h3>
+        <h2>Action</h2>
   
         <div class="row2">
           <div class="column">
             <div class="content">
-            <div class="overlay">
-                <div class="text">
-                  Save 194.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </div>
-              </div>
+            
               <img src={TheDarkKnight} alt="TheDarkKnight" width="196px" height="300px" />
              
               <h4>The Dark Knight</h4>
@@ -59,7 +51,7 @@ function App() {
               />
               <h4>LOTR - Return of the King </h4>
               <p>
-                2003 | Run Time
+                2003 | 3h 21m
               </p>
               <button>Buy</button>
             </div>
@@ -69,7 +61,7 @@ function App() {
               <img src={Inception} alt="Inception" width="196px" height="300px" />
               <h4>Inception</h4>
               <p>
-                2010 | Run Time
+                2010 | 2h 28m
               </p>
               <button>Buy</button>
             </div>
@@ -85,13 +77,13 @@ function App() {
             </div>
           </div>
   
-          <h3>Horror</h3>
+          <hr></hr>
   
           <div class="row2">
             <div class="column">
               <div class="content">
-                <img src={TheShining} alt="TheShining" width="196px" height="300px" />
-                <h4>The Shining</h4>
+                <img src={SWEmpireStrikesBack} alt="SWEmpireStrikesBack" width="196px" height="300px" />
+                <h4>SW - Empire Strikes Back</h4>
                 <p>
                    1980 | Run Time
                 </p>
@@ -100,10 +92,10 @@ function App() {
             </div>
             <div class="column">
               <div class="content">
-                <img src={Alien} alt="Alien" width="196px" height="300px" />
-                <h4>Alien</h4>
+                <img src={Gladiator} alt="Gladiator" width="196px" height="300px" />
+                <h4>Gladiator</h4>
                 <p>
-                  1979 | RunTime
+                  2000 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
@@ -111,43 +103,43 @@ function App() {
             <div class="column">
               <div class="content">
                 <img
-                  src={Psycho}
-                  alt="Psycho"
+                  src={Leon}
+                  alt="Leon"
                   width="196px"
                   height="300px"
                 />
-                <h4>Psycho</h4>
+                <h4>Léon</h4>
                 <p>
-                  1960 | RunTIme
+                  1994 | RunTIme
                 </p>
                 <button>Buy</button>
               </div>
             </div>
             <div class="column">
               <div class="content">
-                <img src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
-                <h4>Tumbbad</h4>
+                <img src={Terminator2} alt="Terminator 2" width="196px" height="300px" />
+                <h4>Terminator 2 </h4>
                 <p>
-                  2018 | RunTime
+                  1991 | RunTime
                 </p>
                 <button>Buy</button>
               </div>
             </div>
   
-            <h3>Comedy</h3>
+            <hr></hr>
   
             <div class="row2">
               <div class="column">
                 <div class="content">
                   <img
-                    src={Parasite}
-                    alt="Parasite"
+                    src={DieHard}
+                    alt="Die Hard"
                     width="196px"
                     height="300px"
                   />
-                  <h4>Parasite</h4>
+                  <h4>Die Hard</h4>
                   <p>
-                    Date RunTime
+                    1988 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
@@ -155,34 +147,34 @@ function App() {
               <div class="column">
                 <div class="content">
                   <img
-                    src={LifeIsBeautiful}
-                    alt="LifeIsBeautiful"
+                    src={Logan}
+                    alt="Logan"
                     width="196px"
                     height="300px"
                   />
-                  <h4>Life Is Beautiful</h4>
+                  <h4>Logan - The Wolverine</h4>
                   <p>
-                    Date RunTime
+                    2017 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
               </div>
               <div class="column">
                 <div class="content">
-                  <img src={TheIntouchables} alt="TheIntouchables" width="196px" height="300px" />
-                  <h4>The Intouchables</h4>
+                  <img src={VForVendetta} alt="V For Vendetta" width="196px" height="300px" />
+                  <h4>V For Vendetta</h4>
                   <p>
-                    Date RunTime
+                    2005 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
               </div>
               <div class="column">
                 <div class="content">
-                  <img src={BackToTheFuture} alt="BackToTheFuture" width="196px" height="300px" />
-                  <h4>Back To The Future</h4>
+                  <img src={KillBillVol1} alt="Kill Bill Vol. 1" width="196px" height="300px" />
+                  <h4>Kill Bill Vol. 1</h4>
                   <p>
-                    Date - RunTime
+                    2003 | RunTime
                   </p>
                   <button>Buy</button>
                 </div>
@@ -197,4 +189,4 @@ function App() {
     );
   }
   
-  export default App;
+  export default CategoryDetailsAction;
