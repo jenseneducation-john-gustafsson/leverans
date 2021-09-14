@@ -11,11 +11,15 @@ app.use(express.urlencoded({ extended: true }));
 
 ConnectDB();
 
+
+
+const userRouter = require("./routes/users");
+app.use(userRouter);
+
+
 app.use('/', (req, res) => {
   res.send('Notflix');
 })
 
-const userRouter = require("./routes/users");
-app.use(userRouter);
 
 app.listen(PORT, () => console.log(`Backend is running on ${PORT}`))
