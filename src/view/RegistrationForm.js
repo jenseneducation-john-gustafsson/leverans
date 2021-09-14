@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Field } from "react-advanced-form";
 import { Input, Button } from "react-advanced-form-addons";
 
+// random comment for testing
 export default class RegistrationForm extends React.Component {
   render() {
     return (
