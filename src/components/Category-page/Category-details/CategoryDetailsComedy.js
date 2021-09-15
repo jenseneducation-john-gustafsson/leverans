@@ -19,13 +19,15 @@ import BackToTheFuture from "../Category-details/ImagesComedy/Back to the Future
  import TheHangover2 from "../Category-details/ImagesComedy/The Hangover 2 (2011).jpg";
  import YourHighness from "../Category-details/ImagesComedy/Your Highness (2011).jpg";
 
+ import { Link } from "react-router-dom";
+
 function CategoryDetailsComedy() {
     return (
       <div class="main">
         
         
   
-        <h2>Comedy</h2>
+        <h2>Comedy</h2> <Link to="/genre"><button><p className="nav-text">Return to Categories</p></button></Link>
   
         <div class="row2">
           <div class="column">

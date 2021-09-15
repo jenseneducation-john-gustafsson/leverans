@@ -19,13 +19,15 @@ import Logan from "../Category-details/ImagesAction/Logan - The Wolverine (2017)
 import VForVendetta from "../Category-details/ImagesAction/V for Vendetta (2005).jpg";
 import KillBillVol1 from "../Category-details/ImagesAction/Kill Bill_ Vol. 1 (2003).jpg";
 
+import { Link } from "react-router-dom";
+
 function CategoryDetailsAction() {
     return (
       <div class="main">
         
         
   
-        <h2>Action</h2>
+        <h2>Action</h2> <Link to="/genre"><button><p className="nav-text">Return to Categories</p></button></Link>
   
         <div class="row2">
           <div class="column">

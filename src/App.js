@@ -1,9 +1,6 @@
 import './App.css';
 import Header from "./components/Header/Header"
 import Navbar from "./components/Navbar/Navbar"
-// import CategoryDetailsAction from './components/Category-page/Category-details/CategoryDetailsAction'; // test purpose
-// import CategoryDetailsComedy from './components/Category-page/Category-details/CategoryDetailsComedy'; // test purpose
-// import CategoryDetailsHorror from './components/Category-page/Category-details/CategoryDetailsHorror'; // test purpose
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -11,6 +8,12 @@ import Wishlist from "./view/Wishlist";
 import Bundle from "./components/Bundle/Bundle";
 import Genre from "./view/CategoryOverview"
 import StartPage from "./view/StartPage"
+
+import CategoryDetailsAction from './components/Category-page/Category-details/CategoryDetailsAction'; 
+import CategoryDetailsComedy from './components/Category-page/Category-details/CategoryDetailsComedy'; 
+import CategoryDetailsHorror from './components/Category-page/Category-details/CategoryDetailsHorror';
+
+
 
 function App() {
   return (
@@ -28,6 +31,15 @@ function App() {
       <Route path="/genre">
         <Genre />
       </Route>
+      <Route path="/categoryAction">
+        <CategoryDetailsAction />
+      </Route>
+      <Route path="/categoryHorror">
+        <CategoryDetailsHorror />
+      </Route>
+      <Route path="/categoryComedy">
+        <CategoryDetailsComedy />
+      </Route>  
       <Route path="/wishlist">
         <Wishlist />
       </Route>

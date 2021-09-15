@@ -19,6 +19,8 @@ import LifeIsBeautiful from "../components/Category-page/Category-overview/Image
 import TheIntouchables from "../components/Category-page/Category-overview/Images/The Intouchables (2011).jpg";
 import BackToTheFuture from "../components/Category-page/Category-overview/Images/Back to the Future (1985).jpg";
 
+import { Link } from "react-router-dom";
+
 function App() {
     return (
       <div class="main">
@@ -28,15 +30,14 @@ function App() {
           Browse and select different categories that you may like to watch.
         </p>
   
-        <h3>Action</h3>
+        <h3>Action</h3>  <Link to="/categoryAction"><button><p className="nav-text">Browse Full List</p></button></Link>
   
-        <div class="row2">
-          <div class="column">
-            <div class="content">
-            <div class="overlay">
-                <div class="text">
-                  Save 194.00 kr when you buy this bundle rather than each movie
-                  individually.
+        <div className="row2">
+          <div className="column">
+            <div className="content">
+            <div className="overlay">
+                <div className="text">
+                  Short Movie Description?. Or Remove entirely
                 </div>
               </div>
               <img src={TheDarkKnight} alt="TheDarkKnight" width="196px" height="300px" />
@@ -85,7 +86,7 @@ function App() {
             </div>
           </div>
   
-          <h3>Horror</h3>
+          <h3>Horror</h3> <Link to="/categoryHorror"><button><p className="nav-text">Browse Full List</p></button></Link>
   
           <div class="row2">
             <div class="column">
@@ -134,7 +135,7 @@ function App() {
               </div>
             </div>
   
-            <h3>Comedy</h3>
+            <h3>Comedy</h3> <Link to="/categoryComedy"><button><p className="nav-text">Browse Full List</p></button></Link>
   
             <div class="row2">
               <div class="column">

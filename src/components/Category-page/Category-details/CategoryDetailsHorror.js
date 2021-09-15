@@ -19,11 +19,13 @@ import Saw from "../Category-details/ImagesHorror/Saw (2004).jpg";
 import TheLighthouse from "../Category-details/ImagesHorror/The Lighthouse (2019).jpg";
 import TheConjuring from "../Category-details/ImagesHorror/The Conjuring (2013).jpg";
 
+import { Link } from "react-router-dom";
+
 function CategoryDetailsHorror() {
     return (
       <div class="main">
         
-        <h2>Horror</h2>
+        <h2>Horror</h2> <Link to="/genre"><button><p className="nav-text">Return to Categories</p></button></Link>
         
   
         <div class="row2">
