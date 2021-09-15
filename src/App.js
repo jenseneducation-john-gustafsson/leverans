@@ -1,10 +1,11 @@
 import './App.css';
 import Header from "./components/Header/Header"
 import Navbar from "./components/Navbar/Navbar"
-import RegisterForm from "./view/RegisterForm"
+import { FormProvider } from 'react-advanced-form'
 import messages from "./components/Forms/validation-messages"
 import rules from "./components/Forms/validation-rules"
-
+import RegisterForm from "./view/RegisterForm"
+import LoginForm from "./view/LoginForm"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <FormProvider rules={rules} messages={messages}>
         <RegisterForm />
+        <LoginForm />
       </FormProvider>
 
     </div>
