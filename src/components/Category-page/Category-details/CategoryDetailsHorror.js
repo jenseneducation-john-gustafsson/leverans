@@ -23,16 +23,16 @@ import { Link } from "react-router-dom";
 
 function CategoryDetailsHorror() {
     return (
-      <div class="main">
+      <div className="main">
         
-        <h2>Horror</h2> <Link to="/genre"><button><p className="nav-text">Return to Categories</p></button></Link>
+        <h2>Horror</h2> <Link to="/genre"><button><p classNameName="nav-text">Return to Categories</p></button></Link>
         
   
-        <div class="row2">
-          <div class="column">
-            <div class="content">
-            <div class="overlay">
-                <div class="text">
+        <div className="row2">
+          <div className="column">
+            <div className="content">
+            <div className="overlay">
+                <div className="text">
                   Save 194.00 kr when you buy this bundle rather than each movie
                   individually.
                 </div>
@@ -47,8 +47,8 @@ function CategoryDetailsHorror() {
             </div>
           </div>
   
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img
                 src={Alien}
                 alt="Alien"
@@ -62,8 +62,8 @@ function CategoryDetailsHorror() {
               <button>Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img src={Psycho} alt="Psycho" width="196px" height="300px" />
               <h4>Psycho</h4>
               <p>
@@ -72,8 +72,8 @@ function CategoryDetailsHorror() {
               <button>Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
               <h4>Tumbbad</h4>
               <p>
@@ -85,9 +85,9 @@ function CategoryDetailsHorror() {
   
           <hr></hr>
   
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div className="row2">
+            <div className="column">
+              <div className="content">
                 <img src={TheThing} alt="The Thing" width="196px" height="300px" />
                 <h4>The Thing</h4>
                 <p>
@@ -96,8 +96,8 @@ function CategoryDetailsHorror() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img src={TheExorcist} alt="The Exorcist" width="196px" height="300px" />
                 <h4>The Exorcist</h4>
                 <p>
@@ -106,8 +106,8 @@ function CategoryDetailsHorror() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img
                   src={GetOut}
                   alt="Get Out"
@@ -121,8 +121,8 @@ function CategoryDetailsHorror() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img src={Halloween} alt="Halloween" width="196px" height="300px" />
                 <h4>Halloween</h4>
                 <p>
@@ -134,9 +134,9 @@ function CategoryDetailsHorror() {
   
             <hr></hr>
   
-            <div class="row2">
-              <div class="column">
-                <div class="content">
+            <div className="row2">
+              <div className="column">
+                <div className="content">
                   <img
                     src={HollowMan}
                     alt="Hollow Man"
@@ -150,8 +150,8 @@ function CategoryDetailsHorror() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img
                     src={Saw}
                     alt="Saw"
@@ -165,8 +165,8 @@ function CategoryDetailsHorror() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img src={TheLighthouse} alt="The Lighthouse" width="196px" height="300px" />
                   <h4>The Lighthouse</h4>
                   <p>
@@ -175,8 +175,8 @@ function CategoryDetailsHorror() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img src={TheConjuring} alt="The Conjuring" width="196px" height="300px" />
                   <h4>The Conjuring</h4>
                   <p>

@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 
 function App() {
     return (
-      <div class="main">
+      <div className="main">
         
         <h2>Categories</h2>
         <p>
@@ -50,8 +50,8 @@ function App() {
             </div>
           </div>
   
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img
                 src={LOTRReturnOfKing}
                 alt="LOTRReturnOfKing"
@@ -65,8 +65,8 @@ function App() {
               <button>Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img src={Inception} alt="Inception" width="196px" height="300px" />
               <h4>Inception</h4>
               <p>
@@ -75,8 +75,8 @@ function App() {
               <button>Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img src={TheMatrix} alt="TheMatrix" width="196px" height="300px" />
               <h4>The Matrix</h4>
               <p>
@@ -88,9 +88,9 @@ function App() {
   
           <h3>Horror</h3> <Link to="/categoryHorror"><button><p className="nav-text">Browse Full List</p></button></Link>
   
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div className="row2">
+            <div className="column">
+              <div className="content">
                 <img src={TheShining} alt="TheShining" width="196px" height="300px" />
                 <h4>The Shining</h4>
                 <p>
@@ -99,8 +99,8 @@ function App() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img src={Alien} alt="Alien" width="196px" height="300px" />
                 <h4>Alien</h4>
                 <p>
@@ -109,8 +109,8 @@ function App() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img
                   src={Psycho}
                   alt="Psycho"
@@ -124,8 +124,8 @@ function App() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
                 <h4>Tumbbad</h4>
                 <p>
@@ -137,9 +137,9 @@ function App() {
   
             <h3>Comedy</h3> <Link to="/categoryComedy"><button><p className="nav-text">Browse Full List</p></button></Link>
   
-            <div class="row2">
-              <div class="column">
-                <div class="content">
+            <div className="row2">
+              <div className="column">
+                <div className="content">
                   <img
                     src={Parasite}
                     alt="Parasite"
@@ -153,8 +153,8 @@ function App() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img
                     src={LifeIsBeautiful}
                     alt="LifeIsBeautiful"
@@ -168,8 +168,8 @@ function App() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img src={TheIntouchables} alt="TheIntouchables" width="196px" height="300px" />
                   <h4>The Intouchables</h4>
                   <p>
@@ -178,8 +178,8 @@ function App() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img src={BackToTheFuture} alt="BackToTheFuture" width="196px" height="300px" />
                   <h4>Back To The Future</h4>
                   <p>

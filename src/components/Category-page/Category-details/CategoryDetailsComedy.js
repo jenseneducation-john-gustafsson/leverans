@@ -23,15 +23,15 @@ import BackToTheFuture from "../Category-details/ImagesComedy/Back to the Future
 
 function CategoryDetailsComedy() {
     return (
-      <div class="main">
+      <div className="main">
         
         
   
-        <h2>Comedy</h2> <Link to="/genre"><button><p className="nav-text">Return to Categories</p></button></Link>
+        <h2>Comedy</h2> <Link to="/genre"><button><p classNameName="nav-text">Return to Categories</p></button></Link>
   
-        <div class="row2">
-          <div class="column">
-            <div class="content">
+        <div className="row2">
+          <div className="column">
+            <div className="content">
             
               <img src={Parasite} alt="Parasite" width="196px" height="300px" />
              
@@ -43,8 +43,8 @@ function CategoryDetailsComedy() {
             </div>
           </div>
   
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img
                 src={LifeIsBeautiful}
                 alt="LifeIsBeautiful"
@@ -58,8 +58,8 @@ function CategoryDetailsComedy() {
               <button>Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img src={TheIntouchables} alt="The Intouchables" width="196px" height="300px" />
               <h4>The Intouchables</h4>
               <p>
@@ -68,8 +68,8 @@ function CategoryDetailsComedy() {
               <button>Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img src={BackToTheFuture} alt="BackToTheFuture" width="196px" height="300px" />
               <h4>Back To The Future</h4>
               <p>
@@ -81,9 +81,9 @@ function CategoryDetailsComedy() {
   
           <hr></hr>
   
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div className="row2">
+            <div className="column">
+              <div className="content">
                 <img src={Snatch} alt="Snatch" width="196px" height="300px" />
                 <h4>Snatch</h4>
                 <p>
@@ -92,8 +92,8 @@ function CategoryDetailsComedy() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img src={IntoTheSpiderverse} alt="IntoTheSpiderverse" width="196px" height="300px" />
                 <h4>Into The Spiderverse</h4>
                 <p>
@@ -102,8 +102,8 @@ function CategoryDetailsComedy() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img
                   src={WildTales}
                   alt="Wild Tales"
@@ -117,8 +117,8 @@ function CategoryDetailsComedy() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img src={GreenBook} alt="GreenBook" width="196px" height="300px" />
                 <h4>Green Book</h4>
                 <p>
@@ -130,9 +130,9 @@ function CategoryDetailsComedy() {
   
             <hr></hr>
   
-            <div class="row2">
-              <div class="column">
-                <div class="content">
+            <div className="row2">
+              <div className="column">
+                <div className="content">
                   <img
                     src={TrumanShow}
                     alt="Truman Show"
@@ -146,8 +146,8 @@ function CategoryDetailsComedy() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img
                     src={TheBigLebowski}
                     alt="The Big Lebowski"
@@ -161,8 +161,8 @@ function CategoryDetailsComedy() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img src={TheHangover2} alt="The Hangover 2" width="196px" height="300px" />
                   <h4>The Hangover 2</h4>
                   <p>
@@ -171,8 +171,8 @@ function CategoryDetailsComedy() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img src={YourHighness} alt="Your Highness" width="196px" height="300px" />
                   <h4>Your Highness</h4>
                   <p>

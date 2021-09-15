@@ -23,15 +23,15 @@ import { Link } from "react-router-dom";
 
 function CategoryDetailsAction() {
     return (
-      <div class="main">
+      <div className="main">
         
         
   
         <h2>Action</h2> <Link to="/genre"><button><p className="nav-text">Return to Categories</p></button></Link>
   
-        <div class="row2">
-          <div class="column">
-            <div class="content">
+        <div className="row2">
+          <div className="column">
+            <div className="content">
             
               <img src={TheDarkKnight} alt="TheDarkKnight" width="196px" height="300px" />
              
@@ -43,8 +43,8 @@ function CategoryDetailsAction() {
             </div>
           </div>
   
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img
                 src={LOTRReturnOfKing}
                 alt="LOTRReturnOfKing"
@@ -58,8 +58,8 @@ function CategoryDetailsAction() {
               <button>Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img src={Inception} alt="Inception" width="196px" height="300px" />
               <h4>Inception</h4>
               <p>
@@ -68,8 +68,8 @@ function CategoryDetailsAction() {
               <button>Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div className="column">
+            <div className="content">
               <img src={TheMatrix} alt="TheMatrix" width="196px" height="300px" />
               <h4>The Matrix</h4>
               <p>
@@ -81,9 +81,9 @@ function CategoryDetailsAction() {
   
           <hr></hr>
   
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div className="row2">
+            <div className="column">
+              <div className="content">
                 <img src={SWEmpireStrikesBack} alt="SWEmpireStrikesBack" width="196px" height="300px" />
                 <h4>SW - Empire Strikes Back</h4>
                 <p>
@@ -92,8 +92,8 @@ function CategoryDetailsAction() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img src={Gladiator} alt="Gladiator" width="196px" height="300px" />
                 <h4>Gladiator</h4>
                 <p>
@@ -102,8 +102,8 @@ function CategoryDetailsAction() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img
                   src={Leon}
                   alt="Leon"
@@ -117,8 +117,8 @@ function CategoryDetailsAction() {
                 <button>Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div className="column">
+              <div className="content">
                 <img src={Terminator2} alt="Terminator 2" width="196px" height="300px" />
                 <h4>Terminator 2 </h4>
                 <p>
@@ -130,9 +130,9 @@ function CategoryDetailsAction() {
   
             <hr></hr>
   
-            <div class="row2">
-              <div class="column">
-                <div class="content">
+            <div className="row2">
+              <div className="column">
+                <div className="content">
                   <img
                     src={DieHard}
                     alt="Die Hard"
@@ -146,8 +146,8 @@ function CategoryDetailsAction() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img
                     src={Logan}
                     alt="Logan"
@@ -161,8 +161,8 @@ function CategoryDetailsAction() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img src={VForVendetta} alt="V For Vendetta" width="196px" height="300px" />
                   <h4>V For Vendetta</h4>
                   <p>
@@ -171,8 +171,8 @@ function CategoryDetailsAction() {
                   <button>Buy</button>
                 </div>
               </div>
-              <div class="column">
-                <div class="content">
+              <div className="column">
+                <div className="content">
                   <img src={KillBillVol1} alt="Kill Bill Vol. 1" width="196px" height="300px" />
                   <h4>Kill Bill Vol. 1</h4>
                   <p>
