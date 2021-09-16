@@ -90,7 +90,7 @@
    /*----------------------*/
   
     /*----------------------*/
-  button{
+  .Bundlebutton{
     width: 40%;
     height: 35px;
     border: 1px solid;
@@ -100,7 +100,7 @@
     color: dodgerblue;
     background: white;
   }
-  button:hover{
+  .Bundlebutton:hover{
     background: #2691d9;
     color: #e9f4fb;
   }

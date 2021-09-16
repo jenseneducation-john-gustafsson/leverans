@@ -41,7 +41,7 @@ import Madagascar from "./Pictures/Madagascar.jpg";
 
 function App() {
   return (
-    <div class="main">
+    <div class="main-fluid">
       <h2>Bundle Of movies</h2>
       <h4>
         Get the best movie bundles deals so that you can enjoy the movie to the
@@ -65,7 +65,7 @@ function App() {
               Save 164.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
-            <button>Buy</button>
+            <button className="Bundlebutton">Buy</button>
           </div>
         </div>
        
@@ -83,7 +83,7 @@ function App() {
               Save 264.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
-            <button>Buy</button>
+            <button className="Bundlebutton">Buy</button>
           </div>
         </div>
         <div class="column">
@@ -94,7 +94,7 @@ function App() {
               Save 67.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
-            <button>Buy</button>
+            <button className="Bundlebutton">Buy</button>
           </div>
         </div>
         <div class="column">
@@ -105,7 +105,7 @@ function App() {
               Save 78.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
-            <button>Buy</button>
+            <button className="Bundlebutton">Buy</button>
           </div>
         </div>
 
@@ -120,7 +120,7 @@ function App() {
                 Save 194.00 kr when you buy this bundle rather than each movie
                 individually.
               </p>
-              <button>Buy</button>
+              <button className="Bundlebutton">Buy</button>
             </div>
           </div>
           <div class="column">
@@ -131,7 +131,7 @@ function App() {
                 Save 88.00 kr when you buy this bundle rather than each movie
                 individually.
               </p>
-              <button>Buy</button>
+              <button className="Bundlebutton">Buy</button>
             </div>
           </div>
           <div class="column">
@@ -147,7 +147,7 @@ function App() {
                 Save 98.00 kr when you buy this bundle rather than each movie
                 individually.
               </p>
-              <button>Buy</button>
+              <button className="Bundlebutton">Buy</button>
             </div>
           </div>
           <div class="column">
@@ -158,7 +158,7 @@ function App() {
                 Save 48.00 kr when you buy this bundle rather than each movie
                 individually.
               </p>
-              <button>Buy</button>
+              <button className="Bundlebutton">Buy</button>
             </div>
           </div>
 
@@ -178,7 +178,7 @@ function App() {
                   Save 88.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -194,7 +194,7 @@ function App() {
                   Save 40.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -205,7 +205,7 @@ function App() {
                   Save 19.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -216,7 +216,7 @@ function App() {
                   Save 68.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
           </div>
@@ -232,7 +232,7 @@ function App() {
                   Save 146.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -248,7 +248,7 @@ function App() {
                   Save 38.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -259,7 +259,7 @@ function App() {
                   Save 245.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -270,7 +270,7 @@ function App() {
                   Save 126.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
           </div>
@@ -286,7 +286,7 @@ function App() {
                   Save 9.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -297,7 +297,7 @@ function App() {
                   Save 117.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -313,7 +313,7 @@ function App() {
                   Save 96.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -329,7 +329,7 @@ function App() {
                   Save 20.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
           </div>
@@ -350,7 +350,7 @@ function App() {
                   Save 155.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -366,7 +366,7 @@ function App() {
                   Save 78.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -377,7 +377,7 @@ function App() {
                   Save 86.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -393,7 +393,7 @@ function App() {
                   Save 19.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
           </div>
@@ -409,7 +409,7 @@ function App() {
                   Save 67.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -425,7 +425,7 @@ function App() {
                   Save 58.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -436,7 +436,7 @@ function App() {
                   Save 67.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             <div class="column">
@@ -452,7 +452,7 @@ function App() {
                   Save 67.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button>Buy</button>
+                <button className="Bundlebutton">Buy</button>
               </div>
             </div>
             
