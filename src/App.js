@@ -1,6 +1,7 @@
 import './App.css';
 import Header from "./components/Header/Header"
 import Navbar from "./components/Navbar/Navbar"
+import Footer from "./components/Footer/Footer"
 
 //importerat login & reg moduler
 import { FormProvider } from 'react-advanced-form'
@@ -16,8 +17,8 @@ import Bundle from "./components/Bundle/Bundle";
 import Genre from "./view/CategoryOverview"
 import StartPage from "./view/StartPage"
 
-import CategoryDetailsAction from './components/Category-page/Category-details/CategoryDetailsAction'; 
-import CategoryDetailsComedy from './components/Category-page/Category-details/CategoryDetailsComedy'; 
+import CategoryDetailsAction from './components/Category-page/Category-details/CategoryDetailsAction';
+import CategoryDetailsComedy from './components/Category-page/Category-details/CategoryDetailsComedy';
 import CategoryDetailsHorror from './components/Category-page/Category-details/CategoryDetailsHorror';
 
 
@@ -27,12 +28,18 @@ function App() {
       <Router>
       <Header />
       <Navbar />
-      // Hej! Har lagt in register och login sidan här
-      <FormProvider rules={rules} messages={messages}>
+
+      {/* <FormProvider rules={rules} messages={messages}>
         <RegisterForm />
         <LoginForm />
-      </FormProvider>
+      </FormProvider> */}
 
+       <Route path="/login">
+        <LoginForm />
+      </Route>
+       <Route path="/register">
+        <RegisterForm />
+      </Route>
       <Route path="/" exact>
         <StartPage />
       </Route>
@@ -50,11 +57,13 @@ function App() {
       </Route>
       <Route path="/categoryComedy">
         <CategoryDetailsComedy />
-      </Route>  
+      </Route>
       <Route path="/wishlist">
         <Wishlist />
       </Route>
         </Router>
+
+        <Footer />
 
     </div>
   );

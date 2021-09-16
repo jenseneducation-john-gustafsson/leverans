@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Form } from 'react-advanced-form'
 import { Input, Button } from 'react-advanced-form-addons'
 
+import { Link } from "react-router-dom";
+
 const LoginForm = () => {
 
   const [loginEmail, setLoginEmail] = useState('')
@@ -40,7 +42,7 @@ const LoginForm = () => {
       />
 
       <Button primary>Login</Button>
-      <p>Don't have an account? Reigster <a href="#">here</a>!</p>
+      <p>Don't have an account? Reigster <Link to="/register">here</Link>!</p>
     </Form>
   )
 }

@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Form } from 'react-advanced-form'
 import { Input, Button } from 'react-advanced-form-addons'
 
+import { Link } from "react-router-dom";
+
 const RegisterForm = () => {
 
   const [inputEmail, setInputEmail] = useState('')
@@ -47,7 +49,7 @@ const RegisterForm = () => {
       />
 
       <Button primary>Register</Button>
-      <p>Already have an account? Login <a href="#">here</a>!</p>
+      <p>Already have an account? Login <Link to="/login">here</Link>!</p>
     </Form>
   )
 }

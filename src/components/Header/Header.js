@@ -13,12 +13,16 @@ function Header() {
           <Link to="/">Notflix</Link>
           </h2>
         <div className="nav-header-icons">
-          <button className="nav-header-buttons">
-            <FaSignInAlt />
-          </button>
-          <button className="nav-header-buttons">
-            <RiAccountCircleFill />
-          </button>
+          <Link to="/login">
+            <button className="nav-header-buttons">
+              <FaSignInAlt />
+            </button>
+          </Link>
+          <Link to="/register">
+            <button className="nav-header-buttons">
+              <RiAccountCircleFill />
+            </button>
+          </Link>
           <button className="nav-header-buttons">
             <TiShoppingCart />
           </button>
