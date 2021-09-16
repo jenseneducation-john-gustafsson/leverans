@@ -26,44 +26,42 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Header />
-      <Navbar />
+        <Header />
+        <Navbar />
 
-      {/* <FormProvider rules={rules} messages={messages}>
-        <RegisterForm />
-        <LoginForm />
-      </FormProvider> */}
+        <FormProvider rules={rules} messages={messages}>
+          <Route path="/login">
+            <LoginForm />
+          </Route>
+          <Route path="/register">
+            <RegisterForm />
+          </Route>
+        </FormProvider>
 
-       <Route path="/login">
-        <LoginForm />
-      </Route>
-       <Route path="/register">
-        <RegisterForm />
-      </Route>
-      <Route path="/" exact>
-        <StartPage />
-      </Route>
-      <Route path="/bundles">
-        <Bundle />
-      </Route>
-      <Route path="/genre">
-        <Genre />
-      </Route>
-      <Route path="/categoryAction">
-        <CategoryDetailsAction />
-      </Route>
-      <Route path="/categoryHorror">
-        <CategoryDetailsHorror />
-      </Route>
-      <Route path="/categoryComedy">
-        <CategoryDetailsComedy />
-      </Route>
-      <Route path="/wishlist">
-        <Wishlist />
-      </Route>
-        </Router>
+        <Route path="/" exact>
+          <StartPage />
+        </Route>
+        <Route path="/bundles">
+          <Bundle />
+        </Route>
+        <Route path="/genre">
+          <Genre />
+        </Route>
+        <Route path="/categoryAction">
+          <CategoryDetailsAction />
+        </Route>
+        <Route path="/categoryHorror">
+          <CategoryDetailsHorror />
+        </Route>
+        <Route path="/categoryComedy">
+          <CategoryDetailsComedy />
+        </Route>
+        <Route path="/wishlist">
+          <Wishlist />
+        </Route>
+      </Router>
 
-        <Footer />
+      <Footer />
 
     </div>
   );
