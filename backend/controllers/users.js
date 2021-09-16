@@ -4,7 +4,7 @@ const User = require("../models/User");
 exports.member = async (req, res) => {
   // Find one user
 
-  const user = await User.find({ username: req.params.username });
+  const user = await User.findOne({ email: req.params.email });
 
   if (user) {
 
@@ -26,10 +26,13 @@ exports.member = async (req, res) => {
 exports.signup = async (req, res) => {
   // Create new user
 
+  console.log("request: ", req.body.password);
+
+
   try {
 
     const user = await User.create({
-      username: req.body.username,
+      // username: req.body.username,
       email: req.body.email,
       password: req.body.password
     });
