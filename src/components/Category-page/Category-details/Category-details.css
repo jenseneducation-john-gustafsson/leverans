@@ -86,7 +86,7 @@
    /*----------------------*/
   
     /*----------------------*/
-  button{
+  .buttonCategory{
     width: 40%;
     height: 35px;
     border: 1px solid;
@@ -96,7 +96,7 @@
     color: dodgerblue;
     background: white;
   }
-  button:hover{
+  .buttonCateogry:hover{
     background: #2691d9;
     color: #e9f4fb;
   }

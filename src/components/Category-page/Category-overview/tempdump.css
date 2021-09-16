@@ -85,7 +85,7 @@
   /*----------------------*/
    /*----------------------*/
   
-    /*----------------------*/
+    /*----------Ändra Button till button ClassName något så att CSS inte krockar------------*/ 
   button{
     width: 40%;
     height: 35px;
