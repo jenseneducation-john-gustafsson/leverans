@@ -1,8 +1,26 @@
 const User = require("../models/User");
 
 
-exports.member = (req, res) => {
+exports.member = async (req, res) => {
   // Find one user
+
+  const user = await User.find({ username: req.params.username });
+
+  if (user) {
+
+    console.log("Found user!");
+
+    res.status(200).json({ user });
+
+  }
+
+  else {
+    console.log("User not found!");
+
+    res.status(400).json({ userStatus: "Not Found" });
+
+  }
+
 }
 
 exports.signup = async (req, res) => {
