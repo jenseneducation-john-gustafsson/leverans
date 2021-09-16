@@ -42,7 +42,7 @@ const LoginForm = () => {
       />
 
       <Button primary>Login</Button>
-      <p>Don't have an account? Reigster <Link to="/register">here</Link>!</p>
+      <p>Don't have an account? Register <Link to="/register">here</Link>!</p>
     </Form>
   )
 }

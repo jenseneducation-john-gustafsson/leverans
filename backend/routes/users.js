@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const UserController = require('../controllers/users');
 
-router.get("/members/:username", UserController.member);
+router.get("/members/:email", UserController.member);
 router.post("/signup", UserController.signup);
 router.post("/login", UserController.login);
 
