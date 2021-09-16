@@ -6,22 +6,29 @@ import { Link } from "react-router-dom";
 
 const RegisterForm = () => {
 
-  const [inputEmail, setInputEmail] = useState('')
-  const [inputPassword, setInputPassword] = useState('')
 
   const registerUser = ({ serialized }) => {
+
+    console.log("Serialized: ", serialized);
 
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: inputEmail, password: inputPassword })
+      body: JSON.stringify({ email: serialized.userEmail, password: serialized.userPassword })
     };
 
-    fetch('http://localhost:3000/signup', requestOptions)
-      .then(response => response.json())
-      .then(data => this.setState({ postId: data.id }));
+    console.log("Serialized2: ", JSON.stringify({ email: serialized.userEmail, password: serialized.userPassword }))
 
-    console.log({ email: inputEmail, password: inputPassword })
+    return fetch('http://localhost:4000/signup', requestOptions)
+      .then(response => {
+
+        console.log("response log new user: ", response)
+
+      })
+
+
+      ;
+
   }
 
   return (
@@ -30,14 +37,12 @@ const RegisterForm = () => {
         name="userEmail"
         type="email"
         label="Email"
-        onChange={(event) => { setInputEmail(event) }}
         required
       />
       <Input
         name="userPassword"
         type="password"
         label="Password"
-        onChange={(event) => { setInputPassword(event) }}
         required
       />
       <Input
