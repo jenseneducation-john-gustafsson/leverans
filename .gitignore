@@ -24,6 +24,9 @@
 .env.test.local
 .env.production.local
 
+#Testing HTTP Requests
+requests.rest
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
