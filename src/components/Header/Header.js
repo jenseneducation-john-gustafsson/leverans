@@ -9,9 +9,9 @@ function Header() {
   return (
     <div >
       <nav className="nav-header">
-        <h2 className="nav-header-title">
-          <Link to="/">Notflix</Link>
-          </h2>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <h2 className="nav-header-title">Notflix</h2>
+        </Link>
         <div className="nav-header-icons">
           <Link to="/login">
             <button className="nav-header-buttons">
