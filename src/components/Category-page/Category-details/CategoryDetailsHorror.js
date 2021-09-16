@@ -25,7 +25,7 @@ function CategoryDetailsHorror() {
     return (
       <div className="main-fluid">
         
-        <h2>Horror</h2> <Link to="/genre"><button><p classNameName="nav-text">Return to Categories</p></button></Link>
+        <h2>Horror</h2> <Link to="/genre"><button className="Catbutton"><p classNameName="nav-text">Return to Categories</p></button></Link>
         
   
         <div className="row2">
@@ -43,7 +43,7 @@ function CategoryDetailsHorror() {
               <p>
                 1980 | 1h 48m
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
   
@@ -59,7 +59,7 @@ function CategoryDetailsHorror() {
               <p>
                 1979 | Run Time
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
           <div className="column">
@@ -69,7 +69,7 @@ function CategoryDetailsHorror() {
               <p>
                 1960 | Run Time
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
           <div className="column">
@@ -79,7 +79,7 @@ function CategoryDetailsHorror() {
               <p>
                 2018 | 1h 58m
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
   
@@ -93,7 +93,7 @@ function CategoryDetailsHorror() {
                 <p>
                    1982 | Run Time
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -103,7 +103,7 @@ function CategoryDetailsHorror() {
                 <p>
                   1973 | RunTime
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -118,7 +118,7 @@ function CategoryDetailsHorror() {
                 <p>
                   2017 | RunTime
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -128,7 +128,7 @@ function CategoryDetailsHorror() {
                 <p>
                   1978 | RunTime
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
   
@@ -147,7 +147,7 @@ function CategoryDetailsHorror() {
                   <p>
                     2000 | RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -162,7 +162,7 @@ function CategoryDetailsHorror() {
                   <p>
                     2004 | RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -172,7 +172,7 @@ function CategoryDetailsHorror() {
                   <p>
                     2019 | RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -182,7 +182,7 @@ function CategoryDetailsHorror() {
                   <p>
                     2013 | RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
             </div>

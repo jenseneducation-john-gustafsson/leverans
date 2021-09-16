@@ -2,7 +2,7 @@
 //import '../components/Category-page/Category-overview/Category-overview.css'
 
 /*css*/
-import "../components/Category-page/Category-overview/tempdump.css";
+import "../components/Category-page/Category-overview/CategoryOverview.css";
 //Action
 import TheDarkKnight from "../components/Category-page/Category-overview/Images/The Dark Knight (2008).jpg";
 import LOTRReturnOfKing from "../components/Category-page/Category-overview/Images/The Lord of the Rings_ The Return of the King (2003).jpg";
@@ -30,7 +30,7 @@ function App() {
           Browse and select different categories that you may like to watch.
         </p>
   
-        <h3>Action</h3>  <Link to="/categoryAction"><button><p className="nav-text">Browse Full List</p></button></Link>
+        <h3>Action</h3>  <Link to="/categoryAction"><button className="Catbutton"><p className="nav-text">Browse Full List</p></button></Link>
   
         <div className="row2">
           <div className="column">
@@ -46,7 +46,7 @@ function App() {
               <p>
                 2008 | 1h 48m
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
   
@@ -62,7 +62,7 @@ function App() {
               <p>
                 2003 | Run Time
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
           <div className="column">
@@ -72,7 +72,7 @@ function App() {
               <p>
                 2010 | Run Time
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
           <div className="column">
@@ -82,11 +82,11 @@ function App() {
               <p>
                 1999 | 1h 58m
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
   
-          <h3>Horror</h3> <Link to="/categoryHorror"><button><p className="nav-text">Browse Full List</p></button></Link>
+          <h3>Horror</h3> <Link to="/categoryHorror"><button className="Catbutton"><p className="nav-text">Browse Full List</p></button></Link>
   
           <div className="row2">
             <div className="column">
@@ -96,7 +96,7 @@ function App() {
                 <p>
                    1980 | Run Time
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -106,7 +106,7 @@ function App() {
                 <p>
                   1979 | RunTime
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -121,7 +121,7 @@ function App() {
                 <p>
                   1960 | RunTIme
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -131,12 +131,12 @@ function App() {
                 <p>
                   2018 | RunTime
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
   
             <div>
-             <h3>Comedy</h3> <Link to="/categoryComedy"><button><p className="nav-text">Browse Full List</p></button></Link>
+             <h3>Comedy</h3> <Link to="/categoryComedy"><button className="Catbutton"><p className="nav-text">Browse Full List</p></button></Link>
               </div>
   
             <div className="row2">
@@ -152,7 +152,7 @@ function App() {
                   <p>
                     Date RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -167,7 +167,7 @@ function App() {
                   <p>
                     Date RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -177,7 +177,7 @@ function App() {
                   <p>
                     Date RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -187,7 +187,7 @@ function App() {
                   <p>
                     Date - RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
             </div>

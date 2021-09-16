@@ -27,7 +27,7 @@ function CategoryDetailsComedy() {
         
         
   
-        <h2>Comedy</h2> <Link to="/genre"><button><p classNameName="nav-text">Return to Categories</p></button></Link>
+        <h2>Comedy</h2> <Link to="/genre"><button className="Catbutton"><p classNameName="nav-text">Return to Categories</p></button></Link>
   
         <div className="row2">
           <div className="column">
@@ -39,7 +39,7 @@ function CategoryDetailsComedy() {
               <p>
                 2019 | 1h 48m
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
   
@@ -55,7 +55,7 @@ function CategoryDetailsComedy() {
               <p>
                 1997 | Run Time
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
           <div className="column">
@@ -65,7 +65,7 @@ function CategoryDetailsComedy() {
               <p>
                 2011 | Run Time
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
           <div className="column">
@@ -75,7 +75,7 @@ function CategoryDetailsComedy() {
               <p>
                 1985 | 1h 58m
               </p>
-              <button>Buy</button>
+              <button className="Catbutton">Buy</button>
             </div>
           </div>
   
@@ -89,7 +89,7 @@ function CategoryDetailsComedy() {
                 <p>
                    2000 | Run Time
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -99,7 +99,7 @@ function CategoryDetailsComedy() {
                 <p>
                   2018 | RunTime
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -114,7 +114,7 @@ function CategoryDetailsComedy() {
                 <p>
                   2014 | RunTIme
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
             <div className="column">
@@ -124,7 +124,7 @@ function CategoryDetailsComedy() {
                 <p>
                   2018 | RunTime
                 </p>
-                <button>Buy</button>
+                <button className="Catbutton">Buy</button>
               </div>
             </div>
   
@@ -143,7 +143,7 @@ function CategoryDetailsComedy() {
                   <p>
                     1998 | RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -158,7 +158,7 @@ function CategoryDetailsComedy() {
                   <p>
                     1998 | RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -168,7 +168,7 @@ function CategoryDetailsComedy() {
                   <p>
                     2011 | RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
               <div className="column">
@@ -178,7 +178,7 @@ function CategoryDetailsComedy() {
                   <p>
                     2011 | RunTime
                   </p>
-                  <button>Buy</button>
+                  <button className="Catbutton">Buy</button>
                 </div>
               </div>
             </div>
