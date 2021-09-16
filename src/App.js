@@ -28,12 +28,18 @@ function App() {
       <Router>
       <Header />
       <Navbar />
-      // Hej! Har lagt in register och login sidan här
-      <FormProvider rules={rules} messages={messages}>
+
+      {/* <FormProvider rules={rules} messages={messages}>
         <RegisterForm />
         <LoginForm />
-      </FormProvider>
+      </FormProvider> */}
 
+       <Route path="/login">
+        <LoginForm />
+      </Route>
+       <Route path="/register">
+        <RegisterForm />
+      </Route>
       <Route path="/" exact>
         <StartPage />
       </Route>
