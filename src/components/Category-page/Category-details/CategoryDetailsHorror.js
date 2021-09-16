@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 
 function CategoryDetailsHorror() {
     return (
-      <div className="main">
+      <div className="main-fluid">
         
         <h2>Horror</h2> <Link to="/genre"><button><p classNameName="nav-text">Return to Categories</p></button></Link>
         

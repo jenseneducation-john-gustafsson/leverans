@@ -23,7 +23,7 @@ import BackToTheFuture from "../Category-details/ImagesComedy/Back to the Future
 
 function CategoryDetailsComedy() {
     return (
-      <div className="main">
+      <div className="main-fluid">
         
         
   

@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 
 function CategoryDetailsAction() {
     return (
-      <div className="main">
+      <div className="main-fluid">
         
         
   

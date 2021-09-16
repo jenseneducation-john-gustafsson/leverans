@@ -22,8 +22,8 @@ import BackToTheFuture from "../components/Category-page/Category-overview/Image
 import { Link } from "react-router-dom";
 
 function App() {
-    return (
-      <div className="main">
+    return ( // Replaced main with main-fluid, dvs container = container-fluid. // Full-width.
+      <div className="main-fluid"> 
         
         <h2>Categories</h2>
         <p>
@@ -135,7 +135,9 @@ function App() {
               </div>
             </div>
   
-            <h3>Comedy</h3> <Link to="/categoryComedy"><button><p className="nav-text">Browse Full List</p></button></Link>
+            <div>
+             <h3>Comedy</h3> <Link to="/categoryComedy"><button><p className="nav-text">Browse Full List</p></button></Link>
+              </div>
   
             <div className="row2">
               <div className="column">

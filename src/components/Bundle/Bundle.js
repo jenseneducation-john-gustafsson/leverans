@@ -455,6 +455,7 @@ function App() {
                 <button>Buy</button>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
