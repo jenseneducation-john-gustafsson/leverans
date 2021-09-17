@@ -17,7 +17,7 @@ const LoginForm = () => {
       body: JSON.stringify({ email: loginEmail, password: loginPassword })
     };
 
-    fetch('http://localhost:3000/login', requestOptions)
+    fetch('/login', requestOptions)
       .then(response => response.json())
       .then(data => this.setState({ postId: data.id }));
 

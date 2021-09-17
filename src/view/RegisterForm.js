@@ -19,16 +19,13 @@ const RegisterForm = () => {
 
     console.log("Serialized2: ", JSON.stringify({ email: serialized.userEmail, password: serialized.userPassword }))
 
-    return fetch('http://localhost:4000/signup', requestOptions)
+    return fetch('/signup', requestOptions)
       .then(response => {
 
         console.log("response log new user: ", response)
 
       })
-
-
       ;
-
   }
 
   return (
