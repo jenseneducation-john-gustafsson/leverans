@@ -5,12 +5,7 @@ const mongoose = require("mongoose");
 const ConnectDB = async () => {
   try {
 
-    await mongoose.connect("mongodb://localhost:27017/notflix_users?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false", {
-      useCreateIndex: true,
-      useFindAndModify: false,
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
+    await mongoose.connect("mongodb://localhost:27017/notflix_users?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false");
     console.log("MongoDB Connection Succeded!");
 
   } catch (error) {
