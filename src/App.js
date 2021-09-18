@@ -14,8 +14,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Wishlist from "./view/Wishlist";
 import Bundle from "./components/Bundle/Bundle";
+import Cart from "./components/Cart/Cart";
 import Genre from "./view/CategoryOverview";
 import StartPage from "./view/StartPage";
+
 
 import CategoryDetailsAction from './components/Category-page/Category-details/CategoryDetailsAction';
 import CategoryDetailsComedy from './components/Category-page/Category-details/CategoryDetailsComedy';
@@ -43,6 +45,9 @@ function App() {
         </Route>
         <Route path="/bundles">
           <Bundle />
+        </Route>
+        <Route path="/cart">
+          <Cart />
         </Route>
         <Route path="/genre">
           <Genre />
