@@ -9,23 +9,19 @@ const RegisterForm = () => {
 
   const registerUser = ({ serialized }) => {
 
-    console.log("Serialized: ", serialized);
-
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: serialized.userEmail, password: serialized.userPassword })
     };
 
-    console.log("Serialized2: ", JSON.stringify({ email: serialized.userEmail, password: serialized.userPassword }))
-
     return fetch('/signup', requestOptions)
-      .then(response => {
+      .then(response => response.json())
+      .then(data => {
 
-        console.log("response log new user: ", response)
+        console.log("response log new user: ", data.message);
 
-      })
-      ;
+      });
   }
 
   return (

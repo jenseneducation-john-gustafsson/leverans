@@ -6,22 +6,26 @@ import { Link } from "react-router-dom";
 
 const LoginForm = () => {
 
-  const [loginEmail, setLoginEmail] = useState('')
-  const [loginPassword, setLoginPassword] = useState('')
+  const [loginMessage, setLoginMessage] = useState("")
 
   const loginUser = ({ serialized }) => {
 
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: loginEmail, password: loginPassword })
+      body: JSON.stringify({ email: serialized.userEmail, password: serialized.userPassword })
     };
 
-    fetch('/login', requestOptions)
+    return fetch('/login', requestOptions)
       .then(response => response.json())
-      .then(data => this.setState({ postId: data.id }));
+      .then(data => {
 
-    console.log({ email: loginEmail, password: loginPassword })
+        console.log("Response login backend: ", data);
+
+        setLoginMessage({ loginMessage: data.message })
+
+      });
+
   }
 
   return (
@@ -30,14 +34,12 @@ const LoginForm = () => {
         name="userEmail"
         type="email"
         label="Email"
-        onChange={(event) => { setLoginEmail(event) }}
         required
       />
       <Input
         name="userPassword"
         type="password"
         label="Password"
-        onChange={(event) => { setLoginPassword(event) }}
         required
       />
 

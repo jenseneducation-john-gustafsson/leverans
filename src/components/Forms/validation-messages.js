@@ -13,7 +13,7 @@ export default {
       rule: {
         capitalLetter: 'Include at least one capital letter',
         oneNumber: 'Include at least one number',
-        minLength: 'Password must be at least 5 letters long',
+        minLength: 'Password must be at least 8 letters long',
       },
     },
   },

@@ -26,33 +26,87 @@ exports.member = async (req, res) => {
 exports.signup = async (req, res) => {
   // Create new user
 
-  console.log("request: ", req.body.password);
+  const { email } = req.body;
 
+  const checkExistingUser = await User.findOne({
+    email
+  })
 
-  try {
+  if (checkExistingUser) {
+    console.log("User already exists!");
 
-    const user = await User.create({
-      // username: req.body.username,
-      email: req.body.email,
-      password: req.body.password
-    });
+    res.status(400).json({
+      message: "Username already exists",
+    })
 
-    console.log("New user created!: ", user);
+  } else {
 
-    res.status(201).json({ newUser: user });
+    try {
 
-  } catch (error) {
+      const user = await User.create({
+        email: req.body.email,
+        password: req.body.password
+      });
 
-    console.log("Error with user creation: ", error);
+      console.log("New user created!: ", user);
 
-    res.status(400).json({ error });
+      res.status(201).json({ message: "New account has been created" });
+
+    } catch (error) {
+
+      console.log("Error with user creation: ", error);
+
+      res.status(400).json({ error });
+
+    }
 
   }
 
 };
 
-exports.login = (req, res) => {
+exports.login = async (req, res) => {
   // Login user
+
+  const { email, password } = req.body;
+
+  const existingUser = await User.findOne({
+    email
+  })
+
+  if (!existingUser) {
+    console.log("User not found!");
+
+    res.status(400).json({
+      message: "Username or Password doesn't exist",
+      auth: false
+    })
+
+  } else {
+
+    if (existingUser.password === password) {
+
+
+      console.log("User found!");
+
+
+      res.status(200).json({
+        message: "Login Successful",
+        auth: true
+      })
+
+    } else {
+
+      console.log("Password not found!");
+
+      res.status(400).json({
+        message: "Username or Password doesn't exist",
+        auth: false
+      })
+    }
+
+
+  }
+
 };
 
 exports.update = (req, res) => {
