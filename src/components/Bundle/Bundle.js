@@ -13,33 +13,19 @@ import DC from "./Pictures/DC.jpg";
 import BadBoys from "./Pictures/BadBoys.jpg";
 import TheLordOfTheRings from "./Pictures/TheLordOfTheRings.jpg";
 import XMen from "./Pictures/X-Men.jpg";
-//Comedy
-import ScaryMovie from "./Pictures/ScaryMovie.jpg";
-import MeanGirls from "./Pictures/MeanGirls.jpg";
-import HotShot from "./Pictures/HotShot.jpg";
-import Big from "./Pictures/Big.jpg";
 //Drama
 import WW2 from "./Pictures/WW2.jpg";
 import TheGodfather from "./Pictures/TheGodfather.jpg";
 import Rocky from "./Pictures/Rocky.jpg";
 import Best from "./Pictures/5Best.jpg";
-//Adventure
-import Jumanji from "./Pictures/Jumanji.jpg";
-import MIB from "./Pictures/MIB.jpg";
-import JurassicWorld from "./Pictures/JurassicWorld.jpg";
-import TombRaider from "./Pictures/TombRaider.jpg";
-//Sci-Fi
-import StarTrek from "./Pictures/StarTrek.jpg";
-import StarTrekTripple from "./Pictures/StarTrekTripple.jpg";
-import Sci from "./Pictures/Sci-Films.jpg";
-import Independence from "./Pictures/Independence.jpg";
 //Animation
 import Shrek from "./Pictures/Shrek.jpg";
 import KungFuPanda from "./Pictures/KungFuPanda.jpg";
 import Minions from "./Pictures/Minions.jpg";
 import Madagascar from "./Pictures/Madagascar.jpg";
 
-function App() {
+export default function Bundles(props){
+const {onAdd} = props;
   return (
     <div class="main-fluid">
       <h2>Bundle Of movies</h2>
@@ -65,7 +51,13 @@ function App() {
               Save 164.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
-            <button className="Bundlebutton">Buy</button>
+            
+            <hr></hr>
+            
+            <p>
+                  $199
+                </p>
+            <button className="Bundlebutton" onClick ={onAdd}>Buy</button>
           </div>
         </div>
        
@@ -83,6 +75,10 @@ function App() {
               Save 264.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
+            <hr></hr>
+            <p>
+                  $499
+                </p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
@@ -94,6 +90,10 @@ function App() {
               Save 67.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
+            <hr></hr>
+            <p>
+                  $249
+                </p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
@@ -105,6 +105,10 @@ function App() {
               Save 78.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
+            <hr></hr>
+            <p>
+                  $199
+                </p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
@@ -120,6 +124,10 @@ function App() {
                 Save 194.00 kr when you buy this bundle rather than each movie
                 individually.
               </p>
+              <hr></hr>
+              <p>
+                  $499
+                </p>
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
@@ -131,6 +139,10 @@ function App() {
                 Save 88.00 kr when you buy this bundle rather than each movie
                 individually.
               </p>
+              <hr></hr>
+              <p>
+                  $99
+                </p>
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
@@ -147,6 +159,10 @@ function App() {
                 Save 98.00 kr when you buy this bundle rather than each movie
                 individually.
               </p>
+              <hr></hr>
+              <p>
+                  $299
+                </p>
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
@@ -158,66 +174,11 @@ function App() {
                 Save 48.00 kr when you buy this bundle rather than each movie
                 individually.
               </p>
+              <hr></hr>
+              <p>
+                  $149
+                </p>
               <button className="Bundlebutton">Buy</button>
-            </div>
-          </div>
-
-          <h3>Comedy</h3>
-
-          <div class="row2">
-            <div class="column">
-              <div class="content">
-                <img
-                  src={ScaryMovie}
-                  alt="ScaryMovie"
-                  width="196px"
-                  height="300px"
-                />
-                <h4>Scary Movie Collection</h4>
-                <p>
-                  Save 88.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img
-                  src={MeanGirls}
-                  alt="MeanGirls"
-                  width="196px"
-                  height="300px"
-                />
-                <h4>Mean Girls Collection</h4>
-                <p>
-                  Save 40.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img src={HotShot} alt="HotShot" width="196px" height="300px" />
-                <h4>Hot Shots Collection</h4>
-                <p>
-                  Save 19.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img src={Big} alt="Big" width="196px" height="300px" />
-                <h4>Night at the Museum</h4>
-                <p>
-                  Save 68.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
             </div>
           </div>
 
@@ -231,6 +192,10 @@ function App() {
                 <p>
                   Save 146.00 kr when you buy this bundle rather than each movie
                   individually.
+                </p>
+                <hr></hr>
+                <p>
+                  $259
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
@@ -248,6 +213,10 @@ function App() {
                   Save 38.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
+                <hr></hr>
+                <p>
+                  $149
+                </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -258,6 +227,10 @@ function App() {
                 <p>
                   Save 245.00 kr when you buy this bundle rather than each movie
                   individually.
+                </p>
+                <hr></hr>
+                <p>
+                  $399
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
@@ -270,134 +243,14 @@ function App() {
                   Save 126.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-          </div>
-
-          <h3>Adventure</h3>
-
-          <div class="row2">
-            <div class="column">
-              <div class="content">
-                <img src={Jumanji} alt="Jumanji" width="196px" height="300px" />
-                <h4>Welcome to the Jumanji</h4>
+                <hr></hr>
                 <p>
-                  Save 9.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img src={MIB} alt="MIB" width="196px" height="300px" />
-                <h4>Men in Black 4 Movie Collection</h4>
-                <p>
-                  Save 117.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img
-                  src={JurassicWorld}
-                  alt="JurassicWorld"
-                  width="196px"
-                  height="300px"
-                />
-                <h4>Jurassic World Collection</h4>
-                <p>
-                  Save 96.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img
-                  src={TombRaider}
-                  alt="TombRaider"
-                  width="196px"
-                  height="300px"
-                />
-                <h4>Tomb Raider Movie Collection</h4>
-                <p>
-                  Save 20.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  $139
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
           </div>
-
-          <h3>Sci-Fi</h3>
-
-          <div class="row2">
-            <div class="column">
-              <div class="content">
-                <img
-                  src={StarTrek}
-                  alt="StarTrek"
-                  width="196px"
-                  height="300px"
-                />
-                <h4>Star Trek The Original</h4>
-                <p>
-                  Save 155.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img
-                  src={StarTrekTripple}
-                  alt="StarTrekTripple"
-                  width="196px"
-                  height="300px"
-                />
-                <h4>Star Trek 3 Film Collection</h4>
-                <p>
-                  Save 78.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img src={Sci} alt="Sci" width="196px" height="300px" />
-                <h4>Sci-Fi 5 Film Collection</h4>
-                <p>
-                  Save 86.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img
-                  src={Independence}
-                  alt="Independence"
-                  width="196px"
-                  height="300px"
-                />
-                <h4>Independence Day: Collection</h4>
-                <p>
-                  Save 19.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </p>
-                <button className="Bundlebutton">Buy</button>
-              </div>
-            </div>
-          </div>
-
           <h3>Animation</h3>
 
           <div class="row2">
@@ -408,6 +261,10 @@ function App() {
                 <p>
                   Save 67.00 kr when you buy this bundle rather than each movie
                   individually.
+                </p>
+                <hr></hr>
+                <p>
+                  $369
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
@@ -425,6 +282,10 @@ function App() {
                   Save 58.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
+                <hr></hr>
+                <p>
+                  $199
+                </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -435,6 +296,10 @@ function App() {
                 <p>
                   Save 67.00 kr when you buy this bundle rather than each movie
                   individually.
+                </p>
+                <hr></hr>
+                <p>
+                  $259
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
@@ -452,6 +317,10 @@ function App() {
                   Save 67.00 kr when you buy this bundle rather than each movie
                   individually.
                 </p>
+                <hr></hr>
+                <p>
+                  $199
+                </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -463,4 +332,3 @@ function App() {
   );
 }
 
-export default App;
