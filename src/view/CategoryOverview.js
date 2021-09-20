@@ -1,6 +1,9 @@
 //import Image from '../components/Category-page/Category-overview/CategoryImage'
 //import '../components/Category-page/Category-overview/Category-overview.css'
 
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+
 /*css*/
 import "../components/Category-page/Category-overview/CategoryOverview.css";
 //Action
