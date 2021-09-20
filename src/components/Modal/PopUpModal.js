@@ -1,12 +1,13 @@
 // Imports
 
-// test
+// test - Modal skall användas istället för Overlay.
+
 //  <div class="modal-dialog modal-dialog-centered">...</div>
 
-function PopUpModal() {
+const PopUpModal = () => {
   return(
   <div class="modal" tabindex="-1">
-    <div class="modal-dialog-centered"> 
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Modal title</h5>

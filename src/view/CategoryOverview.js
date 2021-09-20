@@ -20,8 +20,9 @@ import TheIntouchables from "../components/Category-page/Category-overview/Image
 import BackToTheFuture from "../components/Category-page/Category-overview/Images/Back to the Future (1985).jpg";
 
 import { Link } from "react-router-dom";
-import PopUpModal from "../components/Modal/PopUpModal";
-import OverlayCard from "../components/Overlay/OverlayCard";
+
+import PopUpModal from "../components/Modal/PopUpModal"; // test purpose
+import OverlayCard from "../components/Overlay/OverlayCard"; // test purpose
 
 function App() {
     return ( // Replaced main with main-fluid, dvs container = container-fluid. // Full-width.
@@ -51,25 +52,23 @@ function App() {
               <button className="Catbutton">Buy</button>
             </div>
           </div>
-  
+          
           <div className="column">
             <div className="content">
-            <div className="overlay">
-                <div className="text">
-                  Short Movie Description?. Or Remove entirely
-                </div>
-              </div>
               <img
                 src={LOTRReturnOfKing}
                 alt="LOTRReturnOfKing"
                 width="196px"
                 height="300px"
+                class="img-fluid rounded-start"
+                onClick={PopUpModal}
               />
               <h4>LOTR - Return of the King </h4>
               <p>
                 2003 | Run Time
               </p>
               <button className="Catbutton">Buy</button>
+              <button className="Catbutton" onClick={PopUpModal}>Details</button>
             </div>
           </div>
           <div className="column">

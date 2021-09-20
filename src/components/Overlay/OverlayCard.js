@@ -1,14 +1,14 @@
 // Imports
 
 
-//  Test
+//  Test - Skall ej användas
 
 function OverlayCard() {
     return(
         <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="Test Card"/>
+            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start" alt="Test Card"/>
           </div>
           <div class="col-md-8">
             <div class="card-body">
