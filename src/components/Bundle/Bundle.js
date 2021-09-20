@@ -64,8 +64,7 @@ export default function Bundles(props) {
             />
             <h4>Conjuring Universe </h4>
             <p>
-              Save 264.00 kr when you buy this bundle rather than each movie
-              individually.
+              Save 264.00 
             </p>
             <hr></hr>
             <p>$499</p>
@@ -77,8 +76,7 @@ export default function Bundles(props) {
             <img src={ThePurge} alt="ThePurge" width="196px" height="300px" />
             <h4>The Purge Collection</h4>
             <p>
-              Save 67.00 kr when you buy this bundle rather than each movie
-              individually.
+              Save 67.00 
             </p>
             <hr></hr>
             <p>$249</p>
@@ -90,8 +88,7 @@ export default function Bundles(props) {
             <img src={TheRing} alt="TheRing" width="196px" height="300px" />
             <h4>The Rings 3-Movie Collection</h4>
             <p>
-              Save 78.00 kr when you buy this bundle rather than each movie
-              individually.
+              Save 78.00 
             </p>
             <hr></hr>
             <p>$199</p>
@@ -107,8 +104,7 @@ export default function Bundles(props) {
               <img src={DC} alt="DC" width="196px" height="300px" />
               <h4>DC 7-Film Collection</h4>
               <p>
-                Save 194.00 kr when you buy this bundle rather than each movie
-                individually.
+                Save 194.00 k
               </p>
               <hr></hr>
               <p>$499</p>
@@ -120,8 +116,7 @@ export default function Bundles(props) {
               <img src={BadBoys} alt="BadBoys" width="196px" height="300px" />
               <h4>Bad Boys 3-Movie Collection</h4>
               <p>
-                Save 88.00 kr when you buy this bundle rather than each movie
-                individually.
+                Save 88.00 k
               </p>
               <hr></hr>
               <p>$99</p>
@@ -138,8 +133,7 @@ export default function Bundles(props) {
               />
               <h4>The Lord of the Rings Collection</h4>
               <p>
-                Save 98.00 kr when you buy this bundle rather than each movie
-                individually.
+                Save 98.00 k
               </p>
               <hr></hr>
               <p>$299</p>
@@ -151,8 +145,7 @@ export default function Bundles(props) {
               <img src={XMen} alt="XMen" width="196px" height="300px" />
               <h4>X-Men Trilogy: Extended Bundle</h4>
               <p>
-                Save 48.00 kr when you buy this bundle rather than each movie
-                individually.
+                Save 48.00 k
               </p>
               <hr></hr>
               <p>$149</p>
@@ -168,8 +161,7 @@ export default function Bundles(props) {
                 <img src={WW2} alt="WW2" width="196px" height="300px" />
                 <h4>WWII Films 5 Movies</h4>
                 <p>
-                  Save 146.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  Save 146.00 kr
                 </p>
                 <hr></hr>
                 <p>$259</p>
@@ -186,8 +178,7 @@ export default function Bundles(props) {
                 />
                 <h4>The Godfather Trilogy</h4>
                 <p>
-                  Save 38.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  Save 38.00 kr
                 </p>
                 <hr></hr>
                 <p>$149</p>
@@ -199,8 +190,7 @@ export default function Bundles(props) {
                 <img src={Rocky} alt="Rocky" width="196px" height="300px" />
                 <h4>Rocky Heavyweight </h4>
                 <p>
-                  Save 245.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  Save 245.00 kr
                 </p>
                 <hr></hr>
                 <p>$399</p>
@@ -212,8 +202,7 @@ export default function Bundles(props) {
                 <img src={Best} alt="5Best" width="196px" height="300px" />
                 <h4>Best Picture 5-Film Collection</h4>
                 <p>
-                  Save 126.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  Save 126.00 kr
                 </p>
                 <hr></hr>
                 <p>$139</p>
@@ -229,8 +218,7 @@ export default function Bundles(props) {
                 <img src={Shrek} alt="Shrek" width="196px" height="300px" />
                 <h4>Shrek 4-Movie Collection</h4>
                 <p>
-                  Save 67.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  Save 67.00 kr
                 </p>
                 <hr></hr>
                 <p>$369</p>
@@ -247,8 +235,7 @@ export default function Bundles(props) {
                 />
                 <h4>Kung Fu Panda Movie Collection</h4>
                 <p>
-                  Save 58.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  Save 58.00 kr
                 </p>
                 <hr></hr>
                 <p>$199</p>
@@ -260,8 +247,7 @@ export default function Bundles(props) {
                 <img src={Minions} alt="Minions" width="196px" height="300px" />
                 <h4>Despicable Me 1-3: Minions</h4>
                 <p>
-                  Save 67.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  Save 67.00 kr
                 </p>
                 <hr></hr>
                 <p>$259</p>
@@ -278,8 +264,7 @@ export default function Bundles(props) {
                 />
                 <h4>Madagascar 4-Movie Collection</h4>
                 <p>
-                  Save 67.00 kr when you buy this bundle rather than each movie
-                  individually.
+                  Save 67.00 kr
                 </p>
                 <hr></hr>
                 <p>$199</p>
