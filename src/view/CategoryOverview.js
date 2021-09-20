@@ -1,8 +1,8 @@
-//import Image from '../components/Category-page/Category-overview/CategoryImage'
-//import '../components/Category-page/Category-overview/Category-overview.css'
+// Modals
+import ModalRoot from '.././modules/modals/components/ModalRoot';
+import ModalService from '.././modules/modals/services/ModalService';
+import TestModal from '../components/Modals/TestModal'
 
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
 
 /*css*/
 import "../components/Category-page/Category-overview/CategoryOverview.css";
@@ -23,21 +23,36 @@ import TheIntouchables from "../components/Category-page/Category-overview/Image
 import BackToTheFuture from "../components/Category-page/Category-overview/Images/Back to the Future (1985).jpg";
 
 import { Link } from "react-router-dom";
+import Modal_1 from '../components/Modals/Modal_1';
+import Modal_2 from '../components/Modals/Modal_2';
 
 
-import PopUpModal from "../components/Modal/PopUpModal";
+// Import Modal här - /(Rendera här? eller separat folder. TITTA PÅ SENARE)
 
 
 
 function App() {
-  const PopUpModal=(PopUpModal)
+  const addModal = () => {
+    ModalService.open(TestModal);
+  };
+  
+  const addModal_1 = () => {
+    ModalService.open(Modal_1);
+  };
+
+  const addModal_2 = () => {
+    ModalService.open(Modal_2);
+  };
+
     return ( // Replaced main with main-fluid, dvs container = container-fluid. // Full-width.
       <div className="main-fluid"> 
-        
+        <ModalRoot />
         <h2>Categories</h2>
         <p>
           Browse and select different categories that you may like to watch.
         </p>
+        <hr></hr>
+        <p>Click on a Image to read a synopsis.</p>
   
         <h3>Action</h3>  <Link to="/categoryAction"><button className="Catbutton"><p className="nav-text">Browse Full List</p></button></Link>
         
@@ -67,19 +82,19 @@ function App() {
                 width="196px"
                 height="300px"
                 class="img-fluid rounded-start"
-                onClick={PopUpModal}
+                onClick={addModal}
               />
               <h4>LOTR - Return of the King </h4>
               <p>
                 2003 | Run Time
               </p>
               <button className="Catbutton">Buy</button>
-              <button className="Catbutton" onClick={PopUpModal}>Details</button>
+              <button className="Catbutton" onClick={addModal}>Details</button>
             </div>
           </div>
           <div className="column">
             <div className="content">
-              <img src={Inception} alt="Inception" width="196px" height="300px" />
+              <img src={Inception} alt="Inception" width="196px" height="300px" onClick={addModal_1} />
               <h4>Inception</h4>
               <p>
                 2010 | Run Time
