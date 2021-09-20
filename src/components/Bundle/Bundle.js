@@ -62,8 +62,7 @@ function App() {
             />
             <h4>Conjuring Universe </h4>
             <p>
-              Save 164.00 kr when you buy this bundle rather than each movie
-              individually.
+              Save 164.00 kr 
             </p>
             <button className="Bundlebutton">Buy</button>
           </div>
