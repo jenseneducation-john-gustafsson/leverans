@@ -5,17 +5,16 @@ import ModalFooter from "../../modules/modals/components/ModalFooter";
 
 
 
-export default function Modal_1(props) {
+export default function Modal_3(props) {
   return (
     <Modal>
       <ModalHeader>
-        <h3>Inception</h3>
+        <h3>Lord of the Rings - Return of the King</h3>
       </ModalHeader>
       <ModalBody>
-        <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.</p>
+        <p>Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</p>
       </ModalBody>
       <ModalFooter>
-        <p>Test - Price: 5000:-</p>
         <button onClick={ props.close } className="btn btn-primary">Close Modal</button>
       </ModalFooter>
     </Modal>

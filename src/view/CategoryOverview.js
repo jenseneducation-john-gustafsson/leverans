@@ -1,4 +1,4 @@
-// Modals
+// Modal Head-Component
 import ModalRoot from '.././modules/modals/components/ModalRoot';
 import ModalService from '.././modules/modals/services/ModalService';
 import TestModal from '../components/Modals/TestModal'
@@ -23,9 +23,11 @@ import TheIntouchables from "../components/Category-page/Category-overview/Image
 import BackToTheFuture from "../components/Category-page/Category-overview/Images/Back to the Future (1985).jpg";
 
 import { Link } from "react-router-dom";
+
+// Specific Modals
 import Modal_1 from '../components/Modals/Modal_1';
 import Modal_2 from '../components/Modals/Modal_2';
-
+import Modal_3 from '../components/Modals/Modal_3';
 
 // Import Modal här - /(Rendera här? eller separat folder. TITTA PÅ SENARE)
 
@@ -42,6 +44,10 @@ function App() {
 
   const addModal_2 = () => {
     ModalService.open(Modal_2);
+  };
+
+  const addModal_3 = () => {
+    ModalService.open(Modal_3);
   };
 
     return ( // Replaced main with main-fluid, dvs container = container-fluid. // Full-width.
