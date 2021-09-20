@@ -41,7 +41,7 @@ import Madagascar from "./Pictures/Madagascar.jpg";
 
 function App() {
   return (
-    <div class="main-fluid">
+    <div classNamn="main-fluid">
       <h2>Bundle Of movies</h2>
       <h4>
         Get the best movie bundles deals so that you can enjoy the movie to the
@@ -50,10 +50,10 @@ function App() {
 
       <h3>Horror</h3>
 
-      <div class="row2">
+      <div classNamn="row2">
 
-      <div class="column">
-          <div class="content">
+      <div classNamn="column">
+          <div classNamn="content">
             <img
               src={Scream}
               alt="Scream"
@@ -62,15 +62,15 @@ function App() {
             />
             <h4>Conjuring Universe </h4>
             <p>
-              Save 164.00 kr 
+              Save 164.00 kr
             </p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
        
 
-        <div class="column">
-          <div class="content">
+        <div classNamn="column">
+          <div classNamn="content">
             <img
               src={TheCounjuring}
               alt="TheCounjuring"
@@ -79,23 +79,23 @@ function App() {
             />
             <h4>Conjuring Universe </h4>
             <p>
-              Save 264.00 kr 
+              Save 264.00 kr
             </p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
-        <div class="column">
-          <div class="content">
+        <div classNamn="column">
+          <div classNamn="content">
             <img src={ThePurge} alt="ThePurge" width="196px" height="300px" />
             <h4>The Purge Collection</h4>
             <p>
-              Save 67.00 kr 
+              Save 67.00 kr
             </p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
-        <div class="column">
-          <div class="content">
+        <div classNamn="column">
+          <div classNamn="content">
             <img src={TheRing} alt="TheRing" width="196px" height="300px" />
             <h4>The Rings 3-Movie Collection</h4>
             <p>
@@ -107,9 +107,9 @@ function App() {
 
         <h3>Action</h3>
 
-        <div class="row2">
-          <div class="column">
-            <div class="content">
+        <div classNamn="row2">
+          <div classNamn="column">
+            <div classNamn="content">
               <img src={DC} alt="DC" width="196px" height="300px" />
               <h4>DC 7-Film Collection</h4>
               <p>
@@ -118,8 +118,8 @@ function App() {
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div classNamn="column">
+            <div classNamn="content">
               <img src={BadBoys} alt="BadBoys" width="196px" height="300px" />
               <h4>Bad Boys 3-Movie Collection</h4>
               <p>
@@ -128,8 +128,8 @@ function App() {
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div classNamn="column">
+            <div classNamn="content">
               <img
                 src={TheLordOfTheRings}
                 alt="TheLordOfTheRings"
@@ -143,8 +143,8 @@ function App() {
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
-          <div class="column">
-            <div class="content">
+          <div classNamn="column">
+            <div classNamn="content">
               <img src={XMen} alt="XMen" width="196px" height="300px" />
               <h4>X-Men Trilogy: Extended Bundle</h4>
               <p>
@@ -156,9 +156,9 @@ function App() {
 
           <h3>Comedy</h3>
 
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div classNamn="row2">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={ScaryMovie}
                   alt="ScaryMovie"
@@ -167,13 +167,13 @@ function App() {
                 />
                 <h4>Scary Movie Collection</h4>
                 <p>
-                  Save 88.00 kr 
+                  Save 88.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={MeanGirls}
                   alt="MeanGirls"
@@ -182,27 +182,27 @@ function App() {
                 />
                 <h4>Mean Girls Collection</h4>
                 <p>
-                  Save 40.00 kr
+                  Save 40.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={HotShot} alt="HotShot" width="196px" height="300px" />
                 <h4>Hot Shots Collection</h4>
                 <p>
-                  Save 19.00 kr 
+                  Save 19.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={Big} alt="Big" width="196px" height="300px" />
                 <h4>Night at the Museum</h4>
                 <p>
-                  Save 68.00 kr 
+                  Save 68.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
@@ -211,19 +211,19 @@ function App() {
 
           <h3>Drama</h3>
 
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div classNamn="row2">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={WW2} alt="WW2" width="196px" height="300px" />
                 <h4>WWII Films 5 Movies</h4>
                 <p>
-                  Save 146.00 kr 
+                  Save 146.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={TheGodfather}
                   alt="TheGodfather"
@@ -232,27 +232,27 @@ function App() {
                 />
                 <h4>The Godfather Trilogy</h4>
                 <p>
-                  Save 38.00 kr 
+                  Save 38.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={Rocky} alt="Rocky" width="196px" height="300px" />
                 <h4>Rocky Heavyweight </h4>
                 <p>
-                  Save 245.00 kr 
+                  Save 245.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={Best} alt="5Best" width="196px" height="300px" />
                 <h4>Best Picture 5-Film Collection</h4>
                 <p>
-                  Save 126.00 kr 
+                  Save 126.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
@@ -261,29 +261,29 @@ function App() {
 
           <h3>Adventure</h3>
 
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div classNamn="row2">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={Jumanji} alt="Jumanji" width="196px" height="300px" />
                 <h4>Welcome to the Jumanji</h4>
                 <p>
-                  Save 9.00 kr 
+                  Save 9.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={MIB} alt="MIB" width="196px" height="300px" />
                 <h4>Men in Black 4 Movie Collection</h4>
                 <p>
-                  Save 117.00 kr 
+                  Save 117.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={JurassicWorld}
                   alt="JurassicWorld"
@@ -292,13 +292,13 @@ function App() {
                 />
                 <h4>Jurassic World Collection</h4>
                 <p>
-                  Save 96.00 kr 
+                  Save 96.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={TombRaider}
                   alt="TombRaider"
@@ -307,7 +307,7 @@ function App() {
                 />
                 <h4>Tomb Raider Movie Collection</h4>
                 <p>
-                  Save 20.00 kr 
+                  Save 20.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
@@ -316,9 +316,9 @@ function App() {
 
           <h3>Sci-Fi</h3>
 
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div classNamn="row2">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={StarTrek}
                   alt="StarTrek"
@@ -327,13 +327,13 @@ function App() {
                 />
                 <h4>Star Trek The Original</h4>
                 <p>
-                  Save 155.00 kr 
+                  Save 155.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={StarTrekTripple}
                   alt="StarTrekTripple"
@@ -342,23 +342,23 @@ function App() {
                 />
                 <h4>Star Trek 3 Film Collection</h4>
                 <p>
-                  Save 78.00 kr 
+                  Save 78.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={Sci} alt="Sci" width="196px" height="300px" />
                 <h4>Sci-Fi 5 Film Collection</h4>
                 <p>
-                  Save 86.00 kr 
+                  Save 86.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={Independence}
                   alt="Independence"
@@ -367,7 +367,7 @@ function App() {
                 />
                 <h4>Independence Day: Collection</h4>
                 <p>
-                  Save 19.00 kr 
+                  Save 19.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
@@ -376,19 +376,19 @@ function App() {
 
           <h3>Animation</h3>
 
-          <div class="row2">
-            <div class="column">
-              <div class="content">
+          <div classNamn="row2">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={Shrek} alt="Shrek" width="196px" height="300px" />
                 <h4>Shrek 4-Movie Collection</h4>
                 <p>
-                  Save 67.00 kr 
+                  Save 67.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={KungFuPanda}
                   alt="KungFuPanda"
@@ -397,23 +397,23 @@ function App() {
                 />
                 <h4>Kung Fu Panda Movie Collection</h4>
                 <p>
-                  Save 58.00 kr 
+                  Save 58.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img src={Minions} alt="Minions" width="196px" height="300px" />
                 <h4>Despicable Me 1-3: Minions</h4>
                 <p>
-                  Save 67.00 kr
+                  Save 67.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            <div class="column">
-              <div class="content">
+            <div classNamn="column">
+              <div classNamn="content">
                 <img
                   src={Madagascar}
                   alt="Madagascar"
@@ -422,7 +422,7 @@ function App() {
                 />
                 <h4>Madagascar 4-Movie Collection</h4>
                 <p>
-                  Save 67.00 kr 
+                  Save 67.00 kr w
                 </p>
                 <button className="Bundlebutton">Buy</button>
               </div>
