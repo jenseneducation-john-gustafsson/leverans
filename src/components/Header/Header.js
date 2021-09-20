@@ -23,9 +23,12 @@ function Header() {
               <RiAccountCircleFill />
             </button>
           </Link>
+          
+          <Link to="/cart">
           <button className="nav-header-buttons">
             <TiShoppingCart />
           </button>
+          </Link>
         </div>
       </nav>
     </div>
