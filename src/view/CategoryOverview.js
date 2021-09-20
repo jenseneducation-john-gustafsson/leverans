@@ -24,10 +24,13 @@ import BackToTheFuture from "../components/Category-page/Category-overview/Image
 
 import { Link } from "react-router-dom";
 
-import PopUpModal from "../components/Modal/PopUpModal"; // test purpose
-import OverlayCard from "../components/Overlay/OverlayCard"; // test purpose
+
+import PopUpModal from "../components/Modal/PopUpModal";
+
+
 
 function App() {
+  const PopUpModal=(PopUpModal)
     return ( // Replaced main with main-fluid, dvs container = container-fluid. // Full-width.
       <div className="main-fluid"> 
         
