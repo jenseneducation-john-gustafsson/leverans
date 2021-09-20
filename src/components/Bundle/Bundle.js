@@ -24,8 +24,8 @@ import KungFuPanda from "./Pictures/KungFuPanda.jpg";
 import Minions from "./Pictures/Minions.jpg";
 import Madagascar from "./Pictures/Madagascar.jpg";
 
-export default function Bundles(props){
-const {onAdd} = props;
+export default function Bundles(props) {
+  const { onAdd } = props;
   return (
     <div class="main-fluid">
       <h2>Bundle Of movies</h2>
@@ -37,30 +37,23 @@ const {onAdd} = props;
       <h3>Horror</h3>
 
       <div class="row2">
-
-      <div class="column">
+        <div class="column">
           <div class="content">
-            <img
-              src={Scream}
-              alt="Scream"
-              width="196px"
-              height="300px"
-            />
+            <img src={Scream} alt="Scream" width="196px" height="300px" />
             <h4>Conjuring Universe </h4>
             <p>
               Save 164.00 kr when you buy this bundle rather than each movie
               individually.
             </p>
-            
+
             <hr></hr>
-            
-            <p>
-                  $199
-                </p>
-            <button className="Bundlebutton" onClick ={onAdd}>Buy</button>
+
+            <p>$199</p>
+            <button className="Bundlebutton" onClick={onAdd}>
+              Buy
+            </button>
           </div>
         </div>
-       
 
         <div class="column">
           <div class="content">
@@ -76,9 +69,7 @@ const {onAdd} = props;
               individually.
             </p>
             <hr></hr>
-            <p>
-                  $499
-                </p>
+            <p>$499</p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
@@ -91,9 +82,7 @@ const {onAdd} = props;
               individually.
             </p>
             <hr></hr>
-            <p>
-                  $249
-                </p>
+            <p>$249</p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
@@ -106,9 +95,7 @@ const {onAdd} = props;
               individually.
             </p>
             <hr></hr>
-            <p>
-                  $199
-                </p>
+            <p>$199</p>
             <button className="Bundlebutton">Buy</button>
           </div>
         </div>
@@ -125,9 +112,7 @@ const {onAdd} = props;
                 individually.
               </p>
               <hr></hr>
-              <p>
-                  $499
-                </p>
+              <p>$499</p>
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
@@ -140,9 +125,7 @@ const {onAdd} = props;
                 individually.
               </p>
               <hr></hr>
-              <p>
-                  $99
-                </p>
+              <p>$99</p>
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
@@ -160,9 +143,7 @@ const {onAdd} = props;
                 individually.
               </p>
               <hr></hr>
-              <p>
-                  $299
-                </p>
+              <p>$299</p>
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
@@ -175,9 +156,7 @@ const {onAdd} = props;
                 individually.
               </p>
               <hr></hr>
-              <p>
-                  $149
-                </p>
+              <p>$149</p>
               <button className="Bundlebutton">Buy</button>
             </div>
           </div>
@@ -194,9 +173,7 @@ const {onAdd} = props;
                   individually.
                 </p>
                 <hr></hr>
-                <p>
-                  $259
-                </p>
+                <p>$259</p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -214,9 +191,7 @@ const {onAdd} = props;
                   individually.
                 </p>
                 <hr></hr>
-                <p>
-                  $149
-                </p>
+                <p>$149</p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -229,9 +204,7 @@ const {onAdd} = props;
                   individually.
                 </p>
                 <hr></hr>
-                <p>
-                  $399
-                </p>
+                <p>$399</p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -244,9 +217,7 @@ const {onAdd} = props;
                   individually.
                 </p>
                 <hr></hr>
-                <p>
-                  $139
-                </p>
+                <p>$139</p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -263,9 +234,7 @@ const {onAdd} = props;
                   individually.
                 </p>
                 <hr></hr>
-                <p>
-                  $369
-                </p>
+                <p>$369</p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -283,9 +252,7 @@ const {onAdd} = props;
                   individually.
                 </p>
                 <hr></hr>
-                <p>
-                  $199
-                </p>
+                <p>$199</p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -298,9 +265,7 @@ const {onAdd} = props;
                   individually.
                 </p>
                 <hr></hr>
-                <p>
-                  $259
-                </p>
+                <p>$259</p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
@@ -318,17 +283,13 @@ const {onAdd} = props;
                   individually.
                 </p>
                 <hr></hr>
-                <p>
-                  $199
-                </p>
+                <p>$199</p>
                 <button className="Bundlebutton">Buy</button>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
     </div>
   );
 }
-
