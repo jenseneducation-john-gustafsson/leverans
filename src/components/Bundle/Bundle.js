@@ -42,8 +42,7 @@ export default function Bundles(props) {
             <img src={Scream} alt="Scream" width="196px" height="300px" />
             <h4>Conjuring Universe </h4>
             <p>
-              Save 164.00 kr when you buy this bundle rather than each movie
-              individually.
+              Save 164.00 kr 
             </p>
 
             <hr></hr>
