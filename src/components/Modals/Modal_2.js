@@ -9,10 +9,10 @@ export default function Modal_2(props) {
   return (
     <Modal>
       <ModalHeader>
-        <h3>M E O W</h3>
+        <h3>Inception</h3>
       </ModalHeader>
       <ModalBody>
-        <p>SYNOPSIS GOES HERE, TRY ME PLX =D</p>
+        <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O. </p>
       </ModalBody>
       <ModalFooter>
         <button onClick={ props.close } className="btn btn-primary">Close Modal</button>

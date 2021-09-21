@@ -1,7 +1,7 @@
 // Modal Head-Component
 import ModalRoot from '.././modules/modals/components/ModalRoot';
 import ModalService from '.././modules/modals/services/ModalService';
-import TestModal from '../components/Modals/TestModal'
+import Modal_0 from '../components/Modals/Modal_0'
 
 
 /*css*/
@@ -35,7 +35,7 @@ import Modal_3 from '../components/Modals/Modal_3';
 
 function App() {
   const addModal = () => {
-    ModalService.open(TestModal);
+    ModalService.open(Modal_0);
   };
   
   const addModal_1 = () => {
@@ -65,12 +65,8 @@ function App() {
         <div className="row2">
           <div className="column">
             <div className="content">
-            <div className="overlay">
-                <div className="text">
-                  Short Movie Description?. Or Remove entirely
-                </div>
-              </div>
-              <img src={TheDarkKnight} alt="TheDarkKnight" width="196px" height="300px" />
+            
+              <img className="fade-in-image" src={TheDarkKnight} alt="TheDarkKnight" width="196px" height="300px" onClick={addModal} />
              
               <h4>The Dark Knight</h4>
               <p>
@@ -82,25 +78,25 @@ function App() {
           
           <div className="column">
             <div className="content">
-              <img
+              <img className="fade-in-image"
                 src={LOTRReturnOfKing}
                 alt="LOTRReturnOfKing"
                 width="196px"
                 height="300px"
                 class="img-fluid rounded-start"
-                onClick={addModal}
+                onClick={addModal_1}
               />
               <h4>LOTR - Return of the King </h4>
               <p>
                 2003 | Run Time
               </p>
               <button className="Catbutton">Buy</button>
-              <button className="Catbutton" onClick={addModal}>Details</button>
+              <button className="Catbutton" onClick={addModal_1}>Details</button>
             </div>
           </div>
           <div className="column">
             <div className="content">
-              <img src={Inception} alt="Inception" width="196px" height="300px" onClick={addModal_1} />
+              <img className="fade-in-image" src={Inception} alt="Inception" width="196px" height="300px" onClick={addModal_2} />
               <h4>Inception</h4>
               <p>
                 2010 | Run Time
@@ -110,7 +106,7 @@ function App() {
           </div>
           <div className="column">
             <div className="content">
-              <img src={TheMatrix} alt="TheMatrix" width="196px" height="300px" onClick={addModal_2} />
+              <img className="fade-in-image" src={TheMatrix} alt="TheMatrix" width="196px" height="300px" onClick={addModal_3} />
               <h4>The Matrix</h4>
               <p>
                 1999 | 1h 58m
@@ -124,7 +120,7 @@ function App() {
           <div className="row2">
             <div className="column">
               <div className="content">
-                <img src={TheShining} alt="TheShining" width="196px" height="300px" />
+                <img className="fade-in-image" src={TheShining} alt="TheShining" width="196px" height="300px" />
                 <h4>The Shining</h4>
                 <p>
                    1980 | Run Time
@@ -134,7 +130,7 @@ function App() {
             </div>
             <div className="column">
               <div className="content">
-                <img src={Alien} alt="Alien" width="196px" height="300px" />
+                <img className="fade-in-image" src={Alien} alt="Alien" width="196px" height="300px" />
                 <h4>Alien</h4>
                 <p>
                   1979 | RunTime
@@ -144,7 +140,7 @@ function App() {
             </div>
             <div className="column">
               <div className="content">
-                <img
+                <img className="fade-in-image"
                   src={Psycho}
                   alt="Psycho"
                   width="196px"
@@ -159,7 +155,7 @@ function App() {
             </div>
             <div className="column">
               <div className="content">
-                <img src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
+                <img className="fade-in-image" src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
                 <h4>Tumbbad</h4>
                 <p>
                   2018 | RunTime
@@ -175,7 +171,7 @@ function App() {
             <div className="row2">
               <div className="column">
                 <div className="content">
-                  <img
+                  <img className="fade-in-image"
                     src={Parasite}
                     alt="Parasite"
                     width="196px"
@@ -190,7 +186,7 @@ function App() {
               </div>
               <div className="column">
                 <div className="content">
-                  <img
+                  <img className="fade-in-image"
                     src={LifeIsBeautiful}
                     alt="LifeIsBeautiful"
                     width="196px"
@@ -205,7 +201,7 @@ function App() {
               </div>
               <div className="column">
                 <div className="content">
-                  <img src={TheIntouchables} alt="TheIntouchables" width="196px" height="300px" />
+                  <img className="fade-in-image" src={TheIntouchables} alt="TheIntouchables" width="196px" height="300px" />
                   <h4>The Intouchables</h4>
                   <p>
                     Date RunTime
@@ -215,7 +211,7 @@ function App() {
               </div>
               <div className="column">
                 <div className="content">
-                  <img src={BackToTheFuture} alt="BackToTheFuture" width="196px" height="300px" />
+                  <img className="fade-in-image" src={BackToTheFuture} alt="BackToTheFuture" width="196px" height="300px" />
                   <h4>Back To The Future</h4>
                   <p>
                     Date - RunTime

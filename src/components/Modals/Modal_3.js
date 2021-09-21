@@ -9,7 +9,7 @@ export default function Modal_3(props) {
   return (
     <Modal>
       <ModalHeader>
-        <h3>TEST ME PLS, TEST ME ONEGAI SHIMASSSS</h3>
+        <h3>The Matrix</h3>
       </ModalHeader>
       <ModalBody>
         <p>Synopsis goes here, bitch.</p>
