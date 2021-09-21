@@ -1,5 +1,5 @@
 import React from 'react'
-import Products from '../../../products.json';
+import Products from '../../../products_test.json';
 import GetMovieDetails from '../Category-details/GetMovieDetails'
 // Temporärt för att hämta ut fyra filmer per gener. Ändras när databasen är klar
 // Action 0, 4

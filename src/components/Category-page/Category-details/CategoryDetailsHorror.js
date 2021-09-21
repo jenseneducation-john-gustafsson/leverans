@@ -1,6 +1,6 @@
 /*css*/
 import "../Category-details/Category-details.css";
-import Products from '../../../products.json';
+import Products from '../../../products_test.json';
 import { Link } from "react-router-dom";
 
 import GetMovieDetails from '../Category-details/GetMovieDetails'
