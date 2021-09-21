@@ -1,198 +1,26 @@
-//import Image from '../components/Category-page/Category-overview/CategoryImage'
-//import '../components/Category-page/Category-overview/Category-overview.css'
-
 /*css*/
 import "../Category-details/Category-details.css";
-//Horror Thumbnails Imports
-import TheShining from "../Category-details/ImagesHorror/The Shining (1980).jpg";
-import Alien from "../Category-details/ImagesHorror/Alien (1979).jpg";
-import Psycho from "../Category-details/ImagesHorror/Psycho (1960).jpg";
-import Tumbbad from "../Category-details/ImagesHorror/Tumbbad (2018).jpg";
-//Horror -- del
-import TheThing from "../Category-details/ImagesHorror/The Thing (1982).jpg";
-import TheExorcist from "../Category-details/ImagesHorror/The Exorcist (1973).jpg";
-import GetOut from "../Category-details/ImagesHorror/Get Out (2017).jpg";
-import Halloween from "../Category-details/ImagesHorror/Halloween (1978).jpg";
-//Comedy -- del
-import HollowMan from "../Category-details/ImagesHorror/Hollow Man (2000).jpg";
-import Saw from "../Category-details/ImagesHorror/Saw (2004).jpg";
-import TheLighthouse from "../Category-details/ImagesHorror/The Lighthouse (2019).jpg";
-import TheConjuring from "../Category-details/ImagesHorror/The Conjuring (2013).jpg";
-
+import Products from '../../../products.json';
 import { Link } from "react-router-dom";
 
+import GetMovieDetails from '../Category-details/GetMovieDetails'
 function CategoryDetailsHorror() {
-    return (
-      <div className="main-fluid">
-        
-        <h2>Horror</h2> <Link to="/genre"><button className="Catbutton"><p classNameName="nav-text">Return to Categories</p></button></Link>
-        
-  
+  return (
+    <>
+      <div className="container-fluid">
+        <h2>Horror</h2> <Link to="/genre"><button className="Catbutton"><p className="nav-text">Return to Categories</p></button></Link>
         <div className="row2">
-          <div className="column">
-            <div className="content">
-            <div className="overlay">
-                <div className="text">
-                  Save 194.00 kr when you buy this bundle rather than each movie
-                  individually.
-                </div>
-              </div>
-              <img src={TheShining} alt="The Shining" width="196px" height="300px" />
-             
-              <h4>The Shining</h4>
-              <p>
-                1980 | 1h 48m
-              </p>
-              <button className="Catbutton">Buy</button>
-            </div>
-          </div>
-  
-          <div className="column">
-            <div className="content">
-              <img
-                src={Alien}
-                alt="Alien"
-                width="196px"
-                height="300px"
-              />
-              <h4>Alien </h4>
-              <p>
-                1979 | Run Time
-              </p>
-              <button className="Catbutton">Buy</button>
-            </div>
-          </div>
-          <div className="column">
-            <div className="content">
-              <img src={Psycho} alt="Psycho" width="196px" height="300px" />
-              <h4>Psycho</h4>
-              <p>
-                1960 | Run Time
-              </p>
-              <button className="Catbutton">Buy</button>
-            </div>
-          </div>
-          <div className="column">
-            <div className="content">
-              <img src={Tumbbad} alt="Tumbbad" width="196px" height="300px" />
-              <h4>Tumbbad</h4>
-              <p>
-                2018 | 1h 58m
-              </p>
-              <button className="Catbutton">Buy</button>
-            </div>
-          </div>
-  
-          <hr></hr>
-  
-          <div className="row2">
-            <div className="column">
-              <div className="content">
-                <img src={TheThing} alt="The Thing" width="196px" height="300px" />
-                <h4>The Thing</h4>
-                <p>
-                   1982 | Run Time
-                </p>
-                <button className="Catbutton">Buy</button>
-              </div>
-            </div>
-            <div className="column">
-              <div className="content">
-                <img src={TheExorcist} alt="The Exorcist" width="196px" height="300px" />
-                <h4>The Exorcist</h4>
-                <p>
-                  1973 | RunTime
-                </p>
-                <button className="Catbutton">Buy</button>
-              </div>
-            </div>
-            <div className="column">
-              <div className="content">
-                <img
-                  src={GetOut}
-                  alt="Get Out"
-                  width="196px"
-                  height="300px"
-                />
-                <h4>Get Out</h4>
-                <p>
-                  2017 | RunTime
-                </p>
-                <button className="Catbutton">Buy</button>
-              </div>
-            </div>
-            <div className="column">
-              <div className="content">
-                <img src={Halloween} alt="Halloween" width="196px" height="300px" />
-                <h4>Halloween</h4>
-                <p>
-                  1978 | RunTime
-                </p>
-                <button className="Catbutton">Buy</button>
-              </div>
-            </div>
-  
-            <hr></hr>
-  
-            <div className="row2">
-              <div className="column">
-                <div className="content">
-                  <img
-                    src={HollowMan}
-                    alt="Hollow Man"
-                    width="196px"
-                    height="300px"
-                  />
-                  <h4>Hollow Man</h4>
-                  <p>
-                    2000 | RunTime
-                  </p>
-                  <button className="Catbutton">Buy</button>
-                </div>
-              </div>
-              <div className="column">
-                <div className="content">
-                  <img
-                    src={Saw}
-                    alt="Saw"
-                    width="196px"
-                    height="300px"
-                  />
-                  <h4>Saw</h4>
-                  <p>
-                    2004 | RunTime
-                  </p>
-                  <button className="Catbutton">Buy</button>
-                </div>
-              </div>
-              <div className="column">
-                <div className="content">
-                  <img src={TheLighthouse} alt="The Lighthouse" width="196px" height="300px" />
-                  <h4>The Lighthouse</h4>
-                  <p>
-                    2019 | RunTime
-                  </p>
-                  <button className="Catbutton">Buy</button>
-                </div>
-              </div>
-              <div className="column">
-                <div className="content">
-                  <img src={TheConjuring} alt="The Conjuring" width="196px" height="300px" />
-                  <h4>The Conjuring</h4>
-                  <p>
-                    2013 | RunTime
-                  </p>
-                  <button className="Catbutton">Buy</button>
-                </div>
-              </div>
-            </div>
-           
-  
-           
-          </div>
+          {
+            Products.map(({ film }) => {
+              if (film.gener === "Horror") {
+                return <GetMovieDetails key={film.id} id={film.id} />
+              }
+            })
+          }
         </div>
       </div>
-    );
-  }
-  
-  export default CategoryDetailsHorror;
+    </>
+  );
+}
+
+export default CategoryDetailsHorror;
