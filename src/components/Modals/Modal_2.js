@@ -9,10 +9,10 @@ export default function Modal_2(props) {
   return (
     <Modal>
       <ModalHeader>
-        <h3>Lord of the Rings - Return of the King</h3>
+        <h3>M E O W</h3>
       </ModalHeader>
       <ModalBody>
-        <p>Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</p>
+        <p>SYNOPSIS GOES HERE, TRY ME PLX =D</p>
       </ModalBody>
       <ModalFooter>
         <button onClick={ props.close } className="btn btn-primary">Close Modal</button>

@@ -110,7 +110,7 @@ function App() {
           </div>
           <div className="column">
             <div className="content">
-              <img src={TheMatrix} alt="TheMatrix" width="196px" height="300px" />
+              <img src={TheMatrix} alt="TheMatrix" width="196px" height="300px" onClick={addModal_2} />
               <h4>The Matrix</h4>
               <p>
                 1999 | 1h 58m
