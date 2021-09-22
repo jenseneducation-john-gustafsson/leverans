@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Wishlist from "./view/Wishlist";
 import Bundle from "./components/Bundle/Bundle";
 import Cart from "./components/Cart/Cart";
+import ReduxCart from "./components/Redux-Cart/Cart"
 import Genre from "./view/CategoryOverview";
 import StartPage from "./view/StartPage";
 import databundle from './components/Cart/dataBundle';
@@ -62,7 +63,8 @@ const onAdd =(bundles) =>{
           <Bundle />
         </Route>
         <Route path="/cart">
-          <Cart on onAdd = {onAdd} cartItems = {cartItems}/>
+          {/* <Cart on onAdd = {onAdd} cartItems = {cartItems}/> */}
+          <ReduxCart/>
         </Route>
         <Route path="/genre">
           <Genre />
