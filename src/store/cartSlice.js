@@ -38,9 +38,9 @@ export const cartSlice = createSlice({
     subtractItem: (state, { payload }) => {
       for (let product in state.cart) {
         if (
-          payload.color == state.cart[product].color &&
-          payload.name == state.cart[product].name &&
-          payload.size == state.cart[product].size
+          payload.color === state.cart[product].color &&
+          payload.name === state.cart[product].name &&
+          payload.size === state.cart[product].size
         ) {
           if (state.cart[product].quantity > 1) {
             return state.cart[product].quantity--;
