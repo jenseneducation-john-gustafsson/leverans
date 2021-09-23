@@ -18,8 +18,8 @@ export default function GetMovieDetails(props) {
     fetchMoviesDetails();
   }, []) // eslint-disable-line react-hooks/exhaustive-deps 
 
-   function addModal() {
-      ModalService.open(Modal_0);
+   function addModal(title) {
+      ModalService.open(Modal_0({title}));
     };
   
 
@@ -31,7 +31,7 @@ export default function GetMovieDetails(props) {
             alt={content.title}
             width="196px"
             height="300px" 
-            onClick={addModal} />
+            onClick={addModal(content.title)} />
           <h4>{props.name}</h4>
           <p>{content.release_date} | {content.runtime} min</p>
           <button className="Catbutton">Buy</button>
