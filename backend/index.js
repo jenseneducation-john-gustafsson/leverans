@@ -21,9 +21,9 @@ app.use(userRouter);
 
 
 
-// app.use('/', (req, res) => {
-//   res.send('Notflix');
-// })
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, "../build", "index.html"))
+})
 
 
 app.listen(PORT, () => console.log(`Backend is running on ${PORT}`))
