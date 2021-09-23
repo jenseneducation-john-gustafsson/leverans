@@ -2,6 +2,8 @@ import "./Header.css";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { TiShoppingCart } from "react-icons/ti";
 import { FaSignInAlt } from "react-icons/fa"
+import CartButton from '../Cart/CartButton';
+
 
 import { Link } from "react-router-dom";
 
@@ -26,7 +28,8 @@ function Header() {
           
           <Link to="/cart">
           <button className="nav-header-buttons">
-            <TiShoppingCart />
+              <TiShoppingCart />
+              <CartButton/>
           </button>
           </Link>
         </div>
