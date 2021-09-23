@@ -28,7 +28,6 @@ function Header() {
           
           <Link to="/cart">
           <button className="nav-header-buttons">
-              <TiShoppingCart />
               <CartButton/>
           </button>
           </Link>
