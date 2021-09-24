@@ -19,6 +19,8 @@ app.use(express.static(path.join(__dirname, "../build")));
 const userRouter = require("./routes/users");
 app.use(userRouter);
 
+const filmRouter = require("./routes/productsDBRou");
+app.use(filmRouter);
 
 
 app.get('*', (req, res) => {
