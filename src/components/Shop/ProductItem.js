@@ -9,7 +9,7 @@ const ProductItem = (props) => {
   
   const { title, price, description, id } = props;
 
-  const viewStateSelector = useSelector((state) => state.cart.items[0]);
+  const viewStateSelector = useSelector((state) => state.cart.items);
 
   const viewState = () => {
     console.log(JSON.stringify(viewStateSelector))
