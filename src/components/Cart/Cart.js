@@ -24,6 +24,7 @@ const Cart = (props) => {
           />
         ))}
       </ul>
+      {cartItems.filter(item => item.id).reduce((total, product) => total + product.price * product.quantity, 0)}
     </Card>
   );
 };
