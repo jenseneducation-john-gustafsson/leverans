@@ -24,10 +24,25 @@ import KungFuPanda from "./Pictures/KungFuPanda.jpg";
 import Minions from "./Pictures/Minions.jpg";
 import Madagascar from "./Pictures/Madagascar.jpg";
 
+import ModalRoot from '../../modules/modals/components/ModalRoot';
+import ModalService from '../../modules/modals/services/ModalService';
+
+
+import Modal_1 from './Bundle_modules/Modal_bundle_01';
+import Modal_0 from "../Modals/Modal_0";
+
 export default function Bundles(props) {
   const { onAdd } = props;
+
+  function CategoryOverview() {
+    const addModal = () => {
+      ModalService.open(Modal_0);
+    };
+  }
+
   return (
     <div className="main-fluid">
+      <ModalRoot />
       <h2>Bundle Of movies</h2>
       <h4>
         Get the best movie bundles deals so that you can enjoy the movie to the
@@ -39,7 +54,7 @@ export default function Bundles(props) {
       <div className="row2">
         <div className="column">
           <div className="content">
-            <img src={Scream} alt="Scream" width="196px" height="300px" />
+            <img src={Scream} alt="Scream" width="196px" height="300px" onClick = {Modal_1}/>
             <h4>Conjuring Universe </h4>
             <p>
               Save 164.00 kr

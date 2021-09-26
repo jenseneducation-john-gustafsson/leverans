@@ -75,7 +75,7 @@ function CategoryOverview() {
 
   return ( // Replaced main with main-fluid, dvs container = container-fluid. // Full-width.
     <div className="container-fluid">
-      <ModalRoot />
+      <ModalRoot/>
       <h2>Categories</h2>
       <p>
         Browse and select different categories that you may like to watch.
