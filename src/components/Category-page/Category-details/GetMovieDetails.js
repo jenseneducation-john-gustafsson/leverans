@@ -33,7 +33,7 @@ export default function GetMovieDetails(props) {
             height="300px"
             onClick={addModal} />
           <h4>{props.title}</h4>
-          <p>{content.release_date} | {content.runtime} min</p>
+          <p>{new Date(content.release_date).getFullYear()} | {content.runtime} min</p>
           <button className="Catbutton">Buy</button>
         </div>
       </div>
