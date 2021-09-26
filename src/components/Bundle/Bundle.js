@@ -1,5 +1,8 @@
 /*css*/
 import "./bundle.css";
+
+import ModalRoot from '../../modules/modals/components/ModalRoot';
+import ModalService from '../../modules/modals/services/ModalService';
 /*slide*/
 // import Slider from "./Slider/Slider.js";
 //import pic from '../src/components/Bundle/Pictures/joker.png'
@@ -24,8 +27,7 @@ import KungFuPanda from "./Pictures/KungFuPanda.jpg";
 import Minions from "./Pictures/Minions.jpg";
 import Madagascar from "./Pictures/Madagascar.jpg";
 
-import ModalRoot from '../../modules/modals/components/ModalRoot';
-import ModalService from '../../modules/modals/services/ModalService';
+
 
 
 import Modal_1 from './Bundle_modules/Modal_bundle_01';
@@ -34,11 +36,10 @@ import Modal_0 from "../Modals/Modal_0";
 export default function Bundles(props) {
   const { onAdd } = props;
 
-  function CategoryOverview() {
-    const addModal = () => {
-      ModalService.open(Modal_0);
-    };
-  }
+ 
+  function addModal() {
+    ModalService.open(Modal_1);
+  };
 
   return (
     <div className="main-fluid">
@@ -54,7 +55,7 @@ export default function Bundles(props) {
       <div className="row2">
         <div className="column">
           <div className="content">
-            <img src={Scream} alt="Scream" width="196px" height="300px" onClick = {Modal_1}/>
+            <img src={Scream} alt="Scream" width="196px" height="300px" onClick = {addModal}/>
             <h4>Conjuring Universe </h4>
             <p>
               Save 164.00 kr
