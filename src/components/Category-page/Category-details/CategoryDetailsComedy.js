@@ -26,7 +26,7 @@ function CategoryDetailsComedy() {
           {
             content.map((film) => {
               if (film.genre === "Comedy") {
-                return <GetMovieDetails key={film.apiId} id={film.apiId} />
+                return <GetMovieDetails key={film.apiId} id={film.apiId} title={film.title} />
               }
             })
           }
