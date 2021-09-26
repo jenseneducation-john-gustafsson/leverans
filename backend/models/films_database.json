@@ -1,0 +1,218 @@
+[
+  {
+    "apiId": 155,
+    "title": "The Dark Knight",
+    "genre": "Action",
+    "price": 159
+  },
+  {
+    "apiId": 122,
+    "title": "LOTR - Return of the King",
+    "genre": "Action",
+    "price": 139
+  },
+  {
+    "apiId": 64956,
+    "title": "Inception",
+    "genre": "Action",
+    "price": 129
+  },
+  {
+    "apiId": 603,
+    "title": "The Matrix",
+    "genre": "Action",
+    "price": 149
+  },
+  {
+    "apiId": 98,
+    "title": "Gladiator",
+    "genre": "Action",
+    "price": 99
+  },
+  {
+    "apiId": 1891,
+    "title": "The Empire Strikes Back",
+    "genre": "Action",
+    "price": 109
+  },
+  {
+    "apiId": 101,
+    "title": "Léon: The Professional",
+    "genre": "Action",
+    "price": 89
+  },
+  {
+    "apiId": 280,
+    "title": "Terminator 2: Judgment Day",
+    "genre": "Action",
+    "price": 139
+  },
+  {
+    "apiId": 562,
+    "title": "Die Hard",
+    "genre": "Action",
+    "price": 109
+  },
+  {
+    "apiId": 263115,
+    "title": "Logan - The Wolverine",
+    "genre": "Action",
+    "price": 159
+  },
+  {
+    "apiId": 761040,
+    "title": "V for Vendetta",
+    "genre": "Action",
+    "price": 89
+  },
+  {
+    "apiId": 24,
+    "title": "Kill Bill: Vol. 1",
+    "genre": "Action",
+    "price": 119
+  },
+  {
+    "apiId": 496243,
+    "title": "Parasite",
+    "genre": "Comedy",
+    "price": 159
+  },
+  {
+    "apiId": 637,
+    "title": "Life Is Beautiful",
+    "genre": "Comedy",
+    "price": 159
+  },
+  {
+    "apiId": 77338,
+    "title": "Intouchables",
+    "genre": "Comedy",
+    "price": 159
+  },
+  {
+    "apiId": 105,
+    "title": "Back to the Future",
+    "genre": "Comedy",
+    "price": 79
+  },
+  {
+    "apiId": 107,
+    "title": "Snatch",
+    "genre": "Comedy",
+    "price": 69
+  },
+  {
+    "apiId": 324857,
+    "title": "Spider-Man: Into the Spider-Verse",
+    "genre": "Comedy",
+    "price": 159
+  },
+  {
+    "apiId": 265195,
+    "title": "Wild Tales",
+    "genre": "Comedy",
+    "price": 129
+  },
+  {
+    "apiId": 490132,
+    "title": "Green Book",
+    "genre": "Comedy",
+    "price": 119
+  },
+  {
+    "apiId": 37165,
+    "title": "The Truman Show",
+    "genre": "Comedy",
+    "price": 99
+  },
+  {
+    "apiId": 115,
+    "title": "The Big Lebowski",
+    "genre": "Comedy",
+    "price": 109
+  },
+  {
+    "apiId": 45243,
+    "title": "The Hangover Part II",
+    "genre": "Comedy",
+    "price": 89
+  },
+  {
+    "apiId": 38319,
+    "title": "Your Highness",
+    "genre": "Comedy",
+    "price": 99
+  },
+  {
+    "apiId": 694,
+    "title": "The Shining",
+    "genre": "Horror",
+    "price": 119
+  },
+  {
+    "apiId": 348,
+    "title": "Alien",
+    "genre": "Horror",
+    "price": 129
+  },
+  {
+    "apiId": 539,
+    "title": "Psycho",
+    "genre": "Horror",
+    "price": 109
+  },
+  {
+    "apiId": 538858,
+    "title": "Tumbbad",
+    "genre": "Horror",
+    "price": 89
+  },
+  {
+    "apiId": 1091,
+    "title": "The Thing",
+    "genre": "Horror",
+    "price": 99
+  },
+  {
+    "apiId": 9552,
+    "title": "The Exorcist",
+    "genre": "Horror",
+    "price": 139
+  },
+  {
+    "apiId": 419430,
+    "title": "Get Out",
+    "genre": "Horror",
+    "price": 159
+  },
+  {
+    "apiId": 948,
+    "title": "Halloween",
+    "genre": "Horror",
+    "price": 129
+  },
+  {
+    "apiId": 9383,
+    "title": "Hollow Man",
+    "genre": "Horror",
+    "price": 79
+  },
+  {
+    "apiId": 176,
+    "title": "Saw",
+    "genre": "Horror",
+    "price": 139
+  },
+  {
+    "apiId": 503919,
+    "title": "The Lighthouse",
+    "genre": "Horror",
+    "price": 99
+  },
+  {
+    "apiId": 138843,
+    "title": "The Conjuring",
+    "genre": "Horror",
+    "price": 139
+  }
+]

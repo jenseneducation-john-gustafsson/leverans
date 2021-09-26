@@ -1,0 +1,35 @@
+.button {
+  color: #1d1d1d;
+  border: none;
+}
+
+.button:hover,
+.button:active {
+  color: grey;
+}
+
+.button span {
+  margin: 0 0.5rem;
+}
+
+/* .badge {
+  background-color: #1ad1b9;
+  border-radius: 30px;
+  padding: 0.15rem 1.25rem;
+  color: #1d1d1d;
+} */
+
+.total-quantity {
+      align-items: center;
+      background: lightblue;
+      border-radius: 50%;
+      display: flex;
+      font-weight: bold;
+      height: 2rem;
+      justify-content: center;
+      padding: 0.5rem;
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      width: 2rem;
+    }

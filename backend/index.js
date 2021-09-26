@@ -19,11 +19,13 @@ app.use(express.static(path.join(__dirname, "../build")));
 const userRouter = require("./routes/users");
 app.use(userRouter);
 
+const filmRouter = require("./routes/productsDBRou");
+app.use(filmRouter);
 
 
-// app.use('/', (req, res) => {
-//   res.send('Notflix');
-// })
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, "../build", "index.html"))
+})
 
 
 app.listen(PORT, () => console.log(`Backend is running on ${PORT}`))
