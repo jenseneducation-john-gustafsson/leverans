@@ -1,0 +1,254 @@
+[
+    {
+      "film": {
+        "name": "The Dark Knight",
+        "id": 155,
+        "YTlink": "https://www.youtube.com/watch?v=jcoFyWE-3zg"
+      }
+    },
+    {
+      "film": {
+        "name": "LOTR - Return of the King",
+        "id": 122,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "Inception",
+        "id": 64956,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "The Matrix",
+        "id": 603,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "Gladiator",
+        "id": 98,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "The Empire Strikes Back",
+        "id": 1891,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "Léon: The Professional",
+        "id": 101,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "Terminator 2: Judgment Day",
+        "id": 280,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "Die Hard",
+        "id": 562,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "Logan - The Wolverine",
+        "id": 263115,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "V for Vendetta",
+        "id": 761040,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "Kill Bill: Vol. 1",
+        "id": 24,
+        "gener": "Action"
+      }
+    },
+    {
+      "film": {
+        "name": "Parasite",
+        "id": 496243,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "Life Is Beautiful",
+        "id": 637,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "Intouchables",
+        "id": 77338,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "Back to the Future",
+        "id": 105,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "Snatch",
+        "id": 107,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "Spider-Man: Into the Spider-Verse",
+        "id": 324857,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "Wild Tales",
+        "id": 265195,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "Green Book",
+        "id": 490132,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "The Truman Show",
+        "id": 37165,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "The Big Lebowski",
+        "id": 115,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "The Hangover Part II",
+        "id": 45243,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "Your Highness",
+        "id": 38319,
+        "gener": "Comedy"
+      }
+    },
+    {
+      "film": {
+        "name": "The Shining",
+        "id": 694,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "Alien",
+        "id": 348,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "Psycho",
+        "id": 539,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "Tumbbad",
+        "id": 538858,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "The Thing",
+        "id": 1091,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "The Exorcist",
+        "id": 9552,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "Get Out",
+        "id": 419430,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "Halloween",
+        "id": 948,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "Hollow Man",
+        "id": 9383,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "Saw",
+        "id": 176,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "The Lighthouse",
+        "id": 503919,
+        "gener": "Horror"
+      }
+    },
+    {
+      "film": {
+        "name": "The Conjuring",
+        "id": 138843,
+        "gener": "Horror"
+      }
+    }
+  ]

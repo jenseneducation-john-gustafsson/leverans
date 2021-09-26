@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-import Modal_0 from '../../Modals/Modal_0';
+
 import ModalService from '../../../modules/modals/services/ModalService';
+import Modal_0 from '../../Modals/Modal_0';
 
 export default function GetMovieDetails(props) {
   const [content, setContent] = useState([]);
@@ -17,9 +18,11 @@ export default function GetMovieDetails(props) {
   useEffect(() => {
     fetchMoviesDetails();
   }, []) // eslint-disable-line react-hooks/exhaustive-deps 
-
-   function addModal(title) {
-      ModalService.open(Modal_0({title}));
+  
+  
+  
+    const addModal = () => {
+      ModalService.open(Modal_0);
     };
   
 
@@ -31,7 +34,7 @@ export default function GetMovieDetails(props) {
             alt={content.title}
             width="196px"
             height="300px" 
-            onClick={addModal(content.title)} />
+            onClick={addModal} />
           <h4>{props.name}</h4>
           <p>{content.release_date} | {content.runtime} min</p>
           <button className="Catbutton">Buy</button>
