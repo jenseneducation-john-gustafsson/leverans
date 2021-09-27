@@ -46,3 +46,8 @@ describe('ShoppingCart General', function() {
 
 // For tomorrow, Find and Examine Cart-Logic, then Write tests acording.
 // Functions in Cart.js ?.
+
+
+// let convert = {};
+// module.exports = convert;  
+// Above is used in another file to convert the require here. eg. import.
