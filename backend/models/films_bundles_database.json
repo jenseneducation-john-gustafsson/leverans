@@ -1,29 +1,5 @@
 [
   {
-    "name": "DC 7-Film Collection",
-    "id": 499,
-    "genre": "Action",
-    "price": 199
-  },
-  {
-    "name": "Bad Boys 3-Movie Collection",
-    "id": 99,
-    "genre": "Action",
-    "price": 199
-  },
-  {
-    "name": "The Lord of the Rings Collection",
-    "id": 64956,
-    "genre": "Action",
-    "price": 199
-  },
-  {
-    "name": "X-Men Trilogy: Extended Bundle",
-    "id": 603,
-    "genre": "Action",
-    "price": 199
-  },
-  {
     "name": "Scream Universe",
     "id": 694,
     "genre": "Horror",
@@ -33,13 +9,13 @@
     "name": "Conjuring Universe",
     "id": 348,
     "genre": "Horror",
-    "price": 199
+    "price": 499
   },
   {
     "name": "The Purge Collection",
     "id": 539,
     "genre": "Horror",
-    "price": 199
+    "price": 249
   },
   {
     "name": "The Rings 3-Movie Collection",
@@ -48,34 +24,59 @@
     "price": 199
   },
   {
+    "name": "DC 7-Film Collection",
+    "id": 499,
+    "genre": "Action",
+    "price": 499
+  },
+  {
+    "name": "Bad Boys 3-Movie Collection",
+    "id": 99,
+    "genre": "Action",
+    "price": 99
+  },
+  {
+    "name": "The Lord of the Rings Collection",
+    "id": 64956,
+    "genre": "Action",
+    "price": 299
+  },
+  {
+    "name": "X-Men Trilogy: Extended Bundle",
+    "id": 603,
+    "genre": "Action",
+    "price": 149
+  },
+  
+  {
     "name": "WWII Films 5 Movies",
     "id": 1091,
     "genre": "Drama",
-    "price": 199
+    "price": 259
   },
   {
     "name": "The Godfather Trilogy",
     "id": 9552,
     "genre": "Drama",
-    "price": 199
+    "price": 149
   },
   {
     "name": "Rocky Heavyweight",
     "id": 419430,
     "genre": "Drama",
-    "price": 199
+    "price": 399
   },
   {
     "name": "Best Picture 5-Film Collection",
     "id": 948,
     "genre": "Drama",
-    "price": 199
+    "price": 139
   },
   {
     "name": "Shrek 4-Movie Collection",
     "id": 9383,
     "genre": "Animation",
-    "price": 199
+    "price": 369
   },
   {
     "name": "Kung Fu Panda Movie Collection",
@@ -87,7 +88,7 @@
     "name": "Despicable Me 1-3: Minions",
     "id": 503919,
     "genre": "Animation",
-    "price": 199
+    "price": 259
   },
   {
     "name": "Madagascar 4-Movie Collection",
