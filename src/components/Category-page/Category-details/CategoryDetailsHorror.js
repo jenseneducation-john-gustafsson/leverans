@@ -26,14 +26,14 @@ function CategoryDetailsHorror() {
           {
             content.map((film) => {
               if (film.genre === "Horror") {
-                return <GetMovieDetails key={film.apiId} id={film.apiId} title={film.title} />
+                return <GetMovieDetails key={film.apiId} id={film.apiId} title={film.title} price={film.price} />
               }
             })
           }
         </div>
       </div>
-      </>
-    );
-  }
+    </>
+  );
+}
 
-  export default CategoryDetailsHorror;
+export default CategoryDetailsHorror;
