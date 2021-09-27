@@ -1,8 +1,7 @@
 import "./Header.css";
-import { RiAccountCircleFill } from "react-icons/ri";
-import { TiShoppingCart } from "react-icons/ti";
 import { FaSignInAlt } from "react-icons/fa"
 import CartButton from '../Cart/CartButton';
+import { FaSignOutAlt} from "react-icons/fa";
 
 
 import { Link } from "react-router-dom";
@@ -22,7 +21,7 @@ function Header() {
           </Link>
           <Link to="/register">
             <button className="nav-header-buttons">
-              <RiAccountCircleFill />
+              <FaSignOutAlt />
             </button>
           </Link>
           
