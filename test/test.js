@@ -1,4 +1,5 @@
 // let convert = require('../app.js') // Specify function location. 
+let convert = require('./testLogic')
 
 // require the built-in "assertion" library
 let assert = require('assert');
@@ -7,13 +8,13 @@ let assert = require('assert');
 describe('ShoppingCart General', function() {
     // Nested/underlying Groups of tests
     // Sub-Test Group 1
-    describe('functionNameForTestGoesHere', function() {
+    describe('SimpleMath', function() {
         // A string explanation of what we are testing
-        it('StringExplanationGoesHere', function() {
+        it('3*3 should give 9', function() {
             // Actual test / Code/Logic Goes here
             // Side Note: assert.equal means = (actual, expected) 
             // Individual Test 1
-            assert.equal()
+            assert.equal(9, (3*3));
         });
         it('StringExplanationGoesHere', function() {
             // Individual Test 2
