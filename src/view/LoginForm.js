@@ -4,9 +4,21 @@ import { Input, Button } from 'react-advanced-form-addons'
 
 import { Link } from "react-router-dom";
 
+
+//Buy button reducer import
+import { useDispatch, useSelector } from "react-redux";
+import { authUsername, isAuthenticated } from "../store/authenticatedSlice";
+
+
 const LoginForm = () => {
 
   const [loginMessage, setLoginMessage] = useState("")
+
+
+  const dispatch = useDispatch();
+  const emailState = useSelector((state) => state.authenticated.userEmail)
+
+  const loggedInState = useSelector((state) => state.authenticated.loggedIn)
 
   const loginUser = ({ serialized }) => {
 
@@ -24,7 +36,19 @@ const LoginForm = () => {
 
         setLoginMessage({ loginMessage: data.message })
 
-      });
+        //Lägg till authenticated slices
+
+        if (data.auth) {
+
+          dispatch(authUsername(data));
+          dispatch(isAuthenticated(data.auth));
+
+        }
+
+        console.log("check dispatch data: ", data)
+        console.log("check reducer logged in: ", loggedInState)
+
+      }).then(console.log("check reducer email: ", emailState));
 
   }
 
