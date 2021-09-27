@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import GetMovieDetails from "../Category-details/GetMovieDetails";
 import { Link } from "react-router-dom";
-import GetMovieDetails from "../Category-details/GetMovieDetails"
+
 
 
 function CategoryDetailsHorror() {
@@ -32,7 +32,6 @@ function CategoryDetailsHorror() {
           }
         </div>
       </div>
-    </>
   );
 }
 

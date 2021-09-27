@@ -1,5 +1,5 @@
 const Film = require("../models/FilmDBMod");
-const Bundles = require("../models/Films_Bundle");
+const FilmBundles = require("../models/Films_Bundle");
 
 
 exports.films = async (req, res) => {
@@ -11,7 +11,8 @@ exports.films = async (req, res) => {
 
 exports.bundles = async (req, res) => {
 
-  const bundlesList = await Bundles.find();
+  const bundlesList = await FilmBundles.find();
+  console.log("BundleBackEnd " , bundlesList);
 
   res.status(200).json(bundlesList);
 

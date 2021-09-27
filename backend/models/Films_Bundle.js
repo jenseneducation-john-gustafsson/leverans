@@ -1,20 +1,23 @@
 const mongoose = require("mongoose");
 
-const FilmSchemaBundle =mongoose.Schema({
+const BundlesSchema =mongoose.Schema({
 
-    apiId:{
-        type:Number,
-    },
-    title:{
+    name:{
         type:String,
+    },
+    id:{
+        type:Number,
     },
     genre:{
         type:String,
     },
     price:{
         type:Number,
+    },
+    img:{
+        type:String,
     }
 });
 
-const FilmBundle = mongoose.model("FilmBundle", FilmSchemaBundle);
-module.exports = FilmBundle;
+const Bundle = mongoose.model("bundle", BundlesSchema);
+module.exports = Bundle;
