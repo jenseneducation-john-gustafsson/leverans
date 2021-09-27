@@ -71,7 +71,7 @@ const isElectron = navigator.userAgent.includes('Electron');
           <Bundle />
         </Route>
         <Route path="/cart">
-          <Cart on onAdd = {onAdd} cartItems = {cartItems}/>
+          <Cart/>
         </Route>
         <Route path="/genre">
           <Genre />
