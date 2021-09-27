@@ -10,13 +10,15 @@ import rules from "./components/Forms/validation-rules"
 import RegisterForm from "./view/RegisterForm"
 import LoginForm from "./view/LoginForm"
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import  { Redirect } from 'react-router-dom'
 
 import Wishlist from "./view/Wishlist";
 import Bundle from "./components/Bundle/Bundle";
 import Cart from "./components/Cart/Cart";
 import Genre from "./view/CategoryOverview";
 import StartPage from "./view/StartPage";
+import NotFound from "./view/NotFound";
 
 import CategoryDetailsAction from './components/Category-page/Category-details/CategoryDetailsAction';
 import CategoryDetailsComedy from './components/Category-page/Category-details/CategoryDetailsComedy';
@@ -24,23 +26,33 @@ import CategoryDetailsHorror from './components/Category-page/Category-details/C
 
 function App() {
 
+
+const android = navigator.userAgent.includes('Android');
+const iphone = navigator.userAgent.includes('iPhone');
+
+
   return (
     <div className="App">
       <Router>
         <Header />
         <Navbar />
 
-        <FormProvider rules={rules} messages={messages}>
+          <Switch>
           <Route path="/login">
+        <FormProvider rules={rules} messages={messages}>
             <LoginForm />
+            </FormProvider>
           </Route>
           <Route path="/register">
+            <FormProvider rules={rules} messages={messages}>
             <RegisterForm />
-          </Route>
         </FormProvider>
+          </Route>
+
 
         <Route path="/" exact>
-          <StartPage />
+          {android || iphone ? <Redirect to="/login" /> : <StartPage />}
+
         </Route>
         <Route path="/bundles">
           <Bundle />
@@ -63,6 +75,10 @@ function App() {
         <Route path="/wishlist">
           <Wishlist />
         </Route>
+        <Route path="*">
+          <NotFound />
+        </Route>
+        </Switch>
       </Router>
 
       <Footer />

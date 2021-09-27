@@ -1,8 +1,6 @@
 import Slider from "../components/Bundle/Slider/Slider";
 import "../components/StartPage/StartPage.css"
 
-import Products from "../components/Shop/Products"
-
 const StartPage = () => {
   return (
     <div>
@@ -12,9 +10,6 @@ const StartPage = () => {
         Here you will find all the best movies from 3 different genres, Horror, Comedy and Action.
         We have also gathered our best bundle prices so you can save money on your favourite movies!</p>
       <br></br>
-
-      {/* test */}
-      <Products/>
       <p></p>
     </div>
   )
