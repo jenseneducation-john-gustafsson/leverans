@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     background-color: #f1f1f1;
     padding: 20px;
@@ -11,15 +11,15 @@
     max-width: 1000px;
     margin: auto;
   }
-  
+
   h1 {
     font-size: 50px;
   }
-  
+
   .row {
     margin: 8px -16px;
   }
-  
+
   .row,
   .row > .column {
     padding: 8px;
@@ -27,24 +27,24 @@
   .row2 {
     margin: -9px;
   }
-  
+
   .row2,
   .row2 > .column {
     padding: 8px;
-  } 
- 
+  }
+
   .column {
     float: left;
     width:25%;
-   
+
   }
-  
+
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
+
   .content {
     background-color: white;
     padding: 10px;
@@ -63,18 +63,18 @@
     height: 0;
     transition: .4s ease;
   }
-  
+
   .content:hover .overlay {
     height: 100%;
   }
   ---*/
 
-  
+
    /*--- Img Fade-in effects ---*/
   .fade-in-image {
     opacity: 100%;
   }
-  
+
   .fade-in-image:hover {
     opacity:60%;
     transition:opacity 1.5s
@@ -93,11 +93,11 @@
   }
   /*----------------------*/
    /*----------------------*/
-  
-    /*----------Ändra Button till button ClassName något så att CSS inte krockar------------*/ 
+
+    /*----------Ändra Button till button ClassName något så att CSS inte krockar------------*/
   .Catbutton{
     width: 40%;
-    height: 35px;
+    min-height: 35px;
     border: 1px solid;
     border-radius: 10px;
     font-size: 15px;
@@ -113,20 +113,20 @@
   h3{
     font-size: 28px;
     padding: 10px;
-    
+
   }
   /*title*/
   h4{
   font-size: 18px;
   }
-  
- 
+
+
   @media screen and (max-width: 900px) {
     .column {
       width: 50%;
     }
   }
-  
+
 
   @media screen and (max-width: 600px) {
     .column {
