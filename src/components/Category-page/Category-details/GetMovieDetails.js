@@ -18,13 +18,11 @@ export default function GetMovieDetails(props) {
   useEffect(() => {
     fetchMoviesDetails();
   }, []) // eslint-disable-line react-hooks/exhaustive-deps 
-  
-  
-  
+
+    // Ta bort???
     const addModal = () => {
       ModalService.open(Modal_0);
     };
-  
 
   return (
     <>
@@ -33,10 +31,10 @@ export default function GetMovieDetails(props) {
           <img src={`https://image.tmdb.org/t/p/w300/${content.poster_path}`}
             alt={content.title}
             width="196px"
-            height="300px" 
+            height="300px"
             onClick={addModal} />
-          <h4>{content.name}</h4>
-          <p>{content.release_date} | {content.runtime} min</p>
+          <h4>{props.title}</h4>
+          <p>{new Date(content.release_date).getFullYear()} | {content.runtime} min</p>
           <button className="Catbutton">Buy</button>
         </div>
       </div>
