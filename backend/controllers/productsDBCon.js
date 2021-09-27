@@ -1,4 +1,5 @@
 const Film = require("../models/FilmDBMod");
+const Bundles = require("../models/Films_Bundle");
 
 
 exports.films = async (req, res) => {
@@ -8,9 +9,11 @@ exports.films = async (req, res) => {
   res.status(200).json(filmList);
 };
 
-exports.bundles = (req, res) => {
+exports.bundles = async (req, res) => {
 
-  //Find bundles
+  const bundlesList = await Bundles.find();
+
+  res.status(200).json(bundlesList);
 
 }
 
