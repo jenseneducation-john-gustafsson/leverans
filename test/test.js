@@ -10,7 +10,8 @@ describe('ShoppingCart General', function() {
     describe('functionNameForTestGoesHere', function() {
         // A string explanation of what we are testing
         it('StringExplanationGoesHere', function() {
-            // Actual test / Code/Logic Goes here 
+            // Actual test / Code/Logic Goes here
+            // Side Note: assert.equal means = (actual, expected) 
             // Individual Test 1
             assert.equal()
         });
