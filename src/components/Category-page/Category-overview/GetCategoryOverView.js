@@ -1,16 +1,26 @@
 import React from 'react'
-import Products from '../../../products_test.json';
+import { useState, useEffect } from 'react'
 import GetMovieDetails from '../Category-details/GetMovieDetails'
-// Temporärt för att hämta ut fyra filmer per gener. Ändras när databasen är klar
-// Action 0, 4
-// Comedy 12, 16
-// Horror 23, 27
+
 export default function GetCategoryOverView({ start, end }) {
+
+  const [content, setContent] = useState([]);
+
+  async function fetchMoviesDetails() {
+    const MOVIE_DB = `/api/films`
+    const response = await fetch(MOVIE_DB);
+    const responseData = await response.json();
+    setContent(responseData);
+  }
+
+  useEffect(() => {
+    fetchMoviesDetails();
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps 
   return (
     <>
       {
-        Products.slice(start, end).map(({ film }) => {
-          return <GetMovieDetails key={film.id} id={film.id} name={film.name} />
+        content.slice(start, end).map((film) => {
+          return <GetMovieDetails key={film.apiId} id={film.apiId} title={film.title} />
         })
       }
     </>
