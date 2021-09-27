@@ -9,15 +9,15 @@ export default function Modal_bundle_01(props) {
   return (
     <Modal>
       <ModalHeader>
-        <h3>Scream Universe</h3>
+        <h3>Kung Fu Panda Movie Collection</h3>
       </ModalHeader>
       <ModalBody>
         <p>This Bundle includes the following movies:</p>
-        <p>Scream 1</p>
-        <p>Scream 2</p>
-        <p>Scream 3</p>
+        <p>Kung Fu Panda </p>
+        <p>Kung Fu Panda 2</p>
+        <p>Kung Fu Panda 3</p>
         <hr></hr>
-        <p>Save 164kr when you buy this bundle rather than each movie individually.</p>
+        <p>Save 58kr when you buy this bundle rather than each movie individually.</p>
 
       </ModalBody>
       <ModalFooter>

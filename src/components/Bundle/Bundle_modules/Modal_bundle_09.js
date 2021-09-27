@@ -5,19 +5,21 @@ import ModalFooter from "../../../modules/modals/components/ModalFooter";
 
 
 
-export default function Modal_bundle_01(props) {
+export default function Modal_bundle_09(props) {
   return (
     <Modal>
       <ModalHeader>
-        <h3>Scream Universe</h3>
+        <h3>WWII Films 5 Movies</h3>
       </ModalHeader>
       <ModalBody>
         <p>This Bundle includes the following movies:</p>
-        <p>Scream 1</p>
-        <p>Scream 2</p>
-        <p>Scream 3</p>
+        <p>The Thin Red Line</p>
+        <p>The Longest Day</p>
+        <p>Patton</p>
+        <p>Tora! Tora! Tora!</p>
+        <p>Mounments Men</p>
         <hr></hr>
-        <p>Save 164kr when you buy this bundle rather than each movie individually.</p>
+        <p>Save 146kr when you buy this bundle rather than each movie individually.</p>
 
       </ModalBody>
       <ModalFooter>

@@ -9,15 +9,17 @@ export default function Modal_bundle_01(props) {
   return (
     <Modal>
       <ModalHeader>
-        <h3>Scream Universe</h3>
+        <h3>Best Picture 5-Film Collection</h3>
       </ModalHeader>
       <ModalBody>
         <p>This Bundle includes the following movies:</p>
-        <p>Scream 1</p>
-        <p>Scream 2</p>
-        <p>Scream 3</p>
+        <p>Ömhetsbevis</p>
+        <p>No Country for Old Men</p>
+        <p>Amercian Beauty</p>
+        <p>Forrest Grump</p>
+        <p>A Beautiful Mind</p>
         <hr></hr>
-        <p>Save 164kr when you buy this bundle rather than each movie individually.</p>
+        <p>Save 126kr when you buy this bundle rather than each movie individually.</p>
 
       </ModalBody>
       <ModalFooter>

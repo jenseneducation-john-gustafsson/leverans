@@ -29,16 +29,78 @@ import Madagascar from "./Pictures/Madagascar.jpg";
 
 
 
+// import Modal_0 from "../Modals/Modal_0"; easter Egg
 
 import Modal_1 from './Bundle_modules/Modal_bundle_01';
-import Modal_0 from "../Modals/Modal_0";
+import Modal_2 from './Bundle_modules/Modal_bundle_02';
+import Modal_3 from './Bundle_modules/Modal_bundle_03';
+import Modal_4 from './Bundle_modules/Modal_bundle_04';
+import Modal_5 from './Bundle_modules/Modal_bundle_05';
+import Modal_6 from './Bundle_modules/Modal_bundle_06';
+import Modal_7 from './Bundle_modules/Modal_bundle_07';
+import Modal_8 from './Bundle_modules/Modal_bundle_08';
+import Modal_9 from './Bundle_modules/Modal_bundle_09';
+import Modal_10 from './Bundle_modules/Modal_bundle_10';
+import Modal_11 from './Bundle_modules/Modal_bundle_11';
+import Modal_12 from './Bundle_modules/Modal_bundle_12';
+import Modal_13 from './Bundle_modules/Modal_bundle_13';
+import Modal_14 from './Bundle_modules/Modal_bundle_14';
+import Modal_15 from './Bundle_modules/Modal_bundle_15';
+import Modal_16 from './Bundle_modules/Modal_bundle_16';
+
+
 
 export default function Bundles(props) {
   const { onAdd } = props;
 
  
-  function addModal() {
+  function addModal1() {
     ModalService.open(Modal_1);
+  };
+  function addModal2() {
+    ModalService.open(Modal_2);
+  };
+  function addModal3() {
+    ModalService.open(Modal_3);
+  };
+  function addModal4() {
+    ModalService.open(Modal_4);
+  };
+  function addModal5() {
+    ModalService.open(Modal_5);
+  };
+  function addModal6() {
+    ModalService.open(Modal_6);
+  };
+  function addModal7() {
+    ModalService.open(Modal_7);
+  };
+  function addModal8() {
+    ModalService.open(Modal_8);
+  };
+  function addModal9() {
+    ModalService.open(Modal_9);
+  };
+  function addModal10() {
+    ModalService.open(Modal_10);
+  };
+  function addModal11() {
+    ModalService.open(Modal_11);
+  };
+  function addModal12() {
+    ModalService.open(Modal_12);
+  };
+  function addModal13() {
+    ModalService.open(Modal_13);
+  };
+  function addModal14() {
+    ModalService.open(Modal_14);
+  };
+  function addModal15() {
+    ModalService.open(Modal_15);
+  };
+  function addModal16() {
+    ModalService.open(Modal_16);
   };
 
   return (
@@ -55,8 +117,8 @@ export default function Bundles(props) {
       <div className="row2">
         <div className="column">
           <div className="content">
-            <img src={Scream} alt="Scream" width="196px" height="300px" onClick = {addModal}/>
-            <h4>Conjuring Universe </h4>
+            <img src={Scream} alt="Scream" width="196px" height="300px" onClick = {addModal1}/>
+            <h4>Scream Universe </h4>
             <p>
               Save 164.00 kr
             </p>
@@ -77,6 +139,7 @@ export default function Bundles(props) {
               alt="TheCounjuring"
               width="196px"
               height="300px"
+              onClick = {addModal2}
             />
             <h4>Conjuring Universe </h4>
             <p>
@@ -89,7 +152,7 @@ export default function Bundles(props) {
         </div>
         <div className="column">
           <div className="content">
-            <img src={ThePurge} alt="ThePurge" width="196px" height="300px" />
+            <img src={ThePurge} alt="ThePurge" width="196px" height="300px" onClick = {addModal3} />
             <h4>The Purge Collection</h4>
             <p>
               Save 67.00 kr
@@ -101,7 +164,7 @@ export default function Bundles(props) {
         </div>
         <div className="column">
           <div className="content">
-            <img src={TheRing} alt="TheRing" width="196px" height="300px" />
+            <img src={TheRing} alt="TheRing" width="196px" height="300px" onClick = {addModal4}/>
             <h4>The Rings 3-Movie Collection</h4>
             <p>
               Save 78.00 kr
@@ -117,7 +180,7 @@ export default function Bundles(props) {
         <div className="row2">
           <div className="column">
             <div className="content">
-              <img src={DC} alt="DC" width="196px" height="300px" />
+              <img src={DC} alt="DC" width="196px" height="300px" onClick = {addModal5} />
               <h4>DC 7-Film Collection</h4>
               <p>
                 Save 194.00 kr
@@ -129,7 +192,7 @@ export default function Bundles(props) {
           </div>
           <div className="column">
             <div className="content">
-              <img src={BadBoys} alt="BadBoys" width="196px" height="300px" />
+              <img src={BadBoys} alt="BadBoys" width="196px" height="300px" onClick = {addModal6} />
               <h4>Bad Boys 3-Movie Collection</h4>
               <p>
                 Save 88.00 kr
@@ -146,6 +209,7 @@ export default function Bundles(props) {
                 alt="TheLordOfTheRings"
                 width="196px"
                 height="300px"
+                onClick = {addModal7}
               />
               <h4>The Lord of the Rings Collection</h4>
               <p>
@@ -158,7 +222,7 @@ export default function Bundles(props) {
           </div>
           <div className="column">
             <div className="content">
-              <img src={XMen} alt="XMen" width="196px" height="300px" />
+              <img src={XMen} alt="XMen" width="196px" height="300px" onClick = {addModal8} />
               <h4>X-Men Trilogy: Extended Bundle</h4>
               <p>
                 Save 48.00 kr
@@ -174,7 +238,7 @@ export default function Bundles(props) {
           <div className="row2">
             <div className="column">
               <div className="content">
-                <img src={WW2} alt="WW2" width="196px" height="300px" />
+                <img src={WW2} alt="WW2" width="196px" height="300px" onClick = {addModal9} />
                 <h4>WWII Films 5 Movies</h4>
                 <p>
                   Save 146.00 kr
@@ -191,6 +255,7 @@ export default function Bundles(props) {
                   alt="TheGodfather"
                   width="196px"
                   height="300px"
+                  onClick = {addModal10}
                 />
                 <h4>The Godfather Trilogy</h4>
                 <p>
@@ -203,7 +268,7 @@ export default function Bundles(props) {
             </div>
             <div className="column">
               <div className="content">
-                <img src={Rocky} alt="Rocky" width="196px" height="300px" />
+                <img src={Rocky} alt="Rocky" width="196px" height="300px" onClick = {addModal11}/>
                 <h4>Rocky Heavyweight </h4>
                 <p>
                   Save 245.00 kr
@@ -215,7 +280,7 @@ export default function Bundles(props) {
             </div>
             <div className="column">
               <div className="content">
-                <img src={Best} alt="5Best" width="196px" height="300px" />
+                <img src={Best} alt="5Best" width="196px" height="300px" onClick = {addModal12}/>
                 <h4>Best Picture 5-Film Collection</h4>
                 <p>
                   Save 126.00 kr
@@ -231,7 +296,7 @@ export default function Bundles(props) {
           <div className="row2">
             <div className="column">
               <div className="content">
-                <img src={Shrek} alt="Shrek" width="196px" height="300px" />
+                <img src={Shrek} alt="Shrek" width="196px" height="300px" onClick = {addModal13} />
                 <h4>Shrek 4-Movie Collection</h4>
                 <p>
                   Save 67.00 kr
@@ -248,6 +313,7 @@ export default function Bundles(props) {
                   alt="KungFuPanda"
                   width="196px"
                   height="300px"
+                  onClick = {addModal14}
                 />
                 <h4>Kung Fu Panda Movie Collection</h4>
                 <p>
@@ -260,7 +326,7 @@ export default function Bundles(props) {
             </div>
             <div className="column">
               <div className="content">
-                <img src={Minions} alt="Minions" width="196px" height="300px" />
+                <img src={Minions} alt="Minions" width="196px" height="300px" onClick = {addModal15}/>
                 <h4>Despicable Me 1-3: Minions</h4>
                 <p>
                   Save 67.00 kr
@@ -277,6 +343,7 @@ export default function Bundles(props) {
                   alt="Madagascar"
                   width="196px"
                   height="300px"
+                  onClick = {addModal16}
                 />
                 <h4>Madagascar 4-Movie Collection</h4>
                 <p>
