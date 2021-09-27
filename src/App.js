@@ -11,6 +11,7 @@ import RegisterForm from "./view/RegisterForm"
 import LoginForm from "./view/LoginForm"
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import  { Redirect } from 'react-router-dom'
 
 import Wishlist from "./view/Wishlist";
 import Bundle from "./components/Bundle/Bundle";
@@ -23,6 +24,11 @@ import CategoryDetailsComedy from './components/Category-page/Category-details/C
 import CategoryDetailsHorror from './components/Category-page/Category-details/CategoryDetailsHorror';
 
 function App() {
+
+
+const android = navigator.userAgent.includes('Android');
+const iphone = navigator.userAgent.includes('iPhone');
+
 
   return (
     <div className="App">
@@ -40,7 +46,8 @@ function App() {
         </FormProvider>
 
         <Route path="/" exact>
-          <StartPage />
+          {android || iphone ? <Redirect to="/login" /> : <StartPage />}
+
         </Route>
         <Route path="/bundles">
           <Bundle />

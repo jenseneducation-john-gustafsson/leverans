@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import "../Category-details/Category-details.css";
 import { Link } from "react-router-dom";
+import GetMovieDetails from "../Category-details/GetMovieDetails"
 
 function CategoryDetailsHorror() {
 
@@ -16,7 +17,7 @@ function CategoryDetailsHorror() {
 
   useEffect(() => {
     fetchMoviesDetails();
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps 
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <>
       <div className="container-fluid">
@@ -31,7 +32,8 @@ function CategoryDetailsHorror() {
           }
         </div>
       </div>
+      </>
     );
   }
-  
+
   export default CategoryDetailsHorror;
