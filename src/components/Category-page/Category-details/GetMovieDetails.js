@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-import Modal_0 from '../../Modals/Modal_0';
+
 import ModalService from '../../../modules/modals/services/ModalService';
+import Modal_0 from '../../Modals/Modal_0';
 
 export default function GetMovieDetails(props) {
   const [content, setContent] = useState([]);
@@ -18,10 +19,10 @@ export default function GetMovieDetails(props) {
     fetchMoviesDetails();
   }, []) // eslint-disable-line react-hooks/exhaustive-deps 
 
-  function addModal() {
-    ModalService.open(Modal_0);
-  };
-
+    // Ta bort???
+    const addModal = () => {
+      ModalService.open(Modal_0);
+    };
 
   return (
     <>
