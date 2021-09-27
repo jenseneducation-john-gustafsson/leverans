@@ -20,7 +20,7 @@ export default function GetCategoryOverView({ start, end }) {
     <>
       {
         content.slice(start, end).map((film) => {
-          return <GetMovieDetails key={film.apiId} id={film.apiId} title={film.title} />
+          return <GetMovieDetails key={film.apiId} id={film.apiId} title={film.title} price={film.price} />
         })
       }
     </>
