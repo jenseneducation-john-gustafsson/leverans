@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Form } from 'react-advanced-form'
 import { Input, Button } from 'react-advanced-form-addons'
 
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 
 //Buy button reducer import
@@ -13,7 +13,13 @@ import { authUsername, isAuthenticated } from "../store/authenticatedSlice";
 const LoginForm = () => {
 
   const [loginMessage, setLoginMessage] = useState("")
+  const [loggedIn, setLoggedIn] = useState()
 
+  // function logInRedirect() {
+  //   <Redirect to="/" />
+  // }
+
+  const [loginRedirect, setLoginRedirect] = useState()
 
   const dispatch = useDispatch();
   const emailState = useSelector((state) => state.authenticated.userEmail)
@@ -34,7 +40,8 @@ const LoginForm = () => {
 
         console.log("Response login backend: ", data);
 
-        setLoginMessage({ loginMessage: data.message })
+        setLoginMessage(data.message)
+        setLoggedIn(data.auth)
 
         //Lägg till authenticated slices
 
@@ -43,6 +50,24 @@ const LoginForm = () => {
           dispatch(authUsername(data));
           dispatch(isAuthenticated(data.auth));
 
+        }
+
+        // setTimeout(() => {}, 3000)
+
+        // if (loggedIn === true) {
+        //   setTimeout(function () {
+        //     <Redirect to="/" />
+        //   }, 3000);
+        // } else {
+        //   <div>{loginMessage}</div>
+        // }
+
+        setLoginRedirect(<Redirect to="/" />)
+
+        if (data.auth === true) {
+          setTimeout(loginRedirect, 3000);
+        } else {
+          <div>{loginMessage}</div>
         }
 
         console.log("check dispatch data: ", data)
@@ -68,7 +93,18 @@ const LoginForm = () => {
       />
 
       <Button primary>Login</Button>
-      <p>Don't have an account? Register <Link to="/register">here</Link>!</p>
+
+      <br />
+      <br />
+
+      <h5><b>Don't have an account? Register <Link to="/register">here</Link>!</b></h5>
+
+      <h3>{loginMessage}</h3>
+      {loggedIn}
+      {/* <Redirect to="/" /> */}
+
+
+
     </Form>
   )
 }
