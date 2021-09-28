@@ -9,6 +9,9 @@ import Modal_0 from '../../Modals/Modal_0';
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../../store/cart-slice";
 
+//Wishlist button
+import { wishlistActions } from '../../../store/wishlistSlice';
+
 
 export default function GetMovieDetails(props) {
   const [content, setContent] = useState([]);
@@ -45,6 +48,18 @@ export default function GetMovieDetails(props) {
     );
   }
 
+
+  const sendToWishlist = () => {
+
+    dispatch(
+      wishlistActions.addItemToWishlist({
+        id: props.id,
+        title: props.title,
+        price: props.price,
+      })
+    );
+  }
+
   return (
     <>
       <div className="column">
@@ -57,6 +72,7 @@ export default function GetMovieDetails(props) {
           <h4>{props.title}</h4>
           <p> {props.price}:-</p>
           <button className="Catbutton" onClick={sendToCart}>Buy</button>
+          <button className="Catbutton" onClick={sendToWishlist}>Add to Wishlist</button>
         </div>
       </div>
     </>
