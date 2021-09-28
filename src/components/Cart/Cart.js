@@ -37,8 +37,9 @@ const Cart = (props) => {
 
   const showLog = () => {
 
-    console.log("log truey: ", isAuth);
-    console.log("username: ", authUser);
+    // console.log("log truey: ", isAuth);
+    // console.log("username: ", authUser);
+    console.log("Cart state:" + JSON.stringify(cartItems));
 
   }
 
@@ -52,7 +53,7 @@ const Cart = (props) => {
               key={item.id}
               item={{
                 id: item.id,
-                title: item.name,
+                title: item.title,
                 quantity: item.quantity,
                 total: item.totalPrice,
                 price: item.price,

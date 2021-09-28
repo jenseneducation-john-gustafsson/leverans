@@ -1,111 +1,111 @@
 [
   {
-    "name": "Scream Universe",
+    "title": "Scream Universe",
     "id": 694,
     "genre": "Horror",
     "price": 199,
     "img": "BundlesImg/Scream.jpg"
   },
   {
-    "name": "Conjuring Universe",
+    "title": "Conjuring Universe",
     "id": 348,
     "genre": "Horror",
     "price": 499,
     "img": "BundlesImg/TheConjuring.png"
   },
   {
-    "name": "The Purge Collection",
+    "title": "The Purge Collection",
     "id": 539,
     "genre": "Horror",
     "price": 249,
     "img": "BundlesImg/ThePurge.jpg"
   },
   {
-    "name": "The Rings 3-Movie Collection",
+    "title": "The Rings 3-Movie Collection",
     "id": 538858,
     "genre": "Horror",
     "price": 199,
     "img": "BundlesImg/TheRing.jpg"
   },
   {
-    "name": "DC 7-Film Collection",
+    "title": "DC 7-Film Collection",
     "id": 499,
     "genre": "Action",
     "price": 499,
     "img": "BundlesImg/DC.jpg"
   },
   {
-    "name": "Bad Boys 3-Movie Collection",
+    "title": "Bad Boys 3-Movie Collection",
     "id": 99,
     "genre": "Action",
     "price": 99,
     "img": "BundlesImg/BadBoys.jpg"
   },
   {
-    "name": "The Lord of the Rings Collection",
+    "title": "The Lord of the Rings Collection",
     "id": 64956,
     "genre": "Action",
     "price": 299,
     "img": "BundlesImg/TheLordOfTheRings.jpg"
   },
   {
-    "name": "X-Men Trilogy: Extended Bundle",
+    "title": "X-Men Trilogy: Extended Bundle",
     "id": 603,
     "genre": "Action",
     "price": 149,
     "img": "BundlesImg/X-Men.jpg"
   },
   {
-    "name": "WWII Films 5 Movies",
+    "title": "WWII Films 5 Movies",
     "id": 1091,
     "genre": "Drama",
     "price": 259,
     "img": "BundlesImg/WW2.jpg"
   },
   {
-    "name": "The Godfather Trilogy",
+    "title": "The Godfather Trilogy",
     "id": 9552,
     "genre": "Drama",
     "price": 149,
     "img": "BundlesImg/TheGodfather.jpg"
   },
   {
-    "name": "Rocky Heavyweight",
+    "title": "Rocky Heavyweight",
     "id": 419430,
     "genre": "Drama",
     "price": 399,
     "img": "BundlesImg/Rocky.jpg"
   },
   {
-    "name": "Best Picture 5-Film Collection",
+    "title": "Best Picture 5-Film Collection",
     "id": 948,
     "genre": "Drama",
     "price": 139,
     "img": "BundlesImg/5Best.jpg"
   },
   {
-    "name": "Shrek 4-Movie Collection",
+    "title": "Shrek 4-Movie Collection",
     "id": 9383,
     "genre": "Animation",
     "price": 369,
     "img": "BundlesImg/Shrek.jpg"
   },
   {
-    "name": "Kung Fu Panda Movie Collection",
+    "title": "Kung Fu Panda Movie Collection",
     "id": 176,
     "genre": "Animation",
     "price": 199,
     "img": "BundlesImg/KungFuPanda.jpg"
   },
   {
-    "name": "Despicable Me 1-3: Minions",
+    "title": "Despicable Me 1-3: Minions",
     "id": 503919,
     "genre": "Animation",
     "price": 259,
     "img": "BundlesImg/Minions.jpg"
   },
   {
-    "name": "Madagascar 4-Movie Collection",
+    "title": "Madagascar 4-Movie Collection",
     "id": 138843,
     "genre": "Animation",
     "price": 199,

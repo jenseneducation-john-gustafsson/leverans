@@ -16,12 +16,12 @@ export default function GetBundleOverView({ start, end }) {
 
   useEffect(() => {
     fetchBundlesDetails();
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps 
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <>
       {
         content.slice(start, end).map((bundles) => {
-          return <GetBundlesDetails key={bundles.id} id={bundles.id} name={bundles.name} price={bundles.price} img={bundles.img} />
+          return <GetBundlesDetails key={bundles.id} id={bundles.id} title={bundles.title} price={bundles.price} img={bundles.img} />
         })
       }
     </>

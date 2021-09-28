@@ -2,39 +2,45 @@ import { useState, useEffect } from "react";
 
 
 //Redux wishlist
-import wishlistSlice from "../store/wishlistSlice";
-import { useSelector, useDispatch } from "react-redux";
 
+import { useSelector, useDispatch } from "react-redux";
+import { cartActions } from "../store/cart-slice";
 
 const ElectronWishList = () => {
 
-  let require = window.require;
-  console.log(require);
+    const wishlist = useSelector((state) => state.wishlist.wishlistItems)
+    const cartItems = useSelector((state) => state.cart.items)
 
+    const dispatch = useDispatch();
 
-  const { ipcRenderer } = require('electron');
-  const remote = require('@electron/remote');
+    const [menuChoice, setMenuChoice] = useState('');
+    const [incData, setIncData] = useState("")
 
-  const { app } = remote;
-  const { dialog } = remote;
+    let require = window.require;
+    const { ipcRenderer } = require('electron');
+    const remote = require('@electron/remote');
+    const fs = require('fs');
 
-  const fs = require('fs');
-  const path = require('path');
-
-
-  const [menuChoice, setMenuChoice] = useState('');
-
-  useEffect(() => {
-    let items = this.state.totalQuantity;
-    let wishlist = items.map(item => item.textContent)
-    console.log(items);
+    const { dialog } = remote;
 
     ipcRenderer.on('menuChoice', (ipcEvent, menuItem) => {
-      console.log('You chose the menu item ' + menuItem + '.');
+      setMenuChoice(menuItem);
+    })
+
+
+   useEffect(() => {
+     const test = [{test1: 'product1'}, {test2: 'product2'}]
+     const mapping = test.map(test => test.test1)
+     console.log(wishlist + "rad 26")
+
+
+      console.log('You chose the menu item ' + menuChoice + '.');
+
+      console.log(wishlist + "rad 34")
 
       let fileExtensionToUse = 'not';
 
-      if (menuItem === 'Download wishlist as file') {
+      if (menuChoice === 'Download wishlist as file') {
         let filePath = dialog.showSaveDialogSync({
           properties: ['createDirectory']
         });
@@ -45,28 +51,37 @@ const ElectronWishList = () => {
           ) {
             filePath += '.' + fileExtensionToUse;
           }
+
+          console.log(wishlist + "rad 49")
           fs.writeFileSync(
             filePath,
-            JSON.stringify({ wishlist }, null, '  '),
+            JSON.stringify( wishlist  , null, '  '),
             'utf-8'
           );
         }
       }
 
-      // if (menuItemLabel === 'Upload wishlist to cart') {
-      //   let filePaths = dialog.showOpenDialogSync({
-      //     properties: ['openFile'],
-      //     options: { filters: { extensions: [fileExtensionToUse] } }
-      //   });
-      //   if (filePaths) {
-      //     let json = fs.readFileSync(filePaths[0], 'utf-8');
-      //     let data = JSON.parse(json);
-      //     document.querySelector('.text-to-remember').value = data.textArea;
-      //   }
-      // }
-    });
-    return () => ipcRenderer.off('menuChoice');
-  }, []);
+
+      if (menuChoice === 'Upload wishlist to cart') {
+        let filePaths = dialog.showOpenDialogSync({
+          properties: ['openFile'],
+          options: { filters: { extensions: [".not"] } }
+        });
+        if (filePaths) {
+          let json = fs.readFileSync(filePaths[0], 'utf-8');
+          let data = JSON.parse(json);
+          // setIncData(JSON.stringify(data));
+          console.log(data);
+          data.map(item => dispatch(cartActions.addItemToCart(item)));
+
+          setTimeout(() => {
+            console.log(cartItems)
+          }, 2000);
+        }
+      }
+
+    // return () => ipcRenderer.off('menuChoice');
+  }, [menuChoice]);
 
   return (
     <div>
