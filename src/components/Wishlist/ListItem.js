@@ -35,7 +35,6 @@ const ListItem = (props) => {
             </div>
           </div>
         </div>
-
     </div>
 
   )

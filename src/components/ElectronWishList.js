@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 
 //Redux wishlist
+
 import { useSelector, useDispatch } from "react-redux";
 import { cartActions } from "../store/cart-slice";
 
@@ -50,6 +51,7 @@ const ElectronWishList = () => {
           ) {
             filePath += '.' + fileExtensionToUse;
           }
+
           console.log(wishlist + "rad 49")
           fs.writeFileSync(
             filePath,
@@ -58,6 +60,7 @@ const ElectronWishList = () => {
           );
         }
       }
+
 
       if (menuChoice === 'Upload wishlist to cart') {
         let filePaths = dialog.showOpenDialogSync({
