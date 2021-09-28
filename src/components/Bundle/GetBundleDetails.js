@@ -7,6 +7,10 @@ import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cart-slice";
 
 
+//Wishlist Redux
+import { wishlistActions } from '../../store/wishlistSlice';
+
+
 export default function GetBundleDetails(props) {
   //   const [content, setContent] = useState([]);
 
@@ -37,6 +41,17 @@ export default function GetBundleDetails(props) {
     );
   }
 
+  const sendToWishlist = () => {
+
+    dispatch(
+      wishlistActions.addItemToWishlist({
+        id: props.id,
+        title: props.name,
+        price: props.price,
+      })
+    );
+  }
+
   return (
     <>
       <div className="column">
@@ -50,6 +65,7 @@ export default function GetBundleDetails(props) {
           <hr />
           <p>{props.price}:-</p>
           <button className="Catbutton" onClick={sendToCart}>Buy</button>
+          <button className="Catbutton" onClick={sendToWishlist}>Add to Wishlist</button>
         </div>
       </div>
     </>
