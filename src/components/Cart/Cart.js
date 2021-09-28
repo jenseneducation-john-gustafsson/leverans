@@ -1,10 +1,15 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import Card from "../UI/Card";
 import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
 
+import { cartActions } from "../../store/cart-slice";
+
 const Cart = (props) => {
+
+  const dispatch = useDispatch();
+
   const cartItems = useSelector((state) => state.cart.items);
 
   const authUser = useSelector((state) => state.authenticated.userEmail);
@@ -19,8 +24,21 @@ const Cart = (props) => {
       body: JSON.stringify({ email: authUser, cart: cartItems })
     }
 
-    return fetch("/api/checkout", requestCartOptions)
+    return fetch("/api/checkout", requestCartOptions).then(dispatch(cartActions.clearCart()))
 
+
+  }
+
+  const clearCart = () => {
+
+    dispatch(cartActions.clearCart());
+
+  }
+
+  const showLog = () => {
+
+    console.log("log truey: ", isAuth);
+    console.log("username: ", authUser);
 
   }
 
@@ -45,7 +63,8 @@ const Cart = (props) => {
         <p>Total Price</p>
         {cartItems.filter(item => item.id).reduce((total, product) => total + product.price * product.quantity, 0)}:-
       </Card>
-      {isAuth ? <button onClick={checkoutCart}>Checkout</button> : <p>Must be logged in.</p>}
+      {isAuth && cartItems.length !== 0 ? <button onClick={checkoutCart}>Checkout</button> : <p>Must be logged in and cart can't be empty.</p>}
+      {cartItems.length == 0 ? <p>No items</p> : <button onClick={clearCart}>Empty Cart</button>}
 
     </div>
   );
