@@ -8,20 +8,20 @@ import { cartActions } from "../../store/cart-slice";
 
 
 export default function GetBundleDetails(props) {
-//   const [content, setContent] = useState([]);
+  //   const [content, setContent] = useState([]);
 
   const dispatch = useDispatch();
 
-//   async function fetchBundleDetails() {
-//     const BUNDLE_SERACH = ``
-//     const response = await fetch(BUNDLE_SERACH);
-//     const responseData = await response.json();
-//     setContent(responseData);
-//   }
+  //   async function fetchBundleDetails() {
+  //     const BUNDLE_SERACH = ``
+  //     const response = await fetch(BUNDLE_SERACH);
+  //     const responseData = await response.json();
+  //     setContent(responseData);
+  //   }
 
-//   useEffect(() => {
-//     fetchBundleDetails();
-//   }, []) // eslint-disable-line react-hooks/exhaustive-deps 
+  //   useEffect(() => {
+  //     fetchBundleDetails();
+  //   }, []) // eslint-disable-line react-hooks/exhaustive-deps 
 
 
 
@@ -42,10 +42,10 @@ export default function GetBundleDetails(props) {
       <div className="column">
         <div className="content">
           <img src={props.img}
-            alt =""
+            alt=""
             width="196px"
             height="300px"
-             />
+          />
           <h4>{props.name}</h4>
           <button className="Catbutton" onClick={sendToCart}>Buy</button>
         </div>

@@ -39,21 +39,21 @@ export default function BundleOverview(props) {
       </h4>
       <h3>Horror</h3>
       <div className="row2">
-        <GetBundleOverView start={0} end={5} />
+        <GetBundleOverView start={0} end={4} />
       </div>
 
       <h3>Action</h3>
       <div className="row2">
-        <GetBundleOverView start={5} end={9} />
+        <GetBundleOverView start={4} end={8} />
       </div>
 
-      <h3>Comedy</h3>
+      <h3>Drama</h3>
       <div className="row2">
-        <GetBundleOverView start={9} end={13} />
+        <GetBundleOverView start={8} end={12} />
       </div>
       <h3>Animation</h3>
       <div className="row2">
-        <GetBundleOverView start={13} end={17} />
+        <GetBundleOverView start={12} end={16} />
       </div>
     </div>
   );
