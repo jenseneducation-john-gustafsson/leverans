@@ -1,6 +1,6 @@
 // Modal Head-Component
-import ModalRoot from '.././modules/modals/components/ModalRoot';
-import ModalService from '.././modules/modals/services/ModalService';
+import ModalRoot from '../modules/modals/components/ModalRoot';
+import ModalService from '../modules/modals/services/ModalService';
 
 /*css*/
 import "../components/Category-page/Category-overview/CategoryOverview.css";

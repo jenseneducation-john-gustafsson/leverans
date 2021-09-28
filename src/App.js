@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import  { Redirect } from 'react-router-dom'
 
 import Wishlist from "./view/Wishlist";
-import Bundle from "./components/Bundle/Bundle";
+import Bundle from "./components/Bundle/BundleOverview";
 import Cart from "./components/Cart/Cart";
 import Genre from "./view/CategoryOverview";
 import StartPage from "./view/StartPage";
