@@ -52,17 +52,6 @@ export default function GetBundleDetails(props) {
     );
   }
 
-  const sendToWishlist = () => {
-
-    dispatch(
-      wishlistActions.addItemToWishlist({
-        id: props.id,
-        title: props.name,
-        price: props.price,
-      })
-    );
-  }
-
   return (
     <>
       <div className="column">
