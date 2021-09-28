@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 const RegisterForm = () => {
 
+  const [regMessage, setRegMessage] = useState("")
+  const [regRedirectMessage, setRegRedirectMessage] = useState("")
 
   const registerUser = ({ serialized }) => {
 
@@ -20,6 +22,10 @@ const RegisterForm = () => {
       .then(data => {
 
         console.log("response log new user: ", data.message);
+
+        setRegMessage(data.message)
+
+        setRegRedirectMessage("Log in here!")
 
       });
   }
@@ -47,7 +53,15 @@ const RegisterForm = () => {
       />
 
       <Button primary>Register</Button>
-      <p>Already have an account? Login <Link to="/login">here</Link>!</p>
+
+      <br />
+      <br />
+
+      <h5><b>Already have an account? Login <Link to="/login">here</Link>!</b></h5>
+
+      <h3>{regMessage}</h3>
+      <h4><b><Link to="/login">{regRedirectMessage}</Link></b></h4>
+
     </Form>
   )
 }
