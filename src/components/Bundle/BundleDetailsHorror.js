@@ -16,7 +16,7 @@ function BundleDetailsHorror() {
 
   useEffect(() => {
     fetchMoviesDetails();
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps 
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <>
       <div className="container-fluid">
@@ -25,7 +25,7 @@ function BundleDetailsHorror() {
           {
             content.map((bundle) => {
               if (bundle.genre === "Horror") {
-                return <GetBundleDetails key={bundle.id} id={bundle.id} title={bundle.name} price={bundle.price} img={bundle.img} />
+                return <GetBundleDetails key={bundle.id} id={bundle.id} title={bundle.title} price={bundle.price} img={bundle.img} />
               }
             })
           }

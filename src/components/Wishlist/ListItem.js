@@ -25,7 +25,7 @@ const ListItem = () => {
         return <div className="row" key={index}>
           <div className="col-7">
             <div className="list-item">
-              {product.name}
+              {product.title}
             </div>
           </div>
           <div className="col-5">

@@ -15,7 +15,7 @@ const wishlistSlice = createSlice({
           price: newItem.price,
           quantity: 1,
           totalPrice: newItem.price,
-          name: newItem.title,
+          title: newItem.title,
         });
       } else {
         existingItem.quantity++;

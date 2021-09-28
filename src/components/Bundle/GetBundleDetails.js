@@ -25,7 +25,7 @@ export default function GetBundleDetails(props) {
 
   //   useEffect(() => {
   //     fetchBundleDetails();
-  //   }, []) // eslint-disable-line react-hooks/exhaustive-deps 
+  //   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
 
 
@@ -35,7 +35,7 @@ export default function GetBundleDetails(props) {
     dispatch(
       cartActions.addItemToCart({
         id: props.id,
-        title: props.name,
+        title: props.title,
         price: props.price,
       })
     );
@@ -46,7 +46,7 @@ export default function GetBundleDetails(props) {
     dispatch(
       wishlistActions.addItemToWishlist({
         id: props.id,
-        title: props.name,
+        title: props.title,
         price: props.price,
       })
     );
@@ -61,7 +61,7 @@ export default function GetBundleDetails(props) {
             width="196px"
             height="300px"
           />
-          <h4>{props.name}</h4>
+          <h4>{props.title}</h4>
           <hr />
           <p>{props.price}:-</p>
           <button className="Catbutton" onClick={sendToCart}>Buy</button>
