@@ -1,27 +1,33 @@
-import { useState, useEffect} from "react";
-
-   const ElectronWishList = () => {
-
-    let require = window.require;
-    console.log(require);
+import { useState, useEffect } from "react";
 
 
-    const { ipcRenderer } = require('electron');
-    const remote = require('@electron/remote');
-
-    const { app } = remote;
-    const { dialog } = remote;
-
-    const fs = require('fs');
-    const path = require('path');
+//Redux wishlist
+import wishlistSlice from "../store/wishlistSlice";
+import { useSelector, useDispatch } from "react-redux";
 
 
-    const [menuChoice, setMenuChoice] = useState('');
+const ElectronWishList = () => {
 
-    useEffect(() => {
-      let items = this.state.totalQuantity;
-      let wishlist = items.map(item => item.textContent)
-      console.log(items);
+  let require = window.require;
+  console.log(require);
+
+
+  const { ipcRenderer } = require('electron');
+  const remote = require('@electron/remote');
+
+  const { app } = remote;
+  const { dialog } = remote;
+
+  const fs = require('fs');
+  const path = require('path');
+
+
+  const [menuChoice, setMenuChoice] = useState('');
+
+  useEffect(() => {
+    let items = this.state.totalQuantity;
+    let wishlist = items.map(item => item.textContent)
+    console.log(items);
 
     ipcRenderer.on('menuChoice', (ipcEvent, menuItem) => {
       console.log('You chose the menu item ' + menuItem + '.');
@@ -60,13 +66,13 @@ import { useState, useEffect} from "react";
       // }
     });
     return () => ipcRenderer.off('menuChoice');
-    }, []);
+  }, []);
 
-     return (
-       <div>
-         <p>Choose "Wishlist" up in the menu if you want to download/upload a wishlist.</p>
-       </div>
-     )
-   }
+  return (
+    <div>
+      <p>Choose "Wishlist" up in the menu if you want to download/upload a wishlist.</p>
+    </div>
+  )
+}
 
-   export default ElectronWishList
+export default ElectronWishList
