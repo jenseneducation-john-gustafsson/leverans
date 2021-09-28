@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import GetBundlesDetails from '../Bundle/GetBundleDetails'
 
-export default function GetBundleOverView(start,end) {
+export default function GetBundleOverView({ start, end }) {
 
   const [content, setContent] = useState([]);
 
