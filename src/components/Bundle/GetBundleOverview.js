@@ -21,7 +21,7 @@ export default function GetBundleOverView({ start, end }) {
     <>
       {
         content.splice(start, end).map((bundles) => {
-          return <GetBundlesDetails key={bundles.id} id={bundles.id} title={bundles.name} price={bundles.price} />
+          return <GetBundlesDetails key={bundles.id} id={bundles.id} title={bundles.name} price={bundles.price} img={bundles.img} />
         })
       }
     </>
