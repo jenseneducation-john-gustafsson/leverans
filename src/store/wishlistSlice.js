@@ -15,22 +15,18 @@ const wishlistSlice = createSlice({
           price: newItem.price,
           quantity: 1,
           totalPrice: newItem.price,
-          name: newItem.title,
+          title: newItem.title,
         });
       } else {
         existingItem.quantity++;
         existingItem.totalPrice = existingItem.totalPrice + newItem.price;
       }
     },
-    removeItemFromCart(state, action) {
+    removeItemFromWishlist(state, action) {
       const id = action.payload;
       const existingItem = state.wishlistItems.find((item) => item.id === id);
-      state.totalQuantity--;
-      if (existingItem.quantity === 1) {
+      if (existingItem.quantity > 0) {
         state.wishlistItems = state.wishlistItems.filter((item) => item.id !== id);
-      } else {
-        existingItem.quantity--;
-        existingItem.totalPrice = existingItem.totalPrice - existingItem.price;
       }
     }
 
