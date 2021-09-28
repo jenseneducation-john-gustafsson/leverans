@@ -37,8 +37,9 @@ const Cart = (props) => {
 
   const showLog = () => {
 
-    console.log("log truey: ", isAuth);
-    console.log("username: ", authUser);
+    // console.log("log truey: ", isAuth);
+    // console.log("username: ", authUser);
+    console.log("Cart state:" + JSON.stringify(cartItems));
 
   }
 
