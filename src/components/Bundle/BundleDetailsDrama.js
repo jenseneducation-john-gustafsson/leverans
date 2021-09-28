@@ -1,15 +1,14 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import "../Category-details/Category-details.css";
-import GetMovieDetails from '../Category-details/GetMovieDetails'
-import { Link } from "react-router-dom";
+import GetBundleDetails from './GetBundleDetails'
 
-function CategoryDetailsAction() {
+function BundleDetailsDrama() {
 
   const [content, setContent] = useState([]);
 
   async function fetchMoviesDetails() {
-    const MOVIE_DB = `/api/films/`
+    const MOVIE_DB = `/api/bundles`
     const response = await fetch(MOVIE_DB);
     const responseData = await response.json();
     setContent(responseData);
@@ -21,12 +20,12 @@ function CategoryDetailsAction() {
   return (
     <>
       <div className="container-fluid">
-        <h2>Action</h2> <Link to="/genre"><button className="Catbutton"><p className="nav-text">Return to Categories</p></button></Link>
+        <h2>Drama</h2>
         <div className="row2">
           {
-            content.map((film) => {
-              if (film.genre === "Action") {
-                return <GetMovieDetails key={film.apiId} id={film.apiId} title={film.title} price={film.price} />
+            content.map((bundle) => {
+              if (bundle.genre === "Drama") {
+                return <GetBundleDetails key={bundle.id} id={bundle.id} title={bundle.name} price={bundle.price} img={bundle.img} />
               }
             })
           }
@@ -36,4 +35,4 @@ function CategoryDetailsAction() {
   );
 }
 
-export default CategoryDetailsAction;
+export default BundleDetailsComedy;

@@ -5,7 +5,7 @@ const FilmsController = require('../controllers/productsDBCon');
 routerFilms.get("/api/films", FilmsController.films);
 
 //Bundles Route
-routerFilms.get("/api/bundles");
+routerFilms.get("/api/bundles", FilmsController.bundles);
 
 
 module.exports = routerFilms;

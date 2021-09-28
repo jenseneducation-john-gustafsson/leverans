@@ -1,6 +1,6 @@
 // Modal Head-Component
-import ModalRoot from '.././modules/modals/components/ModalRoot';
-import ModalService from '.././modules/modals/services/ModalService';
+import ModalRoot from '../modules/modals/components/ModalRoot';
+import ModalService from '../modules/modals/services/ModalService';
 
 /*css*/
 import "../components/Category-page/Category-overview/CategoryOverview.css";
@@ -75,7 +75,7 @@ function CategoryOverview() {
 
   return ( // Replaced main with main-fluid, dvs container = container-fluid. // Full-width.
     <div className="container-fluid">
-      <ModalRoot />
+      <ModalRoot/>
       <h2>Categories</h2>
       <p>
         Browse and select different categories that you may like to watch.
