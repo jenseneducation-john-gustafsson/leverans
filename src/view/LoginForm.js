@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Form } from 'react-advanced-form'
 import { Input, Button } from 'react-advanced-form-addons'
 
-import { Link, Redirect } from "react-router-dom";
+import { Link, Redirect, useHistory } from "react-router-dom";
 
 //Buy button reducer import
 import { useDispatch, useSelector } from "react-redux";
@@ -20,6 +20,8 @@ const LoginForm = () => {
 
   const loggedInState = useSelector((state) => state.authenticated.loggedIn)
 
+  const history = useHistory();
+
   const loginUser = ({ serialized }) => {
 
     const requestOptions = {
@@ -27,6 +29,7 @@ const LoginForm = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: serialized.userEmail, password: serialized.userPassword })
     };
+
 
     return fetch('/login', requestOptions)
       .then(response => response.json())
@@ -41,18 +44,20 @@ const LoginForm = () => {
         if (data.auth) {
           dispatch(authUsername(data));
           dispatch(isAuthenticated(data.auth));
+          return history.push('/');
         }
 
-        if (loggedIn === true) {
-          <div>{loginRedirect}</div>
-        } else {
-          <div>{loginMessage}</div>
-        }
+
 
         console.log("check dispatch data: ", data)
         console.log("check reducer logged in: ", loggedInState)
 
-      }).then(console.log("check reducer email: ", emailState));
+      })
+      // .then(item => {if (loggedIn === true) {
+      //     <div>{loginRedirect}</div>
+      //   } else {
+      //     <div>{loginMessage}</div>
+      //   }});
 
   }
 
