@@ -29,6 +29,7 @@ import CategoryDetailsComedy from './components/Category-page/Category-details/C
 import CategoryDetailsHorror from './components/Category-page/Category-details/CategoryDetailsHorror';
 
 import { useState } from 'react';
+import { useSelector } from "react-redux";
 
 
 function App() {
@@ -51,9 +52,20 @@ function App() {
   const isElectron = navigator.userAgent.includes('Electron');
 
 
+  const isLoggedIn = useSelector(state => state.authenticated.loggedIn);
 
   const android = navigator.userAgent.includes('Android');
   const iphone = navigator.userAgent.includes('iPhone');
+
+  const navigation = () => {
+    if(!isLoggedIn && android) {
+      return <Redirect to="/login" />
+    } else if(!isLoggedIn && iphone) {
+      return <Redirect to="/login" />
+    } else {
+      return <StartPage />
+    }
+  }
 
 
   return (
@@ -77,8 +89,8 @@ function App() {
 
 
           <Route path="/" exact>
-            {android || iphone ? <Redirect to="/login" /> : <StartPage />}
-
+            {/* {!isLoggedIn && mobile ? <Redirect to="/login" /> : <StartPage />} */}
+            {navigation()}
           </Route>
           <Route path="/bundles">
             <Bundle />
