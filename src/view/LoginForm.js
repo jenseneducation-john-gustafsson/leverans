@@ -4,20 +4,14 @@ import { Input, Button } from 'react-advanced-form-addons'
 
 import { Link, Redirect } from "react-router-dom";
 
-
 //Buy button reducer import
 import { useDispatch, useSelector } from "react-redux";
 import { authUsername, isAuthenticated } from "../store/authenticatedSlice";
-
 
 const LoginForm = () => {
 
   const [loginMessage, setLoginMessage] = useState("")
   const [loggedIn, setLoggedIn] = useState()
-
-  // function logInRedirect() {
-  //   <Redirect to="/" />
-  // }
 
   const [loginRedirect, setLoginRedirect] = useState()
 
@@ -42,30 +36,15 @@ const LoginForm = () => {
 
         setLoginMessage(data.message)
         setLoggedIn(data.auth)
-
-        //Lägg till authenticated slices
-
-        if (data.auth) {
-
-          dispatch(authUsername(data));
-          dispatch(isAuthenticated(data.auth));
-
-        }
-
-        // setTimeout(() => {}, 3000)
-
-        // if (loggedIn === true) {
-        //   setTimeout(function () {
-        //     <Redirect to="/" />
-        //   }, 3000);
-        // } else {
-        //   <div>{loginMessage}</div>
-        // }
-
         setLoginRedirect(<Redirect to="/" />)
 
-        if (data.auth === true) {
-          setTimeout(loginRedirect, 3000);
+        if (data.auth) {
+          dispatch(authUsername(data));
+          dispatch(isAuthenticated(data.auth));
+        }
+
+        if (loggedIn === true) {
+          <div>{loginRedirect}</div>
         } else {
           <div>{loginMessage}</div>
         }
@@ -100,10 +79,8 @@ const LoginForm = () => {
       <h5><b>Don't have an account? Register <Link to="/register">here</Link>!</b></h5>
 
       <h3>{loginMessage}</h3>
-      {loggedIn}
-      {/* <Redirect to="/" /> */}
 
-
+      {loggedIn && loginRedirect}
 
     </Form>
   )
