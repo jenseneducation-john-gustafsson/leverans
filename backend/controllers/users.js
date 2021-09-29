@@ -1,5 +1,5 @@
 const User = require("../models/User");
-
+const crypto = require("crypto")
 
 exports.member = async (req, res) => {
   // Find one user
@@ -45,7 +45,7 @@ exports.signup = async (req, res) => {
 
       const user = await User.create({
         email: req.body.email,
-        password: req.body.password
+        password: await hash(req.body.password)
       });
 
       console.log("New user created!: ", user);
@@ -83,7 +83,8 @@ exports.login = async (req, res) => {
 
   } else {
 
-    if (existingUser.password === password) {
+
+    if (await verify(password, existingUser.password)) {
 
 
       console.log("User found!");
@@ -118,3 +119,25 @@ exports.delete = (req, res) => {
   // Delete user
 }
 
+
+
+async function hash(password) {
+  return new Promise((resolve, reject) => {
+    const salt = crypto.randomBytes(16).toString("hex")
+
+    crypto.scrypt(password, salt, 64, (err, derivedKey) => {
+      if (err) reject(err);
+      resolve(salt + ":" + derivedKey.toString('hex'))
+    });
+  })
+}
+
+async function verify(password, hash) {
+  return new Promise((resolve, reject) => {
+    const [salt, key] = hash.split(":")
+    crypto.scrypt(password, salt, 64, (err, derivedKey) => {
+      if (err) reject(err);
+      resolve(key == derivedKey.toString('hex'))
+    });
+  })
+}
