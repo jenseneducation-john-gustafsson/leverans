@@ -1,0 +1,26 @@
+.nav-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0;
+}
+
+.nav-header-title {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.nav-header-icons {
+  position: relative;
+}
+
+.nav-header-buttons {
+  background: none;
+  border: 0;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+}
