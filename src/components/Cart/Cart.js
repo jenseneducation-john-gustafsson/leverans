@@ -64,8 +64,8 @@ const Cart = (props) => {
         <p>Total Price</p>
         {cartItems.filter(item => item.id).reduce((total, product) => total + product.price * product.quantity, 0)}:-
       </Card>
-      {isAuth && cartItems.length !== 0 ? <button onClick={checkoutCart}>Checkout</button> : <p>Must be logged in and cart can't be empty.</p>}
-      {cartItems.length == 0 ? <p>No items</p> : <button onClick={clearCart}>Empty Cart</button>}
+      {isAuth && cartItems.length !== 0 ? <button onClick={checkoutCart}>Checkout</button> : <p className={classes.cartWarning}>Must be logged in and cart can't be empty to checkout.</p>}
+      {cartItems.length == 0 ? <p></p> : <button onClick={clearCart}>Empty Cart</button>}
 
     </div>
   );
