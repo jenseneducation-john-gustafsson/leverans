@@ -2,6 +2,11 @@
   margin-top: 1em;
 }
 
+.list-item {
+ font-weight: bold;
+ font-size: 1.2em;
+}
+
 .remove {
   margin-top: 1em;
 }
