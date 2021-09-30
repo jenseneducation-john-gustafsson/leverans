@@ -57,13 +57,53 @@ function App() {
   const android = navigator.userAgent.includes('Android');
   const iphone = navigator.userAgent.includes('iPhone');
 
-  const navigation = () => {
+  const navigationStart = () => {
     if(!isLoggedIn && android) {
       return <Redirect to="/login" />
     } else if(!isLoggedIn && iphone) {
       return <Redirect to="/login" />
     } else {
       return <StartPage />
+    }
+  }
+
+  const navigationBundles = () => {
+    if(!isLoggedIn && android) {
+      return <Redirect to="/login" />
+    } else if(!isLoggedIn && iphone) {
+      return <Redirect to="/login" />
+    } else {
+      return <Bundle />
+    }
+  }
+
+  const navigationGenre = () => {
+    if(!isLoggedIn && android) {
+      return <Redirect to="/login" />
+    } else if(!isLoggedIn && iphone) {
+      return <Redirect to="/login" />
+    } else {
+      return <Genre />
+    }
+  }
+
+  const navigationCart = () => {
+    if(!isLoggedIn && android) {
+      return <Redirect to="/login" />
+    } else if(!isLoggedIn && iphone) {
+      return <Redirect to="/login" />
+    } else {
+      return <Cart />
+    }
+  }
+
+  const navigationWishlist = () => {
+    if(!isLoggedIn && android) {
+      return <Redirect to="/login" />
+    } else if(!isLoggedIn && iphone) {
+      return <Redirect to="/login" />
+    } else {
+      return <Wishlist />
     }
   }
 
@@ -90,16 +130,16 @@ function App() {
 
           <Route path="/" exact>
             {/* {!isLoggedIn && mobile ? <Redirect to="/login" /> : <StartPage />} */}
-            {navigation()}
+            {navigationStart()}
           </Route>
           <Route path="/bundles">
-            <Bundle />
+            {navigationBundles()}
           </Route>
           <Route path="/cart">
-            <Cart />
+            {navigationCart()}
           </Route>
           <Route path="/genre">
-            <Genre />
+            {navigationGenre()}
           </Route>
           <Route path="/categoryAction">
             <CategoryDetailsAction />
@@ -111,7 +151,7 @@ function App() {
             <CategoryDetailsComedy />
           </Route>
           <Route path="/wishlist">
-            <Wishlist />
+            {navigationWishlist()}
           </Route>
           <Route path="*">
             <NotFound />
