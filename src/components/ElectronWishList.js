@@ -14,7 +14,7 @@ const ElectronWishList = () => {
     const dispatch = useDispatch();
 
     const [menuChoice, setMenuChoice] = useState('');
-    const [incData, setIncData] = useState("")
+    const [menuChoiceUpdate, setMenuChoiceUpdate] = useState(0)
 
     let require = window.require;
     const { ipcRenderer } = require('electron');
@@ -23,8 +23,11 @@ const ElectronWishList = () => {
 
     const { dialog } = remote;
 
+    ipcRenderer.removeAllListeners('menuChoice');
+
     ipcRenderer.on('menuChoice', (ipcEvent, menuItem) => {
       setMenuChoice(menuItem);
+      setMenuChoiceUpdate(Math.random());
     })
 
 
@@ -80,8 +83,7 @@ const ElectronWishList = () => {
         }
       }
 
-    // return () => ipcRenderer.off('menuChoice');
-  }, [menuChoice]);
+  }, [menuChoiceUpdate]);
 
   return (
     <div>
