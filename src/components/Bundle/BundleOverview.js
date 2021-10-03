@@ -1,11 +1,5 @@
-/*css*/
 import "./bundle.css";
 import { useState, useEffect } from 'react'
-
-import ModalRoot from '../../modules/modals/components/ModalRoot';
-import ModalService from '../../modules/modals/services/ModalService';
-
-
 import GetBundleOverView from "./GetBundleOverview"
 
 
@@ -25,9 +19,6 @@ export default function BundleOverview(props) {
   useEffect(() => {
     fetchMoviesDetails();
   }, [])
-
-  // eslint-disable-line react-hooks/exhaustive-deps 
-
 
   return (
     <div className="main-fluid">
