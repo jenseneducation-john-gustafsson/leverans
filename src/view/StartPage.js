@@ -9,8 +9,6 @@ const StartPage = () => {
       <p>Watching the films you love right from the comfort of your own home.
         Here you will find all the best movies from 3 different genres, Horror, Comedy and Action.
         We have also gathered our best bundle prices so you can save money on your favourite movies!</p>
-      <br></br>
-      <p></p>
     </div>
   )
 }

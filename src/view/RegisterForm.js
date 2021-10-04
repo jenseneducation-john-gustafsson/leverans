@@ -21,8 +21,6 @@ const RegisterForm = () => {
       .then(response => response.json())
       .then(data => {
 
-        console.log("response log new user: ", data.message);
-
         setRegMessage(data.message)
 
         setRegRedirectMessage("Log in here!")

@@ -49,4 +49,8 @@ export const cartActions = cartSlice.actions;
 export const { addItemToCart } = cartSlice.actions
 export const { removeItemFromCart } = cartSlice.actions
 
-export default cartSlice.reducer;
+ export default cartSlice;     //comment this for jest-test.
+
+
+// line below must be un-commented for testing purposes.
+//  export default cartSlice.reducer;

@@ -8,7 +8,6 @@ function Navbar() {
       <div>
         <nav>
           <div className="navbar">
-             {/* <Link to=""><button className="navbar-buttons"><p className="nav-text">Top Rated</p></button></Link> */}
             <Link to="/"><button className="navbar-buttons"><p className="nav-text">Home</p></button></Link>
             <Link to="/bundles"><button className="navbar-buttons"><p className="nav-text">Bundles</p></button></Link>
             <Link to="/genre"><button className="navbar-buttons"><p className="nav-text">Genre</p></button></Link>

@@ -1,3 +1,6 @@
+// OBS OBS OBS
+// Dont forget to comment/uncomment the proper reducer.export code at the bottom in cart-slice.js if you wanna run the correct  tests.
+
 import reducer, { addItemToCart, removeItemFromCart } from '../store/cart-slice'
 
 test('should return the initial state', () => {
