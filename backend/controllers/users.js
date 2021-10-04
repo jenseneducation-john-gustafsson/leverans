@@ -8,14 +8,11 @@ exports.member = async (req, res) => {
 
   if (user) {
 
-    console.log("Found user!");
-
     res.status(200).json({ user });
 
   }
 
   else {
-    console.log("User not found!");
 
     res.status(400).json({ userStatus: "Not Found" });
 
@@ -33,7 +30,6 @@ exports.signup = async (req, res) => {
   })
 
   if (checkExistingUser) {
-    console.log("User already exists!");
 
     res.status(400).json({
       message: "Username already exists",
@@ -48,13 +44,10 @@ exports.signup = async (req, res) => {
         password: await hash(req.body.password)
       });
 
-      console.log("New user created!: ", user);
 
       res.status(201).json({ message: "New account has been created" });
 
     } catch (error) {
-
-      console.log("Error with user creation: ", error);
 
       res.status(400).json({ error });
 
@@ -74,7 +67,6 @@ exports.login = async (req, res) => {
   })
 
   if (!existingUser) {
-    console.log("User not found!");
 
     res.status(400).json({
       message: "Username or Password doesn't exist",
@@ -87,9 +79,6 @@ exports.login = async (req, res) => {
     if (await verify(password, existingUser.password)) {
 
 
-      console.log("User found!");
-
-
       res.status(200).json({
         message: "Login Successful",
         auth: true,
@@ -97,8 +86,6 @@ exports.login = async (req, res) => {
       })
 
     } else {
-
-      console.log("Password not found!");
 
       res.status(400).json({
         message: "Username or Password doesn't exist",
@@ -110,14 +97,6 @@ exports.login = async (req, res) => {
   }
 
 };
-
-exports.update = (req, res) => {
-  // Update user
-};
-
-exports.delete = (req, res) => {
-  // Delete user
-}
 
 
 

@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react'
 import GetMovieDetails from "../Category-details/GetMovieDetails";
 import { Link } from "react-router-dom";
 
-
-
 function CategoryDetailsHorror() {
 
   const [content, setContent] = useState([]);

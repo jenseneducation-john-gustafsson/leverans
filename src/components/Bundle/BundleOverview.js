@@ -1,37 +1,14 @@
 /*css*/
 import "./bundle.css";
-import { useState, useEffect } from 'react'
-
-import ModalRoot from '../../modules/modals/components/ModalRoot';
-import ModalService from '../../modules/modals/services/ModalService';
-
 
 import GetBundleOverView from "./GetBundleOverview"
 
-
-
-export default function BundleOverview(props) {
-
-  const [content, setContent] = useState([]);
-
-
-  async function fetchMoviesDetails() {
-    const MOVIE_DB = `/api/bundles`
-    const response = await fetch(MOVIE_DB);
-    const responseData = await response.json();
-    setContent(responseData);
-  }
-
-  useEffect(() => {
-    fetchMoviesDetails();
-  }, [])
+export default function BundleOverview() {
 
   // eslint-disable-line react-hooks/exhaustive-deps 
 
-
   return (
     <div className="main-fluid">
-      {/* <ModalRoot /> */}
       <h2>Bundle Of movies</h2>
       <h4>
         Get the best movie bundles deals so that you can enjoy the movie to the

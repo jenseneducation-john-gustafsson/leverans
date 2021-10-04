@@ -35,14 +35,6 @@ const Cart = (props) => {
 
   }
 
-  const showLog = () => {
-
-    // console.log("log truey: ", isAuth);
-    // console.log("username: ", authUser);
-    console.log("Cart state:" + JSON.stringify(cartItems));
-
-  }
-
   return (
     <div>
       <Card className={classes.cart}>
@@ -65,7 +57,7 @@ const Cart = (props) => {
         {cartItems.filter(item => item.id).reduce((total, product) => total + product.price * product.quantity, 0)}:-
       </Card>
       {isAuth && cartItems.length !== 0 ? <button onClick={checkoutCart}>Checkout</button> : <p className={classes.cartWarning}>Must be logged in and cart can't be empty to checkout.</p>}
-      {cartItems.length == 0 ? <p></p> : <button onClick={clearCart}>Empty Cart</button>}
+      {cartItems.length === 0 ? <p></p> : <button onClick={clearCart}>Empty Cart</button>}
 
     </div>
   );

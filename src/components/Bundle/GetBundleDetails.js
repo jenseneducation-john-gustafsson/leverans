@@ -1,6 +1,4 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
-
 
 //Buy button reducer import
 import { useDispatch } from "react-redux";
@@ -12,22 +10,8 @@ import { wishlistActions } from '../../store/wishlistSlice';
 
 
 export default function GetBundleDetails(props) {
-  //   const [content, setContent] = useState([]);
 
   const dispatch = useDispatch();
-
-  //   async function fetchBundleDetails() {
-  //     const BUNDLE_SERACH = ``
-  //     const response = await fetch(BUNDLE_SERACH);
-  //     const responseData = await response.json();
-  //     setContent(responseData);
-  //   }
-
-  //   useEffect(() => {
-  //     fetchBundleDetails();
-  //   }, []) // eslint-disable-line react-hooks/exhaustive-deps
-
-
 
   //Buy button reducer
   const sendToCart = () => {

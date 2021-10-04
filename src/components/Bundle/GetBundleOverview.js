@@ -11,7 +11,6 @@ export default function GetBundleOverView({ start, end }) {
     const response = await fetch(MOVIE_DB);
     const responseData = await response.json();
     setContent(responseData);
-    console.log("respons bundles: ", responseData.map(bundles => bundles))
   }
 
   useEffect(() => {

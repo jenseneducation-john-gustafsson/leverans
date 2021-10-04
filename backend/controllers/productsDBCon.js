@@ -12,7 +12,6 @@ exports.films = async (req, res) => {
 exports.bundles = async (req, res) => {
 
   const bundlesList = await FilmBundles.find();
-  console.log("BundleBackEnd " , bundlesList);
 
   res.status(200).json(bundlesList);
 
