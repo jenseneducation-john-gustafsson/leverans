@@ -2,25 +2,28 @@ import './Wishlist.css'
 
 import { FaTimes } from 'react-icons/fa'
 
-const ListItem = () => {
+//Redux wishlist
+import { useDispatch } from 'react-redux'
+import { wishlistActions } from '../../store/wishlistSlice'
 
-  let products = ['Product 1', 'Product 2', 'Product 3', 'Product 4', 'Product 5'];
+const ListItem = (props) => {
+  const dispatch = useDispatch();
+  const removeWish = () => {dispatch(wishlistActions.removeItemFromWishlist(props.id))}
+
   return (
-    <div>
-    {products.map((product, index) => {
-      return <div className="row">
-        <div className="col-7">
-          <div className="list-item" key={index}>
-            {product}
+    <div className="wishlist">
+        <div className="row">
+          <div className="col-7">
+            <div className="list-item">
+              {props.title}
+            </div>
+          </div>
+          <div className="col-5">
+            <div className="remove">
+             <button onClick={removeWish}> <FaTimes /></button>
+            </div>
           </div>
         </div>
-        <div className="col-5">
-          <div className="remove">
-            <FaTimes />
-          </div>
-        </div>
-      </div>
-      })}
     </div>
 
   )

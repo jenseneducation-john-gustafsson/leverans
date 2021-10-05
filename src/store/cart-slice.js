@@ -17,7 +17,7 @@ const cartSlice = createSlice({
           price: newItem.price,
           quantity: 1,
           totalPrice: newItem.price,
-          name: newItem.title,
+          title: newItem.title,
         });
       } else {
         existingItem.quantity++;
@@ -35,9 +35,22 @@ const cartSlice = createSlice({
         existingItem.totalPrice = existingItem.totalPrice - existingItem.price;
       }
     },
+    clearCart(state) {
+
+      state.items = [];
+      state.totalQuantity = 0;
+
+    }
   },
 });
 
 export const cartActions = cartSlice.actions;
 
-export default cartSlice;
+export const { addItemToCart } = cartSlice.actions
+export const { removeItemFromCart } = cartSlice.actions
+
+ export default cartSlice;     //comment this for jest-test.
+
+
+// line below must be un-commented for testing purposes.
+//  export default cartSlice.reducer;

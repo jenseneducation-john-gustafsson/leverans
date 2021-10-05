@@ -8,12 +8,24 @@ import { Link } from "react-router-dom";
 
 
 //Buy button reducer import
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { isAuthenticated, authUsername } from "../../store/authenticatedSlice";
 
 
 function Header() {
 
-  const isAuthenticated = useSelector(state => state.authenticated.loggedIn)
+  const isLoggedIn = useSelector(state => state.authenticated.loggedIn)
+
+  const dispatch = useDispatch();
+
+  const logOut = () => {
+
+    dispatch(isAuthenticated(false))
+
+    dispatch(authUsername(""));
+
+
+  }
 
   return (
     <div >
@@ -24,12 +36,12 @@ function Header() {
 
         <div className="nav-header-icons">
 
-          {!isAuthenticated ? <Link to="/login">
+          {!isLoggedIn ? <Link to="/login">
             <button className="nav-header-buttons">
               <FaSignInAlt />
             </button>
           </Link> : <Link to="/">
-            <button className="nav-header-buttons">
+            <button className="nav-header-buttons" onClick={logOut}>
               <FaSignOutAlt />
             </button>
           </Link>}

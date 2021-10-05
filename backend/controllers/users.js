@@ -1,5 +1,5 @@
 const User = require("../models/User");
-
+const crypto = require("crypto")
 
 exports.member = async (req, res) => {
   // Find one user
@@ -8,14 +8,11 @@ exports.member = async (req, res) => {
 
   if (user) {
 
-    console.log("Found user!");
-
     res.status(200).json({ user });
 
   }
 
   else {
-    console.log("User not found!");
 
     res.status(400).json({ userStatus: "Not Found" });
 
@@ -33,7 +30,6 @@ exports.signup = async (req, res) => {
   })
 
   if (checkExistingUser) {
-    console.log("User already exists!");
 
     res.status(400).json({
       message: "Username already exists",
@@ -45,16 +41,13 @@ exports.signup = async (req, res) => {
 
       const user = await User.create({
         email: req.body.email,
-        password: req.body.password
+        password: await hash(req.body.password)
       });
 
-      console.log("New user created!: ", user);
 
       res.status(201).json({ message: "New account has been created" });
 
     } catch (error) {
-
-      console.log("Error with user creation: ", error);
 
       res.status(400).json({ error });
 
@@ -74,7 +67,6 @@ exports.login = async (req, res) => {
   })
 
   if (!existingUser) {
-    console.log("User not found!");
 
     res.status(400).json({
       message: "Username or Password doesn't exist",
@@ -83,10 +75,8 @@ exports.login = async (req, res) => {
 
   } else {
 
-    if (existingUser.password === password) {
 
-
-      console.log("User found!");
+    if (await verify(password, existingUser.password)) {
 
 
       res.status(200).json({
@@ -96,8 +86,6 @@ exports.login = async (req, res) => {
       })
 
     } else {
-
-      console.log("Password not found!");
 
       res.status(400).json({
         message: "Username or Password doesn't exist",
@@ -110,11 +98,25 @@ exports.login = async (req, res) => {
 
 };
 
-exports.update = (req, res) => {
-  // Update user
-};
 
-exports.delete = (req, res) => {
-  // Delete user
+
+async function hash(password) {
+  return new Promise((resolve, reject) => {
+    const salt = crypto.randomBytes(16).toString("hex")
+
+    crypto.scrypt(password, salt, 64, (err, derivedKey) => {
+      if (err) reject(err);
+      resolve(salt + ":" + derivedKey.toString('hex'))
+    });
+  })
 }
 
+async function verify(password, hash) {
+  return new Promise((resolve, reject) => {
+    const [salt, key] = hash.split(":")
+    crypto.scrypt(password, salt, 64, (err, derivedKey) => {
+      if (err) reject(err);
+      resolve(key == derivedKey.toString('hex'))
+    });
+  })
+}

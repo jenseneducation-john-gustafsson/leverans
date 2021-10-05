@@ -14,3 +14,12 @@
   padding: 0;
   margin: 0;
 }
+
+.cartWarning {
+  margin: 1.25rem auto;
+  background-color: lightblue;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px 5px;
+}
