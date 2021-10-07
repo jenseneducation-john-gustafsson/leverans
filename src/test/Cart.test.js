@@ -1,7 +1,9 @@
 // OBS OBS OBS
 // Dont forget to comment/uncomment the proper reducer.export code at the bottom in cart-slice.js if you wanna run the correct  tests.
 
+
 import reducer, { addItemToCart, removeItemFromCart } from '../store/cart-slice'
+
 
 test('should return the initial state', () => {
   expect(reducer(undefined, {})).toEqual(
@@ -107,6 +109,70 @@ test('should add item to cart with one other item that is the same', () => {
   )
 })
 
+test('should return correct line-price', () => {
+  const previousState = {
+    items: [{
+      id: 155,
+      price: 199,
+      quantity: 1,
+      totalPrice: 199,
+      title: "Batman",
+    }
+    ],
+    totalQuantity: 1,
+  }
+  expect(reducer(previousState, addItemToCart({
+      id: 155,
+      price: 199,
+      quantity: 1,
+      totalPrice: 199,
+      title: "Batman",}, 1))).toEqual(
+    {
+      items: [{
+      id: 155,
+      price: 199,
+      quantity: 2,
+      totalPrice: 398,
+      title: "Batman",
+    }
+    ],
+    totalQuantity: 2,
+    }
+  )
+})
+
+test('should return correct total quantity', () => {
+  const previousState = {
+    items: [{
+      id: 155,
+      price: 199,
+      quantity: 1,
+      totalPrice: 199,
+      title: "Batman",
+    }
+    ],
+    totalQuantity: 1,
+  }
+  expect(reducer(previousState, addItemToCart({
+      id: 155,
+      price: 199,
+      quantity: 1,
+      totalPrice: 199,
+      title: "Batman",}, 1))).toEqual(
+    {
+      items: [{
+      id: 155,
+      price: 199,
+      quantity: 2,
+      totalPrice: 398,
+      title: "Batman",
+    }
+    ],
+    totalQuantity: 2,
+    }
+  )
+})
+
 test('should remove item from cart with one other different item', () => {
   const previousState = {
     items: [{
@@ -144,6 +210,33 @@ test('should remove item from cart with one other different item', () => {
     }
     ],
     totalQuantity: 2,
+    }
+  )
+})
+
+test('should remove item from cart with two items that are the same', () => {
+  const previousState = {
+    items: [{
+      id: 155,
+      price: 199,
+      quantity: 2,
+      totalPrice: 398,
+      title: "Batman",
+    }
+    ],
+    totalQuantity: 2,
+  }
+  expect(reducer(previousState, removeItemFromCart(155, 1))).toEqual(
+    {
+      items: [{
+      id: 155,
+      price: 199,
+      quantity: 1,
+      totalPrice: 199,
+      title: "Batman",
+    }
+    ],
+    totalQuantity: 1,
     }
   )
 })
